@@ -1,0 +1,35 @@
+ERROR - 2023-01-31 08:57:15 --> Unknown column 'artikel_baca' in 'field list'
+CRITICAL - 2023-01-31 08:57:15 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 223.
+ 1 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+ 2 SYSTEMPATH/BaseModel.php(1088): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Publik.php(378): CodeIgniter\BaseModel->paginate()
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->artikel()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-31 08:57:47 --> Unknown column 'artikel_baca' in 'field list'
+CRITICAL - 2023-01-31 08:57:47 --> Call to a member function getResult() on bool
+in SYSTEMPATH/Model.php on line 223.
+ 1 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+ 2 SYSTEMPATH/BaseModel.php(1088): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH/Controllers/Publik.php(378): CodeIgniter\BaseModel->paginate()
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->artikel()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-31 08:57:49 --> Unknown column 'artikel_baca' in 'field list'
+CRITICAL - 2023-01-31 08:57:49 --> Unknown column 'artikel_baca' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(584): CodeIgniter\Model->doFindAll()
+ 7 SYSTEMPATH/BaseModel.php(1088): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/Publik.php(378): CodeIgniter\BaseModel->paginate()
+ 9 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->artikel()
+10 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

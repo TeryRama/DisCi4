@@ -1,0 +1,111 @@
+ERROR - 2022-10-07 11:51:46 --> Unknown column 'user_create_time' in 'order clause'
+CRITICAL - 2022-10-07 11:51:46 --> Unknown column 'user_create_time' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+ORDER BY `user_create_time` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+ORDER BY `user_create_time` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+ORDER BY `user_create_time` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+ORDER BY `user_create_time` DESC', [...], false)
+ 5 APPPATH\Models\User_model.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(510): App\Models\User_model->get_all_user_by_filter(0, null)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 14:30:08 --> Undefined property: stdClass::$user_role
+in APPPATH\Controllers\Backend.php on line 548.
+ 1 APPPATH\Controllers\Backend.php(548): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_role', 'APPPATH\\Controllers\\Backend.php', 548, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user_role()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 14:56:45 --> Undefined variable: username
+in APPPATH\Models\User_model.php on line 27.
+ 1 APPPATH\Models\User_model.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: username', 'APPPATH\\Models\\User_model.php', 27, [...])
+ 2 APPPATH\Controllers\Backend.php(567): App\Models\User_model->get_user_by_email('22spamer@gmail.com')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_user()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 14:57:32 --> Undefined variable: username
+in APPPATH\Models\User_model.php on line 27.
+ 1 APPPATH\Models\User_model.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: username', 'APPPATH\\Models\\User_model.php', 27, [...])
+ 2 APPPATH\Controllers\Backend.php(567): App\Models\User_model->get_user_by_email(null)
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_user()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 14:57:49 --> Undefined variable: username
+in APPPATH\Models\User_model.php on line 27.
+ 1 APPPATH\Models\User_model.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: username', 'APPPATH\\Models\\User_model.php', 27, [...])
+ 2 APPPATH\Controllers\Backend.php(567): App\Models\User_model->get_user_by_email(null)
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_user()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 14:57:51 --> Undefined variable: username
+in APPPATH\Models\User_model.php on line 27.
+ 1 APPPATH\Models\User_model.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: username', 'APPPATH\\Models\\User_model.php', 27, [...])
+ 2 APPPATH\Controllers\Backend.php(567): App\Models\User_model->get_user_by_email(null)
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_user()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 14:57:58 --> Undefined variable: username
+in APPPATH\Models\User_model.php on line 27.
+ 1 APPPATH\Models\User_model.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: username', 'APPPATH\\Models\\User_model.php', 27, [...])
+ 2 APPPATH\Controllers\Backend.php(567): App\Models\User_model->get_user_by_email(null)
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_user()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 14:58:54 --> Undefined variable: response
+in APPPATH\Controllers\Backend.php on line 584.
+ 1 APPPATH\Controllers\Backend.php(584): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: response', 'APPPATH\\Controllers\\Backend.php', 584, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_user()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 14:58:56 --> Undefined variable: response
+in APPPATH\Controllers\Backend.php on line 584.
+ 1 APPPATH\Controllers\Backend.php(584): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: response', 'APPPATH\\Controllers\\Backend.php', 584, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_user()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 15:02:41 --> Undefined variable: response
+in APPPATH\Controllers\Backend.php on line 584.
+ 1 APPPATH\Controllers\Backend.php(584): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: response', 'APPPATH\\Controllers\\Backend.php', 584, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_user()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 15:02:58 --> Undefined variable: response
+in APPPATH\Controllers\Backend.php on line 584.
+ 1 APPPATH\Controllers\Backend.php(584): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: response', 'APPPATH\\Controllers\\Backend.php', 584, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_user()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-07 15:18:12 --> Call to undefined method App\Models\User_model::get_all_user_by_id
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Backend.php(605): CodeIgniter\Model->__call('get_all_user_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user_by_id()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

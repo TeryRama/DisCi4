@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<?= view('_head') ?>
+
+<body class="stretched">
+    <div id="wrapper" class="clearfix">
+        <?= view('_header') ?>
+        <section id="page-title">
+            <div class="container clearfix">
+                <div class="d-flex">
+                    <img src="<?= base_url($komoditas[0]->komoditas_foto) ?>" width="10%" style="border-radius: 10px;">
+                    <div class="mt-auto mb-auto ms-2">
+                        <h1 class="m-0"><?= $komoditas[0]->komoditas_nama ?></h1>
+                        <span class="text-muted m-0">Update terakhir <?= tgl_indo($last_update) ?></span>
+                    </div>
+
+                </div>
+                <ol class="breadcrumb">
+                    <!-- <li class=""><img src="<?= base_url() ?>/files/web-assets/logo-anka.png" width="80px" alt=""></li> -->
+                    <li class="ms-2"><img src="<?= base_url() ?>/files/web-assets/logo-inhil.png" width="60px" alt=""></li>
+                </ol>
+            </div>
+        </section>
+        <section id="content">
+            <div class="content-wrap">
+                <div class="container clearfix">
+                    <?php if ($status != 0) { ?>
+                        <div class="fancy-title title-bottom-border mb-0">
+                            <h3 class="p-0">Statistik Harga </h3>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-4">
+                                <div class="card bg-primary ">
+                                    <div class="card-header">
+                                        <h5 class="card-title text-light text-center m-0"> Harga Rata-rata </h5>
+                                    </div>
+                                    <div class="card-body text-light text-center">
+                                        <div class="">
+                                            <span class="mt-auto" style="font-size:12px">Rp. </span>
+                                            <span class="h3 m-0"><?= number($komoditas[0]->avg_harga) ?></span>
+                                            <span class="mt-auto" style="font-size:12px"> /<?= $komoditas[0]->komoditas_satuan ?></span>
+                                        </div>
+                                        <h4 class="mt-3 mb-0 text-light"><i class="fas fa-map-marker-alt me-2"></i>Indragiri Hilir</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card bg-danger ">
+                                    <div class="card-header">
+                                        <h5 class="card-title text-light text-center m-0"> Harga Tertinggi </h5>
+                                    </div>
+                                    <div class="card-body text-light text-center">
+                                        <div class="">
+                                            <span class="mt-auto" style="font-size:12px">Rp. </span>
+                                            <span class="h3 m-0"><?= number($komoditas[0]->harga_max) ?></span>
+                                            <span class="mt-auto" style="font-size:12px"> /<?= $komoditas[0]->komoditas_satuan ?></span>
+                                        </div>
+                                        <h4 class="mt-3 mb-0 text-light"><i class="fas fa-map-marker-alt me-2"></i><?= $komoditas[0]->pasar_max ?></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card bg-success ">
+                                    <div class="card-header">
+                                        <h5 class="card-title text-light text-center m-0"> Harga Terendah </h5>
+                                    </div>
+                                    <div class="card-body text-light text-center">
+                                        <div class="">
+                                            <span class="mt-auto" style="font-size:12px">Rp. </span>
+                                            <span class="h3 m-0"><?= number($komoditas[0]->harga_min) ?></span>
+                                            <span class="mt-auto" style="font-size:12px"> /<?= $komoditas[0]->komoditas_satuan ?></span>
+                                        </div>
+                                        <h4 class="mt-3 mb-0 text-light"><i class="fas fa-map-marker-alt me-2"></i><?= $komoditas[0]->pasar_min ?></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fancy-title title-bottom-border mb-0 mt-5">
+                            <h3 class="m-0 p-0" id="tess">Statistik Harga Berdasarkan Pasar</h3>
+                        </div>
+                        <div class="pasar-container">
+                            <div id="pasar" class="row mt-3">
+                                <?php foreach ($komoditas[0]->pasar as $row) {
+                                    if ($row->transaksi_harga > $row->harga_prev) {
+                                        $status = "Harga Naik";
+                                        $bg_status = "bg-danger";
+                                        $ic_status = "fas fa-arrow-up";
+                                        $selisih = rupiah($row->transaksi_harga - $row->harga_prev);
+                                    } elseif ($row->transaksi_harga < $row->harga_prev) {
+                                        $status = "Harga Turun";
+                                        $bg_status = "bg-success";
+                                        $ic_status = "fas fa-arrow-down";
+                                        $selisih =  rupiah($row->harga_prev - $row->transaksi_harga);
+                                    } else {
+                                        $status = "Harga Stabil";
+                                        $bg_status = "bg-primary";
+                                        $ic_status = "fas fa-exchange";
+                                        $selisih =  "";
+                                    }
+                                ?>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                                        <div class="card my-1">
+                                            <div class="card-body" style="height: 6rem;">
+                                                <h4 class="m-0"><?= $row->pasar_nama ?></h4>
+                                                <span class="m-0" style="font-size:14px">Harga Hari Ini : <?= rupiah($row->transaksi_harga) ?>/<?= $komoditas[0]->komoditas_satuan ?></span><br>
+                                                <span class="m-0" style="font-size:14px">Harga sebelumnya : <?= rupiah($row->harga_prev) ?>/<?= $komoditas[0]->komoditas_satuan ?></span>
+                                            </div>
+                                            <div class="card-footer <?= $bg_status ?> text-center p-1">
+                                                <h6 class="m-0 text-light"><i class="<?= $ic_status ?> me-2"></i><?= $status . " " . $selisih ?></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php
+                                }
+                                ?>
+                            </div>
+                            <div class="d-flex mb-0 mt-0">
+                                <div id="pagination-container-pasar" class="pagination-container topmargin  ms-auto">
+                                    <ul id="pagination-pasar" class="pagination m-0"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mt-5">
+                            <div class="card-header">
+                                <h3 class="m-0">Grafik Harga </h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <select class="select-1 form-select form-control" id="select_main" style="width:auto;">
+                                            <option value="inhil">Rata-rata keseluruhan harga</option>
+                                            <option value="kecamatan">Berdasarkan Kecamatan</option>
+                                            <option value="pasar">Berdasarkan Pasar</option>
+                                        </select>
+                                        <select class="select-1 form-select form-control" id="select_kecamatan" style="width:auto;">
+                                            <?php
+                                            foreach ($kecamatan as $row) {
+                                            ?>
+                                                <option value="<?= $row->code ?>"><?= $row->name ?></option>
+                                            <?php
+                                            }
+                                            ?>
+                                        </select>
+                                        <select class="select-1 form-select form-control" id="select_pasar" style="width:auto;">
+                                            <?php
+                                            foreach ($pasar as $row) {
+                                            ?>
+                                                <option value="<?= encrypt_url($row->pasar_id) ?>"><?= $row->pasar_nama ?></option>
+                                            <?php
+                                            }
+                                            ?>
+                                        </select>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <select class="ms-auto select-1 form-select form-control" id="select_bulan" style="width:auto;">
+                                            <?php
+                                            $month = date('n');
+                                            for ($i = 1; $i <= 12; $i++) {
+                                            ?>
+                                                <option value="<?= $i ?>" <?php if ($i == $month) {
+                                                                                echo "selected";
+                                                                            } ?>><?= bulan_indo($i) ?></option>
+                                            <?php
+                                            }
+                                            ?>
+                                        </select>
+                                        <select class="select-1 form-select form-control" id="select_tahun" style="width:auto;">
+                                            <?php
+                                            $year = date('Y');
+                                            $year_min = $year - 10;
+                                            for ($i = $year; $i >= $year_min; $i--) {
+                                            ?>
+                                                <option value="<?= $i ?>"><?= $i ?></option>
+                                            <?php
+                                            }
+                                            ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <h3 class="text-center" id="title_chart"></h3>
+                                <div class="bottommargin mx-auto mt-4" id="chart_box">
+                                    <canvas id="chart-0"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </section>
+        <?= view('_footer'); ?>
+    </div>
+    <div id="gotoTop" class="icon-angle-up"></div>
+    <?= view('_footer_js') ?>
+    <script src="<?= base_url() ?>/assets/user/js/components/select-boxes.js"></script>
+    <script src="<?= base_url() ?>/assets/user/js/components/selectsplitter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            $('.pasar-container').pajinate({
+                items_per_page: 9,
+                item_container_id: '#pasar',
+                nav_panel_id: '#pagination-container-pasar ul',
+                show_first_last: false
+            });
+
+            $('#pagination-pasar a').click(function() {
+                var t = setTimeout(function() {
+                    $('.flexslider .slide').resize();
+                }, 1000);
+            });
+
+            $(".select-1").select2({
+                placeholder: "Select Multiple Values"
+            });
+
+            jQuery("#select_kecamatan").select2().next().hide();
+            jQuery("#select_pasar").select2().next().hide();
+            $('#select_main').on('change', function() {
+                var value = $('#select_main').val();
+                if (value == 'inhil') {
+                    jQuery("#select_kecamatan").select2().next().hide();
+                    jQuery("#select_pasar").select2().next().hide();
+                    getDataGrafik('inhil')
+                } else if (value == 'kecamatan') {
+                    jQuery("#select_kecamatan").select2().next().show();
+                    jQuery("#select_pasar").select2().next().hide();
+                    getDataGrafik('kecamatan')
+                } else {
+                    jQuery("#select_kecamatan").select2().next().hide();
+                    jQuery("#select_pasar").select2().next().show();
+                    getDataGrafik('pasar')
+                }
+            });
+
+            $('#select_kecamatan').on('change', function() {
+                getDataGrafik('kecamatan');
+            });
+
+            $('#select_pasar').on('change', function() {
+                getDataGrafik('pasar');
+            });
+
+            $('#select_bulan').on('change', function() {
+                getDataGrafik($('#select_main').val());
+            });
+
+            $('#select_tahun').on('change', function() {
+                getDataGrafik($('#select_main').val());
+            });
+
+        });
+
+        getDataGrafik($('#select_main').val());
+
+        function getDataGrafik(tipe) {
+            $('#chart-0').remove();
+            $('#chart_box').append('<canvas id="chart-0"><canvas>');
+            var kecamatan = $('#select_kecamatan').val();
+            var pasar = $('#select_pasar').val();
+            var bulan = $('#select_bulan').val();
+            var tahun = $('#select_tahun').val();
+            const xmlhttp = new XMLHttpRequest();
+            var json_url = "<?= base_url() ?>/action/get-data-grafik-detail-komoditas/" + tipe + "/" + '<?= encrypt_url($komoditas[0]->komoditas_id) ?>' + "/" + kecamatan + "/" + pasar + "/" + bulan + "/" + tahun;
+
+            xmlhttp.open('GET', json_url, true);
+            xmlhttp.send();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    const datapoints = JSON.parse(this.responseText);
+                    const labelTanggal = datapoints.data_grafik.map(
+                        function(index) {
+                            return index.transaksi_tanggal;
+                        });
+                    const dataHarga = datapoints.data_grafik.map(
+                        function(index) {
+                            return index.rata_harga;
+                        });
+
+
+                    const data = {
+                        labels: labelTanggal,
+                        datasets: [{
+                            label: "Harga",
+                            fill: false,
+                            lineTension: 0.1,
+                            backgroundColor: "rgba(75,192,192,0.4)",
+                            borderColor: "rgba(75,192,192,1)",
+                            borderCapStyle: 'butt',
+                            borderDash: [],
+                            borderDashOffset: 0.0,
+                            borderJoinStyle: 'miter',
+                            pointBorderColor: "rgba(75,192,192,1)",
+                            pointBackgroundColor: "#fff",
+                            pointBorderWidth: 10,
+                            pointHoverRadius: 5,
+                            pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                            pointHoverBorderColor: "rgba(220,220,220,1)",
+                            pointHoverBorderWidth: 2,
+                            pointRadius: 1,
+                            pointHitRadius: 10,
+                            data: dataHarga,
+                            spanGaps: false,
+
+                        }]
+                    };
+
+                    const config = {
+                        type: 'line',
+                        plugins: [ChartDataLabels],
+                        data,
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            },
+                            plugins: {
+                                datalabels: {
+                                    color: "rgba(75,192,192,1)",
+                                    anchor: 'end',
+                                    align: 'top',
+                                    formatter: function(value, chart_obj) {
+                                        return convertToRupiah(value);
+                                    },
+                                    padding: {
+                                        bottom: 20
+                                    },
+                                    font: {
+                                        weight: 'bold',
+                                        size: 18
+                                    }
+                                }
+                            }
+                        },
+                    };
+
+                    $('#title_chart').val('Grafik Harga');
+
+                    // render init block
+                    const myChart = new Chart(
+                        document.getElementById('chart-0'),
+                        config
+                    );
+                }
+            }
+        }
+
+        function convertToRupiah(angka) {
+            var rupiah = '';
+            var angkarev = angka.toString().split('').reverse().join('');
+            for (var i = 0; i < angkarev.length; i++)
+                if (i % 3 == 0) rupiah += angkarev.substr(i, 3) + '.';
+            return 'Rp. ' + rupiah.split('', rupiah.length - 1).reverse().join('');
+        }
+    </script>
+</body>
+
+</html>

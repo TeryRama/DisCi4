@@ -1,0 +1,975 @@
+ERROR - 2022-12-17 09:53:39 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2022-12-17 09:53:39 --> Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pasar_nama`, `pasar_id`
+FROM `tb_pasar`
+WHERE `status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pasar_nama`, `pasar_id`
+FROM `tb_pasar`
+WHERE `status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pasar_nama`, `pasar_id`
+FROM `tb_pasar`
+WHERE `status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pasar_nama`, `pasar_id`
+FROM `tb_pasar`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Root.php(104): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 09:53:50 --> Undefined variable: r
+in APPPATH\Views\root\page_laporan_komoditas.php on line 36.
+ 1 APPPATH\Views\root\page_laporan_komoditas.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: r', 'APPPATH\\Views\\root\\page_laporan_komoditas.php', 36, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_komoditas', [], true)
+ 5 APPPATH\Controllers\Root.php(109): view('root/page_laporan_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:30:55 --> Call to undefined method App\Models\Jualan_model::wehere
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Root.php(161): CodeIgniter\Model->__call('wehere', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:34:43 --> Attempt to assign property 'komoditas_jualan' of non-object
+in APPPATH\Controllers\Root.php on line 170.
+ 1 APPPATH\Controllers\Root.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'komoditas_jualan\' of non-object', 'APPPATH\\Controllers\\Root.php', 170, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:34:58 --> Creating default object from empty value
+in APPPATH\Controllers\Root.php on line 170.
+ 1 APPPATH\Controllers\Root.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'APPPATH\\Controllers\\Root.php', 170, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:35:07 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Root.php on line 170.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:35:48 --> Creating default object from empty value
+in APPPATH\Controllers\Root.php on line 169.
+ 1 APPPATH\Controllers\Root.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'APPPATH\\Controllers\\Root.php', 169, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:36:19 --> Attempt to assign property 'komoditas_het' of non-object
+in APPPATH\Controllers\Root.php on line 169.
+ 1 APPPATH\Controllers\Root.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'komoditas_het\' of non-object', 'APPPATH\\Controllers\\Root.php', 169, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:37:11 --> Undefined property: stdClass::$transaksi_het
+in APPPATH\Controllers\Root.php on line 169.
+ 1 APPPATH\Controllers\Root.php(169): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$transaksi_het', 'APPPATH\\Controllers\\Root.php', 169, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:37:25 --> Trying to get property 'transaksi_het' of non-object
+in APPPATH\Controllers\Root.php on line 169.
+ 1 APPPATH\Controllers\Root.php(169): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'transaksi_het\' of non-object', 'APPPATH\\Controllers\\Root.php', 169, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:39:19 --> Creating default object from empty value
+in APPPATH\Controllers\Root.php on line 171.
+ 1 APPPATH\Controllers\Root.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'APPPATH\\Controllers\\Root.php', 171, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:40:16 --> Undefined variable: het
+in APPPATH\Controllers\Root.php on line 156.
+ 1 APPPATH\Controllers\Root.php(156): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: het', 'APPPATH\\Controllers\\Root.php', 156, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:40:24 --> Creating default object from empty value
+in APPPATH\Controllers\Root.php on line 156.
+ 1 APPPATH\Controllers\Root.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'APPPATH\\Controllers\\Root.php', 156, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:01:00 --> Undefined variable: tanggal1
+in APPPATH\Views\root\page_laporan_komoditas.php on line 75.
+ 1 APPPATH\Views\root\page_laporan_komoditas.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tanggal1', 'APPPATH\\Views\\root\\page_laporan_komoditas.php', 75, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_komoditas', [], true)
+ 5 APPPATH\Controllers\Root.php(201): view('root/page_laporan_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:01:30 --> Undefined variable: GET
+in APPPATH\Views\root\page_laporan_komoditas.php on line 75.
+ 1 APPPATH\Views\root\page_laporan_komoditas.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: GET', 'APPPATH\\Views\\root\\page_laporan_komoditas.php', 75, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_komoditas', [], true)
+ 5 APPPATH\Controllers\Root.php(201): view('root/page_laporan_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:05:02 --> Undefined variable: grup
+in APPPATH\Views\root\page_laporan_komoditas.php on line 84.
+ 1 APPPATH\Views\root\page_laporan_komoditas.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: grup', 'APPPATH\\Views\\root\\page_laporan_komoditas.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_komoditas', [], true)
+ 5 APPPATH\Controllers\Root.php(201): view('root/page_laporan_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:34:43 --> Undefined property: stdClass::$transaksi_harga1
+in APPPATH\Views\root\page_laporan_komoditas.php on line 108.
+ 1 APPPATH\Views\root\page_laporan_komoditas.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$transaksi_harga1', 'APPPATH\\Views\\root\\page_laporan_komoditas.php', 108, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_komoditas', [], true)
+ 5 APPPATH\Controllers\Root.php(202): view('root/page_laporan_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:52:11 --> Undefined index: pasar
+in APPPATH\Views\root\page_laporan_komoditas.php on line 38.
+ 1 APPPATH\Views\root\page_laporan_komoditas.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pasar', 'APPPATH\\Views\\root\\page_laporan_komoditas.php', 38, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_komoditas', [], true)
+ 5 APPPATH\Controllers\Root.php(202): view('root/page_laporan_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:52:57 --> Undefined index: pasar
+in APPPATH\Views\root\page_laporan_komoditas.php on line 38.
+ 1 APPPATH\Views\root\page_laporan_komoditas.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pasar', 'APPPATH\\Views\\root\\page_laporan_komoditas.php', 38, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_komoditas', [], true)
+ 5 APPPATH\Controllers\Root.php(202): view('root/page_laporan_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:53:19 --> Undefined variable: laporan
+in APPPATH\Views\root\page_laporan_komoditas.php on line 64.
+ 1 APPPATH\Views\root\page_laporan_komoditas.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: laporan', 'APPPATH\\Views\\root\\page_laporan_komoditas.php', 64, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_komoditas', [], true)
+ 5 APPPATH\Controllers\Root.php(202): view('root/page_laporan_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 11:59:57 --> Undefined offset: 0
+in APPPATH\Controllers\Root.php on line 195.
+ 1 APPPATH\Controllers\Root.php(195): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Root.php', 195, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 13:05:22 --> Undefined offset: 0
+in APPPATH\Controllers\Root.php on line 195.
+ 1 APPPATH\Controllers\Root.php(195): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Root.php', 195, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 13:07:24 --> Undefined property: stdClass::$komoditas_het
+in APPPATH\Views\root\page_laporan_komoditas.php on line 110.
+ 1 APPPATH\Views\root\page_laporan_komoditas.php(110): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$komoditas_het', 'APPPATH\\Views\\root\\page_laporan_komoditas.php', 110, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_komoditas', [], true)
+ 5 APPPATH\Controllers\Root.php(177): view('root/page_laporan_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 13:11:46 --> Undefined offset: 0
+in APPPATH\Controllers\Root.php on line 176.
+ 1 APPPATH\Controllers\Root.php(176): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Root.php', 176, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 13:46:52 --> Undefined offset: 0
+in APPPATH\Controllers\Root.php on line 195.
+ 1 APPPATH\Controllers\Root.php(195): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Root.php', 195, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-17 13:47:09 --> Unknown column 'pedagang_nama' in 'field list'
+CRITICAL - 2022-12-17 13:47:09 --> Unknown column 'pedagang_nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pedagang_nama`, `pedagang_id`
+FROM `tb_jualan`
+WHERE `jualan_komoditas` = \'1\'
+AND `transaksi_komoditas` = \'1\'
+AND `pedagang_pasar` = \'R3ZFTTI2dDFIYkVqYXl2ZVhLdkVBZz09\'
+AND `transaksi_tanggal` = \'2022-12-16\'
+AND `jualan_status` = \'1\'
+AND `pedagang_status` = \'1\'
+AND `transaksi_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pedagang_nama`, `pedagang_id`
+FROM `tb_jualan`
+WHERE `jualan_komoditas` = \'1\'
+AND `transaksi_komoditas` = \'1\'
+AND `pedagang_pasar` = \'R3ZFTTI2dDFIYkVqYXl2ZVhLdkVBZz09\'
+AND `transaksi_tanggal` = \'2022-12-16\'
+AND `jualan_status` = \'1\'
+AND `pedagang_status` = \'1\'
+AND `transaksi_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pedagang_nama`, `pedagang_id`
+FROM `tb_jualan`
+WHERE `jualan_komoditas` = \'1\'
+AND `transaksi_komoditas` = \'1\'
+AND `pedagang_pasar` = \'R3ZFTTI2dDFIYkVqYXl2ZVhLdkVBZz09\'
+AND `transaksi_tanggal` = \'2022-12-16\'
+AND `jualan_status` = \'1\'
+AND `pedagang_status` = \'1\'
+AND `transaksi_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pedagang_nama`, `pedagang_id`
+FROM `tb_jualan`
+WHERE `jualan_komoditas` = :jualan_komoditas:
+AND `transaksi_komoditas` = :transaksi_komoditas:
+AND `pedagang_pasar` = :pedagang_pasar:
+AND `transaksi_tanggal` = :transaksi_tanggal:
+AND `jualan_status` = :jualan_status:
+AND `pedagang_status` = :pedagang_status:
+AND `transaksi_status` = :transaksi_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Root.php(167): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-17 13:47:21 --> Unknown column 'jualan_komoditas' in 'where clause'
+CRITICAL - 2022-12-17 13:47:21 --> Unknown column 'jualan_komoditas' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pedagang_nama`, `pedagang_id`
+FROM `tb_Pedagang`
+WHERE `jualan_komoditas` = \'1\'
+AND `transaksi_komoditas` = \'1\'
+AND `pedagang_pasar` = \'R3ZFTTI2dDFIYkVqYXl2ZVhLdkVBZz09\'
+AND `transaksi_tanggal` = \'2022-12-16\'
+AND `jualan_status` = \'1\'
+AND `pedagang_status` = \'1\'
+AND `transaksi_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pedagang_nama`, `pedagang_id`
+FROM `tb_Pedagang`
+WHERE `jualan_komoditas` = \'1\'
+AND `transaksi_komoditas` = \'1\'
+AND `pedagang_pasar` = \'R3ZFTTI2dDFIYkVqYXl2ZVhLdkVBZz09\'
+AND `transaksi_tanggal` = \'2022-12-16\'
+AND `jualan_status` = \'1\'
+AND `pedagang_status` = \'1\'
+AND `transaksi_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pedagang_nama`, `pedagang_id`
+FROM `tb_Pedagang`
+WHERE `jualan_komoditas` = \'1\'
+AND `transaksi_komoditas` = \'1\'
+AND `pedagang_pasar` = \'R3ZFTTI2dDFIYkVqYXl2ZVhLdkVBZz09\'
+AND `transaksi_tanggal` = \'2022-12-16\'
+AND `jualan_status` = \'1\'
+AND `pedagang_status` = \'1\'
+AND `transaksi_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pedagang_nama`, `pedagang_id`
+FROM `tb_Pedagang`
+WHERE `jualan_komoditas` = :jualan_komoditas:
+AND `transaksi_komoditas` = :transaksi_komoditas:
+AND `pedagang_pasar` = :pedagang_pasar:
+AND `transaksi_tanggal` = :transaksi_tanggal:
+AND `jualan_status` = :jualan_status:
+AND `pedagang_status` = :pedagang_status:
+AND `transaksi_status` = :transaksi_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Root.php(167): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 13:49:22 --> Undefined offset: 0
+in APPPATH\Controllers\Root.php on line 195.
+ 1 APPPATH\Controllers\Root.php(195): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Root.php', 195, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 13:51:14 --> Undefined offset: 0
+in APPPATH\Controllers\Root.php on line 195.
+ 1 APPPATH\Controllers\Root.php(195): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Root.php', 195, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 14:14:16 --> Undefined property: stdClass::$perubahan
+in APPPATH\Views\root\page_laporan_komoditas.php on line 118.
+ 1 APPPATH\Views\root\page_laporan_komoditas.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$perubahan', 'APPPATH\\Views\\root\\page_laporan_komoditas.php', 118, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_komoditas', [], true)
+ 5 APPPATH\Controllers\Root.php(198): view('root/page_laporan_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 14:15:07 --> number_format() expects parameter 1 to be float, string given
+in APPPATH\Views\root\page_laporan_komoditas.php on line 132.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'number_format() expects parameter 1 to be float, string given', 'APPPATH\\Views\\root\\page_laporan_komoditas.php', 132, [...])
+ 2 APPPATH\Views\root\page_laporan_komoditas.php(132): number_format('C:\\xampp\\htdocs\\pasar')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_komoditas.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_komoditas', [], true)
+ 6 APPPATH\Controllers\Root.php(200): view('root/page_laporan_komoditas', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 01:25:29 --> syntax error, unexpected '$grup' (T_VARIABLE)
+in APPPATH\Controllers\Root.php on line 154.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Root.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Root')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Root')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Root')
+ 5 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\Root', true)
+ 6 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 14:31:26 --> Undefined variable: pasar
+in APPPATH\Views\root\page_laporan_penting.php on line 36.
+ 1 APPPATH\Views\root\page_laporan_penting.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pasar', 'APPPATH\\Views\\root\\page_laporan_penting.php', 36, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_penting.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_penting', [], true)
+ 5 APPPATH\Controllers\Root.php(220): view('root/page_laporan_penting', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 01:58:21 --> syntax error, unexpected '$data' (T_VARIABLE)
+in APPPATH\Controllers\Root.php on line 227.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Root.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Root')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Root')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Root')
+ 5 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\Root', true)
+ 6 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 01:58:37 --> syntax error, unexpected '$data' (T_VARIABLE)
+in APPPATH\Controllers\Root.php on line 227.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Root.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Root')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Root')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Root')
+ 5 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\Root', true)
+ 6 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 15:00:33 --> Invalid file: ro/ot/page_laporan_penting.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ro/ot/page_laporan_penting.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('ro/ot/page_laporan_penting', [], true)
+ 3 APPPATH\Controllers\Root.php(235): view('ro/ot/page_laporan_penting', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-17 15:00:48 --> Unknown column 'komoditas_status' in 'where clause'
+CRITICAL - 2022-12-17 15:00:48 --> Unknown column 'komoditas_status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `komoditas_status` = :komoditas_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Root.php(228): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 15:05:06 --> Undefined index: distributor_nama
+in APPPATH\Controllers\Root.php on line 237.
+ 1 APPPATH\Controllers\Root.php(237): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: distributor_nama', 'APPPATH\\Controllers\\Root.php', 237, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 15:08:19 --> Object of class stdClass could not be converted to string
+in APPPATH\Controllers\Root.php on line 239.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 15:08:26 --> Object of class stdClass could not be converted to string
+in APPPATH\Controllers\Root.php on line 239.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 15:12:48 --> Undefined property: stdClass::$barang_id
+in APPPATH\Controllers\Root.php on line 235.
+ 1 APPPATH\Controllers\Root.php(235): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$barang_id', 'APPPATH\\Controllers\\Root.php', 235, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-17 15:13:17 --> Unknown column 'transaksi_barang' in 'where clause'
+CRITICAL - 2022-12-17 15:13:17 --> Unknown column 'transaksi_barang' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `distributor_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor_barang_penting` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+WHERE `relasi_status` = \'1\'
+AND `transaksi_barang` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `distributor_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor_barang_penting` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+WHERE `relasi_status` = \'1\'
+AND `transaksi_barang` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `distributor_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor_barang_penting` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+WHERE `relasi_status` = \'1\'
+AND `transaksi_barang` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `distributor_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor_barang_penting` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+WHERE `relasi_status` = :relasi_status:
+AND `transaksi_barang` = :transaksi_barang:', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Root.php(236): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 15:13:47 --> Undefined offset: 3
+in APPPATH\Controllers\Root.php on line 242.
+ 1 APPPATH\Controllers\Root.php(242): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 3', 'APPPATH\\Controllers\\Root.php', 242, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 15:14:21 --> Undefined offset: 0
+in APPPATH\Controllers\Root.php on line 237.
+ 1 APPPATH\Controllers\Root.php(237): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Root.php', 237, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 15:14:47 --> Undefined offset: 0
+in APPPATH\Controllers\Root.php on line 237.
+ 1 APPPATH\Controllers\Root.php(237): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Root.php', 237, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 15:17:20 --> Undefined offset: 0
+in APPPATH\Controllers\Root.php on line 251.
+ 1 APPPATH\Controllers\Root.php(251): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Root.php', 251, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 15:24:58 --> Undefined variable: transaksi
+in APPPATH\Views\root\page_laporan_penting.php on line 85.
+ 1 APPPATH\Views\root\page_laporan_penting.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: transaksi', 'APPPATH\\Views\\root\\page_laporan_penting.php', 85, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_penting.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_penting', [], true)
+ 5 APPPATH\Controllers\Root.php(264): view('root/page_laporan_penting', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 15:27:29 --> Undefined property: stdClass::$komoditas_nama
+in APPPATH\Views\root\page_laporan_penting.php on line 106.
+ 1 APPPATH\Views\root\page_laporan_penting.php(106): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$komoditas_nama', 'APPPATH\\Views\\root\\page_laporan_penting.php', 106, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_penting.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_penting', [], true)
+ 5 APPPATH\Controllers\Root.php(264): view('root/page_laporan_penting', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 15:27:46 --> Undefined property: stdClass::$distributor_nama
+in APPPATH\Views\root\page_laporan_penting.php on line 108.
+ 1 APPPATH\Views\root\page_laporan_penting.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$distributor_nama', 'APPPATH\\Views\\root\\page_laporan_penting.php', 108, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_penting.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_penting', [], true)
+ 5 APPPATH\Controllers\Root.php(264): view('root/page_laporan_penting', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 15:29:35 --> number_format() expects parameter 1 to be float, string given
+in APPPATH\Views\root\page_laporan_penting.php on line 112.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'number_format() expects parameter 1 to be float, string given', 'APPPATH\\Views\\root\\page_laporan_penting.php', 112, [...])
+ 2 APPPATH\Views\root\page_laporan_penting.php(112): number_format('-')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_penting.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_penting', [], true)
+ 6 APPPATH\Controllers\Root.php(264): view('root/page_laporan_penting', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 15:37:25 --> Undefined variable: tanggal
+in APPPATH\Views\root\page_laporan_penting.php on line 79.
+ 1 APPPATH\Views\root\page_laporan_penting.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tanggal', 'APPPATH\\Views\\root\\page_laporan_penting.php', 79, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_penting.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_penting', [], true)
+ 5 APPPATH\Controllers\Root.php(265): view('root/page_laporan_penting', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 15:38:10 --> Undefined variable: tanggal
+in APPPATH\Views\root\page_laporan_penting.php on line 79.
+ 1 APPPATH\Views\root\page_laporan_penting.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tanggal', 'APPPATH\\Views\\root\\page_laporan_penting.php', 79, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_penting.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_penting', [], true)
+ 5 APPPATH\Controllers\Root.php(265): view('root/page_laporan_penting', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-17 15:41:06 --> Unknown column 'tb_barang_penting.barang_grup' in 'on clause'
+CRITICAL - 2022-12-17 15:41:06 --> Unknown column 'tb_barang_penting.barang_grup' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_nama`, `barang_satuan`, `barang_id`
+FROM `tb_barang_lainnya`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_nama`, `barang_satuan`, `barang_id`
+FROM `tb_barang_lainnya`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_nama`, `barang_satuan`, `barang_id`
+FROM `tb_barang_lainnya`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_nama`, `barang_satuan`, `barang_id`
+FROM `tb_barang_lainnya`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Root.php(283): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_lainnya()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 15:41:37 --> Undefined offset: 0
+in APPPATH\Controllers\Root.php on line 303.
+ 1 APPPATH\Controllers\Root.php(303): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Root.php', 303, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_lainnya()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-17 16:49:49 --> Unknown column 'distributor_kondatk' in 'field list'
+CRITICAL - 2022-12-17 16:49:49 --> Unknown column 'distributor_kondatk' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `distributor_nama`, `distributor_alamat`, `distributor_kondatk`, `komoditas_nama`
+FROM `tb_relasi_stok`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_distributor_stok`.`distributor_id`
+WHERE `relasi_distributor` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `relasi_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `distributor_nama`, `distributor_alamat`, `distributor_kondatk`, `komoditas_nama`
+FROM `tb_relasi_stok`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_distributor_stok`.`distributor_id`
+WHERE `relasi_distributor` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `relasi_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `distributor_nama`, `distributor_alamat`, `distributor_kondatk`, `komoditas_nama`
+FROM `tb_relasi_stok`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_distributor_stok`.`distributor_id`
+WHERE `relasi_distributor` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `relasi_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `distributor_nama`, `distributor_alamat`, `distributor_kondatk`, `komoditas_nama`
+FROM `tb_relasi_stok`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_distributor_stok`.`distributor_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `komoditas_status` = :komoditas_status:
+AND `relasi_status` = :relasi_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Root.php(346): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 16:55:41 --> Undefined variable: distributor
+in APPPATH\Controllers\Root.php on line 363.
+ 1 APPPATH\Controllers\Root.php(363): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: distributor', 'APPPATH\\Controllers\\Root.php', 363, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_stok()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-17 16:56:30 --> Unknown column 'transaksi_komoditas' in 'where clause'
+CRITICAL - 2022-12-17 16:56:30 --> Unknown column 'transaksi_komoditas' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `transaksi_stok`
+FROM `tb_transaksi_stok`
+WHERE `transaksi_komoditas` = \'3\'
+AND MONTH(transaksi_tanggal) IS NULL
+AND YEAR(transaksi_tanggal) IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi_stok`
+FROM `tb_transaksi_stok`
+WHERE `transaksi_komoditas` = \'3\'
+AND MONTH(transaksi_tanggal) IS NULL
+AND YEAR(transaksi_tanggal) IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi_stok`
+FROM `tb_transaksi_stok`
+WHERE `transaksi_komoditas` = \'3\'
+AND MONTH(transaksi_tanggal) IS NULL
+AND YEAR(transaksi_tanggal) IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi_stok`
+FROM `tb_transaksi_stok`
+WHERE `transaksi_komoditas` = :transaksi_komoditas:
+AND MONTH(transaksi_tanggal) IS NULL
+AND YEAR(transaksi_tanggal) IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Root.php(356): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 16:57:24 --> Undefined offset: 0
+in APPPATH\Controllers\Root.php on line 357.
+ 1 APPPATH\Controllers\Root.php(357): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Root.php', 357, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_stok()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 17:05:17 --> Undefined property: stdClass::$transaksi_ketahanan
+in APPPATH\Controllers\Root.php on line 361.
+ 1 APPPATH\Controllers\Root.php(361): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$transaksi_ketahanan', 'APPPATH\\Controllers\\Root.php', 361, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_stok()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 17:13:32 --> Undefined property: stdClass::$distributor_nama
+in APPPATH\Views\root\page_laporan_stok.php on line 108.
+ 1 APPPATH\Views\root\page_laporan_stok.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$distributor_nama', 'APPPATH\\Views\\root\\page_laporan_stok.php', 108, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_stok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_stok', [], true)
+ 5 APPPATH\Controllers\Root.php(379): view('root/page_laporan_stok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_stok()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-17 19:22:53 --> Unknown column 'grup_komoditas_status' in 'where clause'
+CRITICAL - 2022-12-17 19:22:53 --> Unknown column 'grup_komoditas_status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_grup`, `komoditas_foto`, `komoditas_satuan`
+FROM `tb_komoditas`
+WHERE `komoditas_grup` = \'12\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `komoditas_nama` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_grup`, `komoditas_foto`, `komoditas_satuan`
+FROM `tb_komoditas`
+WHERE `komoditas_grup` = \'12\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `komoditas_nama` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_grup`, `komoditas_foto`, `komoditas_satuan`
+FROM `tb_komoditas`
+WHERE `komoditas_grup` = \'12\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `komoditas_nama` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_grup`, `komoditas_foto`, `komoditas_satuan`
+FROM `tb_komoditas`
+WHERE `komoditas_grup` = :komoditas_grup:
+AND `komoditas_status` = :komoditas_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `komoditas_nama` ASC', [...], false)
+ 5 APPPATH\Models\Komoditas_model.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Publik.php(114): App\Models\Komoditas_model->get_komoditas_by_grup('12')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-17 19:25:22 --> Unknown column 'grup_komoditas_status' in 'where clause'
+CRITICAL - 2022-12-17 19:25:22 --> Unknown column 'grup_komoditas_status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_grup`, `komoditas_foto`, `komoditas_satuan`
+FROM `tb_komoditas`
+WHERE `komoditas_grup` = \'12\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `komoditas_nama` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_grup`, `komoditas_foto`, `komoditas_satuan`
+FROM `tb_komoditas`
+WHERE `komoditas_grup` = \'12\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `komoditas_nama` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_grup`, `komoditas_foto`, `komoditas_satuan`
+FROM `tb_komoditas`
+WHERE `komoditas_grup` = \'12\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `komoditas_nama` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_grup`, `komoditas_foto`, `komoditas_satuan`
+FROM `tb_komoditas`
+WHERE `komoditas_grup` = :komoditas_grup:
+AND `komoditas_status` = :komoditas_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `komoditas_nama` ASC', [...], false)
+ 5 APPPATH\Models\Komoditas_model.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Publik.php(114): App\Models\Komoditas_model->get_komoditas_by_grup('12')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-17 19:25:40 --> Unknown column 'grup_komoditas_status' in 'where clause'
+CRITICAL - 2022-12-17 19:25:40 --> Unknown column 'grup_komoditas_status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_grup`, `komoditas_foto`, `komoditas_satuan`
+FROM `tb_komoditas`
+WHERE `komoditas_grup` = \'12\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `komoditas_nama` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_grup`, `komoditas_foto`, `komoditas_satuan`
+FROM `tb_komoditas`
+WHERE `komoditas_grup` = \'12\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `komoditas_nama` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_grup`, `komoditas_foto`, `komoditas_satuan`
+FROM `tb_komoditas`
+WHERE `komoditas_grup` = \'12\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `komoditas_nama` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_grup`, `komoditas_foto`, `komoditas_satuan`
+FROM `tb_komoditas`
+WHERE `komoditas_grup` = :komoditas_grup:
+AND `komoditas_status` = :komoditas_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `komoditas_nama` ASC', [...], false)
+ 5 APPPATH\Models\Komoditas_model.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Publik.php(114): App\Models\Komoditas_model->get_komoditas_by_grup('12')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-17 19:28:31 --> Unknown column 'grup_komoditas_status' in 'where clause'
+CRITICAL - 2022-12-17 19:28:31 --> Unknown column 'grup_komoditas_status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_grup`, `komoditas_foto`, `komoditas_satuan`
+FROM `tb_komoditas`
+WHERE `komoditas_grup` = \'12\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `komoditas_nama` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_grup`, `komoditas_foto`, `komoditas_satuan`
+FROM `tb_komoditas`
+WHERE `komoditas_grup` = \'12\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `komoditas_nama` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_grup`, `komoditas_foto`, `komoditas_satuan`
+FROM `tb_komoditas`
+WHERE `komoditas_grup` = \'12\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `komoditas_nama` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_grup`, `komoditas_foto`, `komoditas_satuan`
+FROM `tb_komoditas`
+WHERE `komoditas_grup` = :komoditas_grup:
+AND `komoditas_status` = :komoditas_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `komoditas_nama` ASC', [...], false)
+ 5 APPPATH\Models\Komoditas_model.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Publik.php(114): App\Models\Komoditas_model->get_komoditas_by_grup('12')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 20:04:15 --> Undefined variable: last_update
+in APPPATH\Views\public\page_detail_komoditas.php on line 14.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: last_update', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 14, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(176): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 20:04:38 --> explode() expects parameter 2 to be string, array given
+in APPPATH\Helpers\additional_helper.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'explode() expects parameter 2 to be string, array given', 'APPPATH\\Helpers\\additional_helper.php', 92, [...])
+ 2 APPPATH\Helpers\additional_helper.php(92): explode('-', [...])
+ 3 APPPATH\Views\public\page_detail_komoditas.php(14): tgl_indo([...])
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 7 APPPATH\Controllers\Publik.php(176): view('page_detail_komoditas', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 20:57:46 --> Call to undefined method App\Models\Transaksi_model::get_avg_by_kecamatan
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Action.php(36): CodeIgniter\Model->__call('get_avg_by_kecamatan', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 20:57:49 --> Call to undefined method App\Models\Transaksi_model::get_avg_by_kecamatan
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Action.php(36): CodeIgniter\Model->__call('get_avg_by_kecamatan', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 20:57:53 --> Call to undefined method App\Models\Transaksi_model::get_avg_by_kecamatan
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Action.php(36): CodeIgniter\Model->__call('get_avg_by_kecamatan', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 22:35:59 --> Undefined offset: 0
+in APPPATH\Views\public\page_detail_komoditas.php on line 341.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(341): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 341, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(130): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-17 23:09:04 --> Unknown column 'komoditas_id' in 'where clause'
+CRITICAL - 2022-12-17 23:09:04 --> Unknown column 'komoditas_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(transaksi_harga) as rata_harga
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `pasar_kecamatan` = \'14.04.01\'
+AND `komoditas_id` = 1
+AND `transaksi_status` = \'1\'
+AND `transaksi_tanggal` = \'2022-12-17\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(transaksi_harga) as rata_harga
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `pasar_kecamatan` = \'14.04.01\'
+AND `komoditas_id` = 1
+AND `transaksi_status` = \'1\'
+AND `transaksi_tanggal` = \'2022-12-17\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(transaksi_harga) as rata_harga
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `pasar_kecamatan` = \'14.04.01\'
+AND `komoditas_id` = 1
+AND `transaksi_status` = \'1\'
+AND `transaksi_tanggal` = \'2022-12-17\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(transaksi_harga) as rata_harga
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `pasar_kecamatan` = :pasar_kecamatan:
+AND `komoditas_id` = :komoditas_id:
+AND `transaksi_status` = :transaksi_status:
+AND `transaksi_tanggal` = :transaksi_tanggal:', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Publik.php(110): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 23:27:50 --> array_push() expects parameter 1 to be array, null given
+in APPPATH\Controllers\Publik.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() expects parameter 1 to be array, null given', 'APPPATH\\Controllers\\Publik.php', 111, [...])
+ 2 APPPATH\Controllers\Publik.php(111): array_push(null, '13300')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 10:46:24 --> syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Publik.php on line 170.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Publik.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Publik')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Publik')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Publik')
+ 5 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\Publik', true)
+ 6 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 23:53:11 --> Undefined property: stdClass::$pasar
+in APPPATH\Views\public\page_detail_komoditas.php on line 91.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$pasar', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 91, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(177): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 23:59:15 --> Array to string conversion
+in APPPATH\Controllers\Publik.php on line 125.
+ 1 APPPATH\Controllers\Publik.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Publik.php', 125, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

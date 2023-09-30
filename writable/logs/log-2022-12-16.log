@@ -1,0 +1,1469 @@
+ERROR - 2022-12-16 11:38:20 --> Unknown column 'komoditas_status' in 'where clause'
+CRITICAL - 2022-12-16 11:38:20 --> Unknown column 'komoditas_status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_komoditas_stok`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = 0
+ORDER BY `komoditas_create_time` DESC
+ LIMIT 1476', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_komoditas_stok`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = 0
+ORDER BY `komoditas_create_time` DESC
+ LIMIT 1476')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_komoditas_stok`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = 0
+ORDER BY `komoditas_create_time` DESC
+ LIMIT 1476')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_komoditas_stok`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `komoditas_status` = :komoditas_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_grup` = :komoditas_grup:
+ORDER BY `komoditas_create_time` DESC
+ LIMIT 1476', [...], false)
+ 5 APPPATH\Models\Komoditas_stok_model.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(2754): App\Models\Komoditas_stok_model->get_all_komoditas_by_filter(1476, 'C:\\xampp\\htdocs\\pasar', false)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_komoditas_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 14:09:31 --> Unknown column 'komoditas_foto' in 'field list'
+CRITICAL - 2022-12-16 14:09:31 --> Unknown column 'komoditas_foto' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (NULL, \'18\', \'Beras\', \'Ton\', \'1\', \'root\', \'2022-12-16 14:09:31\', \'files/komoditas/Beras-9020221216140931.jpeg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (NULL, \'18\', \'Beras\', \'Ton\', \'1\', \'root\', \'2022-12-16 14:09:31\', \'files/komoditas/Beras-9020221216140931.jpeg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (NULL, \'18\', \'Beras\', \'Ton\', \'1\', \'root\', \'2022-12-16 14:09:31\', \'files/komoditas/Beras-9020221216140931.jpeg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (:komoditas_id:, :komoditas_grup:, :komoditas_nama:, :komoditas_satuan:, :komoditas_status:, :komoditas_create_by:, :komoditas_create_time:, :komoditas_foto:)', [...], false)
+ 5 APPPATH\Models\Komoditas_stok_model.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(2819): App\Models\Komoditas_stok_model->add_komoditas([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_komoditas_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 14:09:52 --> Unknown column 'komoditas_foto' in 'field list'
+CRITICAL - 2022-12-16 14:09:52 --> Unknown column 'komoditas_foto' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (NULL, \'18\', \'Beras\', \'Ton\', \'1\', \'root\', \'2022-12-16 14:09:52\', \'files/komoditas/Beras-7320221216140952.jpeg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (NULL, \'18\', \'Beras\', \'Ton\', \'1\', \'root\', \'2022-12-16 14:09:52\', \'files/komoditas/Beras-7320221216140952.jpeg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (NULL, \'18\', \'Beras\', \'Ton\', \'1\', \'root\', \'2022-12-16 14:09:52\', \'files/komoditas/Beras-7320221216140952.jpeg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (:komoditas_id:, :komoditas_grup:, :komoditas_nama:, :komoditas_satuan:, :komoditas_status:, :komoditas_create_by:, :komoditas_create_time:, :komoditas_foto:)', [...], false)
+ 5 APPPATH\Models\Komoditas_stok_model.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(2819): App\Models\Komoditas_stok_model->add_komoditas([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_komoditas_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 14:16:25 --> Unknown column 'komoditas_foto' in 'field list'
+CRITICAL - 2022-12-16 14:16:25 --> Unknown column 'komoditas_foto' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (NULL, \'18\', \'Beras\', \'Ton\', \'1\', \'root\', \'2022-12-16 14:16:25\', \'files/komoditas/Beras-4920221216141625.jpeg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (NULL, \'18\', \'Beras\', \'Ton\', \'1\', \'root\', \'2022-12-16 14:16:25\', \'files/komoditas/Beras-4920221216141625.jpeg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (NULL, \'18\', \'Beras\', \'Ton\', \'1\', \'root\', \'2022-12-16 14:16:25\', \'files/komoditas/Beras-4920221216141625.jpeg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (:komoditas_id:, :komoditas_grup:, :komoditas_nama:, :komoditas_satuan:, :komoditas_status:, :komoditas_create_by:, :komoditas_create_time:, :komoditas_foto:)', [...], false)
+ 5 APPPATH\Models\Komoditas_stok_model.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(2827): App\Models\Komoditas_stok_model->add_komoditas([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_komoditas_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 14:16:27 --> Unknown column 'komoditas_foto' in 'field list'
+CRITICAL - 2022-12-16 14:16:27 --> Unknown column 'komoditas_foto' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (NULL, \'18\', \'Beras\', \'Ton\', \'1\', \'root\', \'2022-12-16 14:16:27\', \'files/komoditas/Beras-3820221216141627.jpeg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (NULL, \'18\', \'Beras\', \'Ton\', \'1\', \'root\', \'2022-12-16 14:16:27\', \'files/komoditas/Beras-3820221216141627.jpeg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (NULL, \'18\', \'Beras\', \'Ton\', \'1\', \'root\', \'2022-12-16 14:16:27\', \'files/komoditas/Beras-3820221216141627.jpeg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (:komoditas_id:, :komoditas_grup:, :komoditas_nama:, :komoditas_satuan:, :komoditas_status:, :komoditas_create_by:, :komoditas_create_time:, :komoditas_foto:)', [...], false)
+ 5 APPPATH\Models\Komoditas_stok_model.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(2827): App\Models\Komoditas_stok_model->add_komoditas([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_komoditas_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 14:16:51 --> Unknown column 'komoditas_foto' in 'field list'
+CRITICAL - 2022-12-16 14:16:51 --> Unknown column 'komoditas_foto' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (NULL, \'1\', \'Beras\', \'ton\', \'1\', \'root\', \'2022-12-16 14:16:51\', \'files/komoditas/Beras-120221216141651.png\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (NULL, \'1\', \'Beras\', \'ton\', \'1\', \'root\', \'2022-12-16 14:16:51\', \'files/komoditas/Beras-120221216141651.png\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (NULL, \'1\', \'Beras\', \'ton\', \'1\', \'root\', \'2022-12-16 14:16:51\', \'files/komoditas/Beras-120221216141651.png\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_komoditas_stok` (`komoditas_id`, `komoditas_grup`, `komoditas_nama`, `komoditas_satuan`, `komoditas_status`, `komoditas_create_by`, `komoditas_create_time`, `komoditas_foto`) VALUES (:komoditas_id:, :komoditas_grup:, :komoditas_nama:, :komoditas_satuan:, :komoditas_status:, :komoditas_create_by:, :komoditas_create_time:, :komoditas_foto:)', [...], false)
+ 5 APPPATH\Models\Komoditas_stok_model.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(2827): App\Models\Komoditas_stok_model->add_komoditas([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_komoditas_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 14:26:12 --> Unknown column 'komoditas_het' in 'field list'
+CRITICAL - 2022-12-16 14:26:12 --> Unknown column 'komoditas_het' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tb_komoditas_stok` SET `komoditas_id` = \'2\', `komoditas_grup` = \'18\', `komoditas_nama` = \'Berase mase\', `komoditas_satuan` = \'Ton\', `komoditas_het` = \'\', `komoditas_status` = \'1\', `komoditas_update_by` = \'root\', `komoditas_update_time` = \'2022-12-16 14:26:12\'
+WHERE `komoditas_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_komoditas_stok` SET `komoditas_id` = \'2\', `komoditas_grup` = \'18\', `komoditas_nama` = \'Berase mase\', `komoditas_satuan` = \'Ton\', `komoditas_het` = \'\', `komoditas_status` = \'1\', `komoditas_update_by` = \'root\', `komoditas_update_time` = \'2022-12-16 14:26:12\'
+WHERE `komoditas_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_komoditas_stok` SET `komoditas_id` = \'2\', `komoditas_grup` = \'18\', `komoditas_nama` = \'Berase mase\', `komoditas_satuan` = \'Ton\', `komoditas_het` = \'\', `komoditas_status` = \'1\', `komoditas_update_by` = \'root\', `komoditas_update_time` = \'2022-12-16 14:26:12\'
+WHERE `komoditas_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_komoditas_stok` SET `komoditas_id` = :komoditas_id.1:, `komoditas_grup` = :komoditas_grup:, `komoditas_nama` = :komoditas_nama:, `komoditas_satuan` = :komoditas_satuan:, `komoditas_het` = :komoditas_het:, `komoditas_status` = :komoditas_status:, `komoditas_update_by` = :komoditas_update_by:, `komoditas_update_time` = :komoditas_update_time:
+WHERE `komoditas_id` = :komoditas_id:', [...], false)
+ 5 APPPATH\Models\Komoditas_stok_model.php(43): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Backend.php(2875): App\Models\Komoditas_stok_model->edit_komoditas([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_komoditas_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 14:26:14 --> Unknown column 'komoditas_het' in 'field list'
+CRITICAL - 2022-12-16 14:26:14 --> Unknown column 'komoditas_het' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tb_komoditas_stok` SET `komoditas_id` = \'2\', `komoditas_grup` = \'18\', `komoditas_nama` = \'Berase mase\', `komoditas_satuan` = \'Ton\', `komoditas_het` = \'\', `komoditas_status` = \'1\', `komoditas_update_by` = \'root\', `komoditas_update_time` = \'2022-12-16 14:26:14\'
+WHERE `komoditas_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_komoditas_stok` SET `komoditas_id` = \'2\', `komoditas_grup` = \'18\', `komoditas_nama` = \'Berase mase\', `komoditas_satuan` = \'Ton\', `komoditas_het` = \'\', `komoditas_status` = \'1\', `komoditas_update_by` = \'root\', `komoditas_update_time` = \'2022-12-16 14:26:14\'
+WHERE `komoditas_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_komoditas_stok` SET `komoditas_id` = \'2\', `komoditas_grup` = \'18\', `komoditas_nama` = \'Berase mase\', `komoditas_satuan` = \'Ton\', `komoditas_het` = \'\', `komoditas_status` = \'1\', `komoditas_update_by` = \'root\', `komoditas_update_time` = \'2022-12-16 14:26:14\'
+WHERE `komoditas_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_komoditas_stok` SET `komoditas_id` = :komoditas_id.1:, `komoditas_grup` = :komoditas_grup:, `komoditas_nama` = :komoditas_nama:, `komoditas_satuan` = :komoditas_satuan:, `komoditas_het` = :komoditas_het:, `komoditas_status` = :komoditas_status:, `komoditas_update_by` = :komoditas_update_by:, `komoditas_update_time` = :komoditas_update_time:
+WHERE `komoditas_id` = :komoditas_id:', [...], false)
+ 5 APPPATH\Models\Komoditas_stok_model.php(43): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Backend.php(2875): App\Models\Komoditas_stok_model->edit_komoditas([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_komoditas_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 14:54:48 --> Undefined property: stdClass::$distributor_toko
+in APPPATH\Controllers\Backend.php on line 2925.
+ 1 APPPATH\Controllers\Backend.php(2925): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$distributor_toko', 'APPPATH\\Controllers\\Backend.php', 2925, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_distributor_stok()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 14:55:05 --> Undefined property: stdClass::$distributor_toko
+in APPPATH\Controllers\Backend.php on line 2925.
+ 1 APPPATH\Controllers\Backend.php(2925): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$distributor_toko', 'APPPATH\\Controllers\\Backend.php', 2925, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_distributor_stok()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 14:55:07 --> Undefined property: stdClass::$distributor_toko
+in APPPATH\Controllers\Backend.php on line 2925.
+ 1 APPPATH\Controllers\Backend.php(2925): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$distributor_toko', 'APPPATH\\Controllers\\Backend.php', 2925, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_distributor_stok()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 14:56:01 --> Undefined property: stdClass::$distributor_toko
+in APPPATH\Controllers\Backend.php on line 2925.
+ 1 APPPATH\Controllers\Backend.php(2925): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$distributor_toko', 'APPPATH\\Controllers\\Backend.php', 2925, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_distributor_stok()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 15:02:52 --> Table 'pasar.tb_stok' doesn't exist
+CRITICAL - 2022-12-16 15:02:52 --> Table 'pasar.tb_stok' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_relasi_stok`
+JOIN `tb_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_stok`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `relasi_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_relasi_stok`
+JOIN `tb_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_stok`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `relasi_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_relasi_stok`
+JOIN `tb_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_stok`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `relasi_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_relasi_stok`
+JOIN `tb_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_stok`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `barang_status` = :barang_status:
+AND `relasi_status` = :relasi_status:', [...], false)
+ 5 APPPATH\Models\Relasi_stok_model.php(23): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(2930): App\Models\Relasi_stok_model->count_barang_by_distributor('1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_distributor_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 15:03:51 --> Unknown column 'barang_status' in 'where clause'
+CRITICAL - 2022-12-16 15:03:51 --> Unknown column 'barang_status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_relasi_stok`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `relasi_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_relasi_stok`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `relasi_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_relasi_stok`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `relasi_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_relasi_stok`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `barang_status` = :barang_status:
+AND `relasi_status` = :relasi_status:', [...], false)
+ 5 APPPATH\Models\Relasi_stok_model.php(23): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(2930): App\Models\Relasi_stok_model->count_barang_by_distributor('1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_distributor_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 15:04:15 --> Unknown column 'tb_komoditas_stok.barang_id' in 'on clause'
+CRITICAL - 2022-12-16 15:04:15 --> Unknown column 'tb_komoditas_stok.barang_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_relasi_stok`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `relasi_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_relasi_stok`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `relasi_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_relasi_stok`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `relasi_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_relasi_stok`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_status` = :komoditas_status:
+AND `relasi_status` = :relasi_status:', [...], false)
+ 5 APPPATH\Models\Relasi_stok_model.php(23): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(2930): App\Models\Relasi_stok_model->count_barang_by_distributor('1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_distributor_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 15:04:31 --> Unknown column 'tb_komoditas_stok.barang_grup' in 'on clause'
+CRITICAL - 2022-12-16 15:04:31 --> Unknown column 'tb_komoditas_stok.barang_grup' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_relasi_stok`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `relasi_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_relasi_stok`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `relasi_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_relasi_stok`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `relasi_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_relasi_stok`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_status` = :komoditas_status:
+AND `relasi_status` = :relasi_status:', [...], false)
+ 5 APPPATH\Models\Relasi_stok_model.php(23): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(2930): App\Models\Relasi_stok_model->count_barang_by_distributor('1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_distributor_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 15:25:16 --> Unknown column 'komoditas_het' in 'field list'
+CRITICAL - 2022-12-16 15:25:16 --> Unknown column 'komoditas_het' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_het`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_komoditas` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_het`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_komoditas` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_het`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_komoditas` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_het`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_komoditas` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `komoditas_status` = :komoditas_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `relasi_create_time` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3022): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_relasi_distributor_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 15:25:22 --> Unknown column 'komoditas_het' in 'field list'
+CRITICAL - 2022-12-16 15:25:22 --> Unknown column 'komoditas_het' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_het`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_komoditas` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_het`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_komoditas` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_het`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_komoditas` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_het`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_komoditas` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `komoditas_status` = :komoditas_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `relasi_create_time` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3022): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_relasi_distributor_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 15:25:26 --> Unknown column 'tb_relasi_stok.relasi_komoditas' in 'on clause'
+CRITICAL - 2022-12-16 15:25:26 --> Unknown column 'tb_relasi_stok.relasi_komoditas' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_komoditas` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_komoditas` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_komoditas` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_komoditas` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `komoditas_status` = :komoditas_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `relasi_create_time` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3022): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_relasi_distributor_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 15:25:37 --> Unknown column 'tb_relasi_stok.relasi_barang' in 'on clause'
+CRITICAL - 2022-12-16 15:25:37 --> Unknown column 'tb_relasi_stok.relasi_barang' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `komoditas_status` = :komoditas_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `relasi_create_time` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3022): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_relasi_distributor_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 15:26:03 --> Unknown column 'tb_relasi_stok.relasi_barang' in 'on clause'
+CRITICAL - 2022-12-16 15:26:03 --> Unknown column 'tb_relasi_stok.relasi_barang' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `relasi_id`, `komoditas_nama`, `komoditas_id`, `komoditas_satuan`, `grup_komoditas_nama`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `komoditas_status` = :komoditas_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `relasi_create_time` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3022): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_relasi_distributor_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 15:30:39 --> Column 'relasi_id' cannot be null
+CRITICAL - 2022-12-16 15:30:39 --> Column 'relasi_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_relasi_stok` (`relasi_id`, `relasi_distributor`, `relasi_barang`, `relasi_status`, `relasi_create_by`, `relasi_create_time`) VALUES (NULL, \'1\', \'3\', \'1\', \'root\', \'2022-12-16 15:30:39\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_relasi_stok` (`relasi_id`, `relasi_distributor`, `relasi_barang`, `relasi_status`, `relasi_create_by`, `relasi_create_time`) VALUES (NULL, \'1\', \'3\', \'1\', \'root\', \'2022-12-16 15:30:39\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_relasi_stok` (`relasi_id`, `relasi_distributor`, `relasi_barang`, `relasi_status`, `relasi_create_by`, `relasi_create_time`) VALUES (NULL, \'1\', \'3\', \'1\', \'root\', \'2022-12-16 15:30:39\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_relasi_stok` (`relasi_id`, `relasi_distributor`, `relasi_barang`, `relasi_status`, `relasi_create_by`, `relasi_create_time`) VALUES (:relasi_id:, :relasi_distributor:, :relasi_barang:, :relasi_status:, :relasi_create_by:, :relasi_create_time:)', [...], false)
+ 5 APPPATH\Models\Relasi_stok_model.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(3056): App\Models\Relasi_stok_model->add_relasi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_relasi_distributor_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 15:30:42 --> Column 'relasi_id' cannot be null
+CRITICAL - 2022-12-16 15:30:42 --> Column 'relasi_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_relasi_stok` (`relasi_id`, `relasi_distributor`, `relasi_barang`, `relasi_status`, `relasi_create_by`, `relasi_create_time`) VALUES (NULL, \'1\', \'3\', \'1\', \'root\', \'2022-12-16 15:30:42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_relasi_stok` (`relasi_id`, `relasi_distributor`, `relasi_barang`, `relasi_status`, `relasi_create_by`, `relasi_create_time`) VALUES (NULL, \'1\', \'3\', \'1\', \'root\', \'2022-12-16 15:30:42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_relasi_stok` (`relasi_id`, `relasi_distributor`, `relasi_barang`, `relasi_status`, `relasi_create_by`, `relasi_create_time`) VALUES (NULL, \'1\', \'3\', \'1\', \'root\', \'2022-12-16 15:30:42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_relasi_stok` (`relasi_id`, `relasi_distributor`, `relasi_barang`, `relasi_status`, `relasi_create_by`, `relasi_create_time`) VALUES (:relasi_id:, :relasi_distributor:, :relasi_barang:, :relasi_status:, :relasi_create_by:, :relasi_create_time:)', [...], false)
+ 5 APPPATH\Models\Relasi_stok_model.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(3056): App\Models\Relasi_stok_model->add_relasi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_relasi_distributor_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 15:31:38 --> Column 'relasi_id' cannot be null
+CRITICAL - 2022-12-16 15:31:38 --> Column 'relasi_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_relasi_stok` (`relasi_id`, `relasi_distributor`, `relasi_barang`, `relasi_status`, `relasi_create_by`, `relasi_create_time`) VALUES (NULL, \'1\', \'2\', \'1\', \'root\', \'2022-12-16 15:31:38\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_relasi_stok` (`relasi_id`, `relasi_distributor`, `relasi_barang`, `relasi_status`, `relasi_create_by`, `relasi_create_time`) VALUES (NULL, \'1\', \'2\', \'1\', \'root\', \'2022-12-16 15:31:38\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_relasi_stok` (`relasi_id`, `relasi_distributor`, `relasi_barang`, `relasi_status`, `relasi_create_by`, `relasi_create_time`) VALUES (NULL, \'1\', \'2\', \'1\', \'root\', \'2022-12-16 15:31:38\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_relasi_stok` (`relasi_id`, `relasi_distributor`, `relasi_barang`, `relasi_status`, `relasi_create_by`, `relasi_create_time`) VALUES (:relasi_id:, :relasi_distributor:, :relasi_barang:, :relasi_status:, :relasi_create_by:, :relasi_create_time:)', [...], false)
+ 5 APPPATH\Models\Relasi_stok_model.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(3056): App\Models\Relasi_stok_model->add_relasi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_relasi_distributor_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 15:32:50 --> Column 'relasi_id' cannot be null
+CRITICAL - 2022-12-16 15:32:50 --> Column 'relasi_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_relasi_stok` (`relasi_id`, `relasi_distributor`, `relasi_barang`, `relasi_status`, `relasi_create_by`, `relasi_create_time`) VALUES (NULL, \'1\', \'1\', \'1\', \'root\', \'2022-12-16 15:32:50\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_relasi_stok` (`relasi_id`, `relasi_distributor`, `relasi_barang`, `relasi_status`, `relasi_create_by`, `relasi_create_time`) VALUES (NULL, \'1\', \'1\', \'1\', \'root\', \'2022-12-16 15:32:50\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_relasi_stok` (`relasi_id`, `relasi_distributor`, `relasi_barang`, `relasi_status`, `relasi_create_by`, `relasi_create_time`) VALUES (NULL, \'1\', \'1\', \'1\', \'root\', \'2022-12-16 15:32:50\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_relasi_stok` (`relasi_id`, `relasi_distributor`, `relasi_barang`, `relasi_status`, `relasi_create_by`, `relasi_create_time`) VALUES (:relasi_id:, :relasi_distributor:, :relasi_barang:, :relasi_status:, :relasi_create_by:, :relasi_create_time:)', [...], false)
+ 5 APPPATH\Models\Relasi_stok_model.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(3056): App\Models\Relasi_stok_model->add_relasi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_relasi_distributor_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 16:31:31 --> Unknown column 'barang_nama' in 'field list'
+CRITICAL - 2022-12-16 16:31:31 --> Unknown column 'barang_nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `komoditas_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `komoditas_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `komoditas_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `komoditas_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `distributor_status` = :distributor_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_status` = :komoditas_status:
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100', [...], false)
+ 5 APPPATH\Models\Relasi_stok_model.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3106): App\Models\Relasi_stok_model->get_barang_by_distributor(100, '1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_stok_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 16:32:27 --> Unknown column 'barang_nama' in 'field list'
+CRITICAL - 2022-12-16 16:32:27 --> Unknown column 'barang_nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `komoditas_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `komoditas_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `komoditas_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `komoditas_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `distributor_status` = :distributor_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_status` = :komoditas_status:
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100', [...], false)
+ 5 APPPATH\Models\Relasi_stok_model.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3106): App\Models\Relasi_stok_model->get_barang_by_distributor(100, '1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_stok_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 16:33:21 --> Unknown column 'barang_nama' in 'field list'
+CRITICAL - 2022-12-16 16:33:21 --> Unknown column 'barang_nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `komoditas_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `komoditas_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `komoditas_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `komoditas_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `distributor_status` = :distributor_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_status` = :komoditas_status:
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100', [...], false)
+ 5 APPPATH\Models\Relasi_stok_model.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3106): App\Models\Relasi_stok_model->get_barang_by_distributor(100, '1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_stok_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 16:34:47 --> Unknown column 'barang_nama' in 'field list'
+CRITICAL - 2022-12-16 16:34:47 --> Unknown column 'barang_nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `komoditas_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `komoditas_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `komoditas_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `komoditas_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `distributor_status` = :distributor_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_status` = :komoditas_status:
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100', [...], false)
+ 5 APPPATH\Models\Relasi_stok_model.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3106): App\Models\Relasi_stok_model->get_barang_by_distributor(100, '1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_stok_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 16:35:31 --> Unknown column 'barang_het' in 'field list'
+CRITICAL - 2022-12-16 16:35:31 --> Unknown column 'barang_het' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `komoditas_id`, `komoditas_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `komoditas_id`, `komoditas_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `komoditas_id`, `komoditas_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `komoditas_id`, `komoditas_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `distributor_status` = :distributor_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_status` = :komoditas_status:
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100', [...], false)
+ 5 APPPATH\Models\Relasi_stok_model.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3106): App\Models\Relasi_stok_model->get_barang_by_distributor(100, '1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_stok_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 16:35:39 --> Unknown column 'barang_het' in 'field list'
+CRITICAL - 2022-12-16 16:35:39 --> Unknown column 'barang_het' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `komoditas_id`, `komoditas_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `komoditas_id`, `komoditas_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `komoditas_id`, `komoditas_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `komoditas_id`, `komoditas_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `distributor_status` = :distributor_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_status` = :komoditas_status:
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100', [...], false)
+ 5 APPPATH\Models\Relasi_stok_model.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3106): App\Models\Relasi_stok_model->get_barang_by_distributor(100, '1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_stok_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 16:35:43 --> Unknown column 'barang_foto' in 'field list'
+CRITICAL - 2022-12-16 16:35:43 --> Unknown column 'barang_foto' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `komoditas_id`, `komoditas_nama`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `komoditas_id`, `komoditas_nama`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `komoditas_id`, `komoditas_nama`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `komoditas_id`, `komoditas_nama`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `distributor_status` = :distributor_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_status` = :komoditas_status:
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100', [...], false)
+ 5 APPPATH\Models\Relasi_stok_model.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3106): App\Models\Relasi_stok_model->get_barang_by_distributor(100, '1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_stok_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 16:35:52 --> Unknown column 'barang_satuan' in 'field list'
+CRITICAL - 2022-12-16 16:35:52 --> Unknown column 'barang_satuan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `komoditas_id`, `komoditas_nama`, `komoditas_foto`, `barang_satuan`
+FROM `tb_relasi_stok`
+JOIN `tb_distributor_stok` ON `tb_relasi_stok`.`relasi_distributor` = `tb_distributor_stok`.`distributor_id`
+JOIN `tb_komoditas_stok` ON `tb_relasi_stok`.`relasi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `distributor_status` = :distributor_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_status` = :komoditas_status:
+ORDER BY `relasi_create_time` DESC
+ LIMIT 100', [...], false)
+ 5 APPPATH\Models\Relasi_stok_model.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3106): App\Models\Relasi_stok_model->get_barang_by_distributor(100, '1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_stok_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 17:13:52 --> Unknown column 'transaksi_stok' in 'field list'
+CRITICAL - 2022-12-16 17:13:52 --> Unknown column 'transaksi_stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'2\', 0, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:13:52\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'2\', 0, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:13:52\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'2\', 0, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:13:52\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_barang:, :transaksi_distributor:, :transaksi_stok:, :transaksi_ketahanan:, :transaksi_pemasok:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_barang_penting_model.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(3173): App\Models\Transaksi_barang_penting_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 17:13:53 --> Unknown column 'transaksi_stok' in 'field list'
+CRITICAL - 2022-12-16 17:13:53 --> Unknown column 'transaksi_stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'2\', 0, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:13:53\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'2\', 0, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:13:53\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'2\', 0, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:13:53\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_barang:, :transaksi_distributor:, :transaksi_stok:, :transaksi_ketahanan:, :transaksi_pemasok:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_barang_penting_model.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(3173): App\Models\Transaksi_barang_penting_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 17:14:02 --> Unknown column 'transaksi_stok' in 'field list'
+CRITICAL - 2022-12-16 17:14:02 --> Unknown column 'transaksi_stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'2\', 0, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:14:02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'2\', 0, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:14:02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'2\', 0, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:14:02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_barang:, :transaksi_distributor:, :transaksi_stok:, :transaksi_ketahanan:, :transaksi_pemasok:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_barang_penting_model.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(3173): App\Models\Transaksi_barang_penting_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 17:16:40 --> Unknown column 'transaksi_stok' in 'field list'
+CRITICAL - 2022-12-16 17:16:40 --> Unknown column 'transaksi_stok' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, NULL, \'1\', \'1\', \'12\', \'1 bulan\', \'dumai\', \'gas\', \'1\', \'root\', \'2022-12-16 17:16:40\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, NULL, \'1\', \'1\', \'12\', \'1 bulan\', \'dumai\', \'gas\', \'1\', \'root\', \'2022-12-16 17:16:40\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, NULL, \'1\', \'1\', \'12\', \'1 bulan\', \'dumai\', \'gas\', \'1\', \'root\', \'2022-12-16 17:16:40\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_barang:, :transaksi_distributor:, :transaksi_stok:, :transaksi_ketahanan:, :transaksi_pemasok:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_barang_penting_model.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(3173): App\Models\Transaksi_barang_penting_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 17:17:26 --> Column 'transaksi_distributor' cannot be null
+CRITICAL - 2022-12-16 17:17:26 --> Column 'transaksi_distributor' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_stok` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'UUdXKzNPRzE2THZweGRTOWMvMnVFdz09\', NULL, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:17:26\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_stok` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'UUdXKzNPRzE2THZweGRTOWMvMnVFdz09\', NULL, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:17:26\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_stok` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'UUdXKzNPRzE2THZweGRTOWMvMnVFdz09\', NULL, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:17:26\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_stok` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_barang:, :transaksi_distributor:, :transaksi_stok:, :transaksi_ketahanan:, :transaksi_pemasok:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_stok_model.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(3172): App\Models\Transaksi_stok_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 17:17:39 --> Column 'transaksi_tanggal' cannot be null
+CRITICAL - 2022-12-16 17:17:39 --> Column 'transaksi_tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_stok` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, NULL, \'1\', \'1\', \'12\', \'1 bulan\', \'dumai\', \'gas\', \'1\', \'root\', \'2022-12-16 17:17:39\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_stok` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, NULL, \'1\', \'1\', \'12\', \'1 bulan\', \'dumai\', \'gas\', \'1\', \'root\', \'2022-12-16 17:17:39\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_stok` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, NULL, \'1\', \'1\', \'12\', \'1 bulan\', \'dumai\', \'gas\', \'1\', \'root\', \'2022-12-16 17:17:39\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_stok` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_barang:, :transaksi_distributor:, :transaksi_stok:, :transaksi_ketahanan:, :transaksi_pemasok:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_stok_model.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(3172): App\Models\Transaksi_stok_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 17:18:05 --> Column 'transaksi_distributor' cannot be null
+CRITICAL - 2022-12-16 17:18:05 --> Column 'transaksi_distributor' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_stok` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'UUdXKzNPRzE2THZweGRTOWMvMnVFdz09\', NULL, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:18:05\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_stok` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'UUdXKzNPRzE2THZweGRTOWMvMnVFdz09\', NULL, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:18:05\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_stok` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'UUdXKzNPRzE2THZweGRTOWMvMnVFdz09\', NULL, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:18:05\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_stok` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_barang:, :transaksi_distributor:, :transaksi_stok:, :transaksi_ketahanan:, :transaksi_pemasok:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_stok_model.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(3172): App\Models\Transaksi_stok_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 17:18:45 --> Column 'transaksi_distributor' cannot be null
+CRITICAL - 2022-12-16 17:18:45 --> Column 'transaksi_distributor' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_stok` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'UUdXKzNPRzE2THZweGRTOWMvMnVFdz09\', NULL, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:18:45\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_stok` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'UUdXKzNPRzE2THZweGRTOWMvMnVFdz09\', NULL, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:18:45\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_stok` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-16\', \'UUdXKzNPRzE2THZweGRTOWMvMnVFdz09\', NULL, \'6\', \'2 bulan\', \'Dumai\', \'ntaps deh\', \'1\', \'root\', \'2022-12-16 17:18:45\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_stok` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_ketahanan`, `transaksi_pemasok`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_barang:, :transaksi_distributor:, :transaksi_stok:, :transaksi_ketahanan:, :transaksi_pemasok:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_stok_model.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(3172): App\Models\Transaksi_stok_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 21:01:25 --> Unknown column 'barang_status' in 'where clause'
+CRITICAL - 2022-12-16 21:01:25 --> Unknown column 'barang_status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = :transaksi_status:
+AND `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\Transaksi_stok_model.php(66): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3225): App\Models\Transaksi_stok_model->get_all_transaksi_by_filter(20, 'C:\\xampp\\htdocs\\pasar', 'C:\\xampp\\htdocs\\pasar', 'C:\\xampp\\htdocs\\pasar')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 21:01:27 --> Unknown column 'barang_status' in 'where clause'
+CRITICAL - 2022-12-16 21:01:27 --> Unknown column 'barang_status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = :transaksi_status:
+AND `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\Transaksi_stok_model.php(66): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3225): App\Models\Transaksi_stok_model->get_all_transaksi_by_filter(20, 'C:\\xampp\\htdocs\\pasar', 'C:\\xampp\\htdocs\\pasar', 'C:\\xampp\\htdocs\\pasar')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 21:02:27 --> Unknown column 'barang_status' in 'where clause'
+CRITICAL - 2022-12-16 21:02:27 --> Unknown column 'barang_status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 100', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 100')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 100')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = :transaksi_status:
+AND `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 100', [...], false)
+ 5 APPPATH\Models\Transaksi_stok_model.php(66): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3225): App\Models\Transaksi_stok_model->get_all_transaksi_by_filter(100, null, null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 21:02:43 --> Unknown column 'tb_komoditas_stok.barang_grup' in 'on clause'
+CRITICAL - 2022-12-16 21:02:43 --> Unknown column 'tb_komoditas_stok.barang_grup' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = :transaksi_status:
+AND `komoditas_status` = :komoditas_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\Transaksi_stok_model.php(66): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3225): App\Models\Transaksi_stok_model->get_all_transaksi_by_filter(20, 'C:\\xampp\\htdocs\\pasar', 'C:\\xampp\\htdocs\\pasar', 'C:\\xampp\\htdocs\\pasar')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 21:02:47 --> Unknown column 'tb_komoditas_stok.barang_grup' in 'on clause'
+CRITICAL - 2022-12-16 21:02:47 --> Unknown column 'tb_komoditas_stok.barang_grup' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 100', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 100')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `komoditas_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 100')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_distributor`, `transaksi_stok`, `transaksi_catatan`, `komoditas_nama`, `distributor_nama`, `komoditas_foto`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = :transaksi_status:
+AND `komoditas_status` = :komoditas_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `transaksi_tanggal` DESC
+ LIMIT 100', [...], false)
+ 5 APPPATH\Models\Transaksi_stok_model.php(66): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(3225): App\Models\Transaksi_stok_model->get_all_transaksi_by_filter(100, null, null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-16 21:03:08 --> Unknown column 'barang_status' in 'where clause'
+CRITICAL - 2022-12-16 21:03:08 --> Unknown column 'barang_status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_transaksi_stok`
+JOIN `tb_komoditas_stok` ON `tb_transaksi_stok`.`transaksi_barang` = `tb_komoditas_stok`.`komoditas_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_stok`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas_stok`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = :transaksi_status:
+AND `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:', [...], false)
+ 5 APPPATH\Models\Transaksi_stok_model.php(89): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(3229): App\Models\Transaksi_stok_model->count_transaksi_by_filter(null, null, null)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 21:03:39 --> Undefined property: stdClass::$komoditas_stok
+in APPPATH\Controllers\Backend.php on line 3239.
+ 1 APPPATH\Controllers\Backend.php(3239): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$komoditas_stok', 'APPPATH\\Controllers\\Backend.php', 3239, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi_stok()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 21:08:37 --> Undefined property: stdClass::$komoditas_satuan
+in APPPATH\Controllers\Backend.php on line 3240.
+ 1 APPPATH\Controllers\Backend.php(3240): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$komoditas_satuan', 'APPPATH\\Controllers\\Backend.php', 3240, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi_stok()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

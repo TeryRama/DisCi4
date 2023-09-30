@@ -1,0 +1,49 @@
+ERROR - 2022-10-16 20:23:00 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+CRITICAL - 2022-10-16 20:23:00 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.07\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'1\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.07\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'1\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.07\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'1\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = :tb_pasar.pasar_kecamatan:
+AND `tb_transaksi`.`transaksi_komoditas` = :tb_transaksi.transaksi_komoditas:
+AND `tb_transaksi`.`transaksi_status` = :tb_transaksi.transaksi_status:
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(239): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Action.php(37): App\Models\Transaksi_model->count_transaksi_by_komoditas_kecamatan('1', '14.04.07')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

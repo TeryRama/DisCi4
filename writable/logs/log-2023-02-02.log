@@ -1,0 +1,115 @@
+CRITICAL - 2023-02-02 01:06:49 --> Division by zero
+in APPPATH/Controllers/Root.php on line 365.
+ 1 APPPATH/Controllers/Root.php(365): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 01:06:54 --> Division by zero
+in APPPATH/Controllers/Root.php on line 365.
+ 1 APPPATH/Controllers/Root.php(365): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 01:09:56 --> Division by zero
+in APPPATH/Controllers/Root.php on line 365.
+ 1 APPPATH/Controllers/Root.php(365): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 01:10:03 --> Division by zero
+in APPPATH/Controllers/Root.php on line 365.
+ 1 APPPATH/Controllers/Root.php(365): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 08:52:51 --> Division by zero
+in APPPATH/Controllers/Root.php on line 365.
+ 1 APPPATH/Controllers/Root.php(365): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 09:31:30 --> Division by zero
+in APPPATH/Controllers/Root.php on line 365.
+ 1 APPPATH/Controllers/Root.php(365): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 09:32:27 --> Division by zero
+in APPPATH/Controllers/Root.php on line 365.
+ 1 APPPATH/Controllers/Root.php(365): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 09:32:36 --> Division by zero
+in APPPATH/Controllers/Root.php on line 365.
+ 1 APPPATH/Controllers/Root.php(365): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 09:33:54 --> Division by zero
+in APPPATH/Controllers/Root.php on line 365.
+ 1 APPPATH/Controllers/Root.php(365): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 09:45:41 --> Division by zero
+in APPPATH/Controllers/Root.php on line 365.
+ 1 APPPATH/Controllers/Root.php(365): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 11:01:25 --> Division by zero
+in APPPATH/Controllers/Root.php on line 365.
+ 1 APPPATH/Controllers/Root.php(365): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 11:01:45 --> Undefined offset: 0
+in APPPATH/Controllers/Root.php on line 352.
+ 1 APPPATH/Controllers/Root.php(352): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 11:05:52 --> Undefined offset: 0
+in APPPATH/Controllers/Root.php on line 352.
+ 1 APPPATH/Controllers/Root.php(352): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 11:06:10 --> Undefined offset: 0
+in APPPATH/Controllers/Root.php on line 352.
+ 1 APPPATH/Controllers/Root.php(352): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 17:07:46 --> Argument 1 passed to _get_uri() must be of the type string, null given, called in /var/customers/webs/disdagtri/disdagtri.inhilkab.go.id/system/Helpers/url_helper.php on line 87
+in SYSTEMPATH/Helpers/url_helper.php on line 31.
+ 1 SYSTEMPATH/Helpers/url_helper.php(87): _get_uri()
+ 2 SYSTEMPATH/Helpers/url_helper.php(106): site_url()
+ 3 APPPATH/Views/root/_user_panel.php(13): base_url()
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/root/_user_panel.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render()
+ 7 APPPATH/Views/root/page_laporan_komoditas.php(178): view()
+ 8 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/root/page_laporan_komoditas.php')
+ 9 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render()
+11 APPPATH/Controllers/Root.php(271): view()
+12 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+13 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

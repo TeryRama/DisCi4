@@ -1,0 +1,62 @@
+CRITICAL - 2022-10-10 11:24:51 --> A non-numeric value encountered
+in APPPATH\Controllers\Backend.php on line 421.
+ 1 APPPATH\Controllers\Backend.php(421): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\Backend.php', 421, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 11:26:02 --> A non-numeric value encountered
+in APPPATH\Controllers\Backend.php on line 421.
+ 1 APPPATH\Controllers\Backend.php(421): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\Backend.php', 421, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 11:28:54 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH\Images\Handlers\GDHandler.php on line 251.
+ 1 SYSTEMPATH\Images\Handlers\GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH\Controllers\Backend.php(423): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH\\/thumbnail/1665376134_d67014774d660701bcdc.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_komoditas()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 11:36:26 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH\Images\Handlers\GDHandler.php on line 251.
+ 1 SYSTEMPATH\Images\Handlers\GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH\Controllers\Backend.php(421): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH\\/thumbnail/img-2022101011362620221008_080051.jpg', 50)
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_komoditas()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 11:39:09 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH\Images\Handlers\GDHandler.php on line 251.
+ 1 SYSTEMPATH\Images\Handlers\GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH\Controllers\Backend.php(421): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH\\public\\files\\komoditas/komoditas/img-2022101011390920221008_080051.jpg', 50)
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_komoditas()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 11:39:30 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH\Images\Handlers\GDHandler.php on line 251.
+ 1 SYSTEMPATH\Images\Handlers\GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH\Controllers\Backend.php(421): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH\\public\\files\\komoditas/komoditas/img-2022101011392920221008_080051.jpg', 50)
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_komoditas()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 11:39:36 --> Unable to save the image. Please make sure the image and file directory are writable.
+in SYSTEMPATH\Images\Handlers\GDHandler.php on line 251.
+ 1 SYSTEMPATH\Images\Handlers\GDHandler.php(251): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+ 2 APPPATH\Controllers\Backend.php(421): CodeIgniter\Images\Handlers\GDHandler->save('FCPATH\\public\\files\\komoditas/komoditas/img-2022101011393620221008_080051.jpg', 50)
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_komoditas()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 11:45:09 --> An angle of rotation is required to rotate the image.
+in SYSTEMPATH\Images\Handlers\BaseHandler.php on line 321.
+ 1 SYSTEMPATH\Images\Handlers\BaseHandler.php(321): CodeIgniter\Images\Exceptions\ImageException::forMissingAngle()
+ 2 APPPATH\Controllers\Backend.php(421): CodeIgniter\Images\Handlers\BaseHandler->rotate(45.0)
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_komoditas()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

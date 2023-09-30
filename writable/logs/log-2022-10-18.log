@@ -1,0 +1,56 @@
+CRITICAL - 2022-10-18 09:38:12 --> Undefined variable: response
+in APPPATH\Controllers\Backend.php on line 138.
+ 1 APPPATH\Controllers\Backend.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: response', 'APPPATH\\Controllers\\Backend.php', 138, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 09:38:28 --> Undefined variable: response
+in APPPATH\Controllers\Backend.php on line 142.
+ 1 APPPATH\Controllers\Backend.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: response', 'APPPATH\\Controllers\\Backend.php', 142, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 09:38:46 --> Undefined variable: response
+in APPPATH\Controllers\Backend.php on line 142.
+ 1 APPPATH\Controllers\Backend.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: response', 'APPPATH\\Controllers\\Backend.php', 142, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 09:39:27 --> Undefined variable: response
+in APPPATH\Controllers\Backend.php on line 142.
+ 1 APPPATH\Controllers\Backend.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: response', 'APPPATH\\Controllers\\Backend.php', 142, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 09:39:53 --> Undefined variable: response
+in APPPATH\Controllers\Backend.php on line 142.
+ 1 APPPATH\Controllers\Backend.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: response', 'APPPATH\\Controllers\\Backend.php', 142, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 09:39:56 --> Undefined variable: response
+in APPPATH\Controllers\Backend.php on line 142.
+ 1 APPPATH\Controllers\Backend.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: response', 'APPPATH\\Controllers\\Backend.php', 142, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 17:14:13 --> Too few arguments to function App\Models\Transaksi_model::get_all_transaksi_by_filter(), 2 passed in C:\xampp\htdocs\pasar\app\Controllers\Backend.php on line 782 and exactly 3 expected
+in APPPATH\Models\Transaksi_model.php on line 12.
+ 1 APPPATH\Controllers\Backend.php(782): App\Models\Transaksi_model->get_all_transaksi_by_filter(20, 'C:\\xampp\\htdocs\\pasar')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 17:14:14 --> Too few arguments to function App\Models\Transaksi_model::get_all_transaksi_by_filter(), 2 passed in C:\xampp\htdocs\pasar\app\Controllers\Backend.php on line 782 and exactly 3 expected
+in APPPATH\Models\Transaksi_model.php on line 12.
+ 1 APPPATH\Controllers\Backend.php(782): App\Models\Transaksi_model->get_all_transaksi_by_filter(20, 'C:\\xampp\\htdocs\\pasar')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,227 @@
+CRITICAL - 2022-10-25 13:23:02 --> Trying to get property 'transaksi_tanggal' of non-object
+in APPPATH\Controllers\Publik.php on line 133.
+ 1 APPPATH\Controllers\Publik.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'transaksi_tanggal\' of non-object', 'APPPATH\\Controllers\\Publik.php', 133, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-25 13:43:43 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-10-25 13:43:43 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_komoditas`
+WHERE `komoditas_status` = :komoditas_status:', [...], false)
+ 3 APPPATH\Models\Komoditas_model.php(24): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\Backend.php(126): App\Models\Komoditas_model->count_komoditas_by_filter('C:\\xampp\\htdocs\\pasar', 'null')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-25 13:44:42 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-10-25 13:44:42 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_komoditas`
+WHERE `komoditas_status` = :komoditas_status:', [...], false)
+ 3 APPPATH\Models\Komoditas_model.php(24): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH\Controllers\Backend.php(126): App\Models\Komoditas_model->count_komoditas_by_filter('C:\\xampp\\htdocs\\pasar', 'null')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-25 13:44:51 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+ERROR - 2022-10-25 13:44:51 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-10-25 13:44:51 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_grup_komoditas`
+WHERE `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `grup_komoditas_create_time` DESC', [...], false)
+ 3 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Backend.php(343): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_grup_komoditas()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 13:44:51 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_komoditas`
+JOIN `tb_grup_komoditas` ON `tb_komoditas`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `komoditas_status` = :komoditas_status:
+ORDER BY `komoditas_create_time` DESC
+ LIMIT 10', [...], false)
+ 3 APPPATH\Models\Komoditas_model.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Backend.php(438): App\Models\Komoditas_model->get_all_komoditas_by_filter(10, 'C:\\xampp\\htdocs\\pasar', 'null')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_komoditas()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-25 13:45:25 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+ERROR - 2022-10-25 13:45:25 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-10-25 13:45:25 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_komoditas`
+JOIN `tb_grup_komoditas` ON `tb_komoditas`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `komoditas_status` = :komoditas_status:
+ORDER BY `komoditas_create_time` DESC
+ LIMIT 20', [...], false)
+ 3 APPPATH\Models\Komoditas_model.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Backend.php(438): App\Models\Komoditas_model->get_all_komoditas_by_filter(20, 'C:\\xampp\\htdocs\\pasar', 'null')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_komoditas()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 13:45:25 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_komoditas`
+JOIN `tb_grup_komoditas` ON `tb_komoditas`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `komoditas_status` = :komoditas_status:
+ORDER BY `komoditas_create_time` DESC
+ LIMIT 10', [...], false)
+ 3 APPPATH\Models\Komoditas_model.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Backend.php(438): App\Models\Komoditas_model->get_all_komoditas_by_filter(10, 'C:\\xampp\\htdocs\\pasar', 'null')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_komoditas()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-25 13:45:25 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-10-25 13:45:25 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_grup_komoditas`
+WHERE `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `grup_komoditas_create_time` DESC', [...], false)
+ 3 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Backend.php(343): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_grup_komoditas()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-25 13:45:47 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-10-25 13:45:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_komoditas`
+JOIN `tb_grup_komoditas` ON `tb_komoditas`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `komoditas_status` = :komoditas_status:
+ORDER BY `komoditas_create_time` DESC
+ LIMIT 60', [...], false)
+ 3 APPPATH\Models\Komoditas_model.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Backend.php(924): App\Models\Komoditas_model->get_all_komoditas_by_filter(60, 'C:\\xampp\\htdocs\\pasar', 'null')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_harga_komoditas_harian()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-25 13:47:14 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-10-25 13:47:14 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+JOIN `tb_komoditas` ON `tb_transaksi`.`transaksi_komoditas` = `tb_komoditas`.`komoditas_id`
+WHERE `tb_transaksi`.`transaksi_status` = :tb_transaksi.transaksi_status:
+AND `tb_komoditas`.`komoditas_status` = :tb_komoditas.komoditas_status:
+AND `tb_pasar`.`pasar_status` = :tb_pasar.pasar_status:
+AND `tb_pasar`.`pasar_id` = :tb_pasar.pasar_id:
+ORDER BY `transaksi_create_time` DESC
+ LIMIT 40', [...], false)
+ 3 APPPATH\Models\Transaksi_model.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Backend.php(782): App\Models\Transaksi_model->get_all_transaksi_by_filter(40, 'C:\\xampp\\htdocs\\pasar', '18')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-25 13:49:26 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-10-25 13:49:26 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 3 APPPATH\Models\User_model.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Backend.php(588): App\Models\User_model->get_all_user_by_filter(20, 'C:\\xampp\\htdocs\\pasar')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-25 13:49:47 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+ERROR - 2022-10-25 13:49:47 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-10-25 13:49:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_pasar`
+WHERE `pasar_status` = :pasar_status:
+ORDER BY `pasar_create_time` DESC
+ LIMIT 20', [...], false)
+ 3 APPPATH\Models\Pasar_model.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Backend.php(152): App\Models\Pasar_model->get_pasar_by_filter(20, 'C:\\xampp\\htdocs\\pasar')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 13:49:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_pasar`
+WHERE `pasar_status` = :pasar_status:
+ORDER BY `pasar_create_time` DESC
+ LIMIT 20', [...], false)
+ 3 APPPATH\Models\Pasar_model.php(51): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Backend.php(152): App\Models\Pasar_model->get_pasar_by_filter(20, 'C:\\xampp\\htdocs\\pasar')
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

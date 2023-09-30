@@ -1,0 +1,84 @@
+ERROR - 2022-10-09 09:12:49 --> Column 'log_user' cannot be null
+CRITICAL - 2022-10-09 09:12:49 --> Column 'log_user' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_log` (`log_id`, `log_user`, `log_time`, `log_activity`, `log_modul`, `log_type`, `log_ip`, `log_browser`, `log_so`) VALUES (NULL, NULL, \'2022-10-09 09:12:49\', \'{\\"user_id\\":\\"DB2ACD66-B618-47DA-8B47-BCCC8BD4CFA3\\",\\"user_update_by\\":null,\\"user_update_time\\":\\"2022-10-09 09:12:49\\"}\', \'User Management\', \'Delete\', \'192.168.80.208\', \'Aplikasi Android\', \'Android\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_log` (`log_id`, `log_user`, `log_time`, `log_activity`, `log_modul`, `log_type`, `log_ip`, `log_browser`, `log_so`) VALUES (NULL, NULL, \'2022-10-09 09:12:49\', \'{\\"user_id\\":\\"DB2ACD66-B618-47DA-8B47-BCCC8BD4CFA3\\",\\"user_update_by\\":null,\\"user_update_time\\":\\"2022-10-09 09:12:49\\"}\', \'User Management\', \'Delete\', \'192.168.80.208\', \'Aplikasi Android\', \'Android\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_log` (`log_id`, `log_user`, `log_time`, `log_activity`, `log_modul`, `log_type`, `log_ip`, `log_browser`, `log_so`) VALUES (NULL, NULL, \'2022-10-09 09:12:49\', \'{\\"user_id\\":\\"DB2ACD66-B618-47DA-8B47-BCCC8BD4CFA3\\",\\"user_update_by\\":null,\\"user_update_time\\":\\"2022-10-09 09:12:49\\"}\', \'User Management\', \'Delete\', \'192.168.80.208\', \'Aplikasi Android\', \'Android\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_log` (`log_id`, `log_user`, `log_time`, `log_activity`, `log_modul`, `log_type`, `log_ip`, `log_browser`, `log_so`) VALUES (:log_id:, :log_user:, :log_time:, :log_activity:, :log_modul:, :log_type:, :log_ip:, :log_browser:, :log_so:)', [...], false)
+ 5 APPPATH\Models\Log_model.php(16): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(51): App\Models\Log_model->add_new_log([...])
+ 7 APPPATH\Controllers\Backend.php(673): App\Controllers\Backend->__addLog('User Management', '{"user_id":"DB2ACD66-B618-47DA-8B47-BCCC8BD4CFA3","user_update_by":null,"user_update_time":"2022-10-09 09:12:49"}', 'Delete', null)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->delete_user()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 12:14:44 --> Call to undefined method App\Models\Pasar_model::get_transaksi_by_pasar_komoditas
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Backend.php(757): CodeIgniter\Model->__call('get_transaksi_by_pasar_komoditas', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_transaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 12:16:06 --> Call to undefined method App\Models\Pasar_model::get_transaksi_by_pasar_komoditas
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Backend.php(757): CodeIgniter\Model->__call('get_transaksi_by_pasar_komoditas', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_transaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 12:45:20 --> Call to undefined method App\Models\Transaksi_model::count
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Backend.php(722): CodeIgniter\Model->__call('count', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi_by_id()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 12:45:23 --> Call to undefined method App\Models\Transaksi_model::count
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Backend.php(722): CodeIgniter\Model->__call('count', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi_by_id()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 12:45:52 --> Call to undefined method App\Models\Transaksi_model::count
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Backend.php(722): CodeIgniter\Model->__call('count', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi_by_id()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-09 12:46:42 --> Call to undefined method App\Models\Transaksi_model::count
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Backend.php(722): CodeIgniter\Model->__call('count', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi_by_id()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-09 12:57:32 --> Column 'log_user' cannot be null
+CRITICAL - 2022-10-09 12:57:32 --> Column 'log_user' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_log` (`log_id`, `log_user`, `log_time`, `log_activity`, `log_modul`, `log_type`, `log_ip`, `log_browser`, `log_so`) VALUES (NULL, NULL, \'2022-10-09 12:57:32\', \'{\\"transaksi_id\\":\\"3\\",\\"transaksi_tanggal\\":\\"2022-10-09\\",\\"transaksi_pasar\\":\\"14\\",\\"transaksi_komoditas\\":\\"6\\",\\"transaksi_harga\\":\\"130000\\",\\"transaksi_catatan\\":\\"ntaps\\",\\"transaksi_status\\":\\"1\\",\\"transaksi_update_by\\":null,\\"transaksi_update_time\\":\\"2022-10-09 12:57:32\\"}\', \'Transaksi\', \'Update\', \'192.168.80.208\', \'Aplikasi Android\', \'Android\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_log` (`log_id`, `log_user`, `log_time`, `log_activity`, `log_modul`, `log_type`, `log_ip`, `log_browser`, `log_so`) VALUES (NULL, NULL, \'2022-10-09 12:57:32\', \'{\\"transaksi_id\\":\\"3\\",\\"transaksi_tanggal\\":\\"2022-10-09\\",\\"transaksi_pasar\\":\\"14\\",\\"transaksi_komoditas\\":\\"6\\",\\"transaksi_harga\\":\\"130000\\",\\"transaksi_catatan\\":\\"ntaps\\",\\"transaksi_status\\":\\"1\\",\\"transaksi_update_by\\":null,\\"transaksi_update_time\\":\\"2022-10-09 12:57:32\\"}\', \'Transaksi\', \'Update\', \'192.168.80.208\', \'Aplikasi Android\', \'Android\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_log` (`log_id`, `log_user`, `log_time`, `log_activity`, `log_modul`, `log_type`, `log_ip`, `log_browser`, `log_so`) VALUES (NULL, NULL, \'2022-10-09 12:57:32\', \'{\\"transaksi_id\\":\\"3\\",\\"transaksi_tanggal\\":\\"2022-10-09\\",\\"transaksi_pasar\\":\\"14\\",\\"transaksi_komoditas\\":\\"6\\",\\"transaksi_harga\\":\\"130000\\",\\"transaksi_catatan\\":\\"ntaps\\",\\"transaksi_status\\":\\"1\\",\\"transaksi_update_by\\":null,\\"transaksi_update_time\\":\\"2022-10-09 12:57:32\\"}\', \'Transaksi\', \'Update\', \'192.168.80.208\', \'Aplikasi Android\', \'Android\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_log` (`log_id`, `log_user`, `log_time`, `log_activity`, `log_modul`, `log_type`, `log_ip`, `log_browser`, `log_so`) VALUES (:log_id:, :log_user:, :log_time:, :log_activity:, :log_modul:, :log_type:, :log_ip:, :log_browser:, :log_so:)', [...], false)
+ 5 APPPATH\Models\Log_model.php(16): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(53): App\Models\Log_model->add_new_log([...])
+ 7 APPPATH\Controllers\Backend.php(791): App\Controllers\Backend->__addLog('Transaksi', '{"transaksi_id":"3","transaksi_tanggal":"2022-10-09","transaksi_pasar":"14","transaksi_komoditas":"6","transaksi_harga":"130000","transaksi_catatan":"ntaps","transaksi_status":"1","transaksi_update_by":null,"transaksi_update_time":"2022-10-09 12:57:32"}', 'Update', null)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_transaksi()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-09 12:59:13 --> Column 'log_user' cannot be null
+CRITICAL - 2022-10-09 12:59:13 --> Column 'log_user' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_log` (`log_id`, `log_user`, `log_time`, `log_activity`, `log_modul`, `log_type`, `log_ip`, `log_browser`, `log_so`) VALUES (NULL, NULL, \'2022-10-09 12:59:13\', \'{\\"transaksi_id\\":\\"3\\",\\"transaksi_pasar\\":\\"14\\",\\"transaksi_komoditas\\":\\"3\\",\\"transaksi_harga\\":\\"10000\\",\\"transaksi_catatan\\":\\"12\\",\\"transaksi_update_by\\":null,\\"transaksi_update_time\\":\\"2022-10-09 12:59:13\\"}\', \'Transaksi\', \'Update\', \'::1\', \'Aplikasi Android\', \'Android\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_log` (`log_id`, `log_user`, `log_time`, `log_activity`, `log_modul`, `log_type`, `log_ip`, `log_browser`, `log_so`) VALUES (NULL, NULL, \'2022-10-09 12:59:13\', \'{\\"transaksi_id\\":\\"3\\",\\"transaksi_pasar\\":\\"14\\",\\"transaksi_komoditas\\":\\"3\\",\\"transaksi_harga\\":\\"10000\\",\\"transaksi_catatan\\":\\"12\\",\\"transaksi_update_by\\":null,\\"transaksi_update_time\\":\\"2022-10-09 12:59:13\\"}\', \'Transaksi\', \'Update\', \'::1\', \'Aplikasi Android\', \'Android\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_log` (`log_id`, `log_user`, `log_time`, `log_activity`, `log_modul`, `log_type`, `log_ip`, `log_browser`, `log_so`) VALUES (NULL, NULL, \'2022-10-09 12:59:13\', \'{\\"transaksi_id\\":\\"3\\",\\"transaksi_pasar\\":\\"14\\",\\"transaksi_komoditas\\":\\"3\\",\\"transaksi_harga\\":\\"10000\\",\\"transaksi_catatan\\":\\"12\\",\\"transaksi_update_by\\":null,\\"transaksi_update_time\\":\\"2022-10-09 12:59:13\\"}\', \'Transaksi\', \'Update\', \'::1\', \'Aplikasi Android\', \'Android\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_log` (`log_id`, `log_user`, `log_time`, `log_activity`, `log_modul`, `log_type`, `log_ip`, `log_browser`, `log_so`) VALUES (:log_id:, :log_user:, :log_time:, :log_activity:, :log_modul:, :log_type:, :log_ip:, :log_browser:, :log_so:)', [...], false)
+ 5 APPPATH\Models\Log_model.php(16): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(53): App\Models\Log_model->add_new_log([...])
+ 7 APPPATH\Controllers\Backend.php(789): App\Controllers\Backend->__addLog('Transaksi', '{"transaksi_id":"3","transaksi_pasar":"14","transaksi_komoditas":"3","transaksi_harga":"10000","transaksi_catatan":"12","transaksi_update_by":null,"transaksi_update_time":"2022-10-09 12:59:13"}', 'Update', null)
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_transaksi()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

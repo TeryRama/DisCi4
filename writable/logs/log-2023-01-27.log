@@ -1,0 +1,259 @@
+CRITICAL - 2023-01-27 09:03:03 --> Undefined variable: file_name
+in APPPATH\Views\root\laporan_komoditas_excel.php on line 162.
+ 1 APPPATH\Views\root\laporan_komoditas_excel.php(162): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: file_name', 'APPPATH\\Views\\root\\laporan_komoditas_excel.php', 162, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\laporan_komoditas_excel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/laporan_komoditas_excel', [], true)
+ 5 APPPATH\Controllers\Crud.php(605): view('root/laporan_komoditas_excel', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 09:03:05 --> Undefined variable: file_name
+in APPPATH\Views\root\laporan_komoditas_excel.php on line 162.
+ 1 APPPATH\Views\root\laporan_komoditas_excel.php(162): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: file_name', 'APPPATH\\Views\\root\\laporan_komoditas_excel.php', 162, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\laporan_komoditas_excel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/laporan_komoditas_excel', [], true)
+ 5 APPPATH\Controllers\Crud.php(605): view('root/laporan_komoditas_excel', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 09:03:10 --> Undefined variable: file_name
+in APPPATH\Views\root\laporan_komoditas_excel.php on line 162.
+ 1 APPPATH\Views\root\laporan_komoditas_excel.php(162): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: file_name', 'APPPATH\\Views\\root\\laporan_komoditas_excel.php', 162, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\laporan_komoditas_excel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/laporan_komoditas_excel', [], true)
+ 5 APPPATH\Controllers\Crud.php(605): view('root/laporan_komoditas_excel', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 09:03:30 --> Undefined variable: file_name
+in APPPATH\Views\root\laporan_komoditas_excel.php on line 10.
+ 1 APPPATH\Views\root\laporan_komoditas_excel.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: file_name', 'APPPATH\\Views\\root\\laporan_komoditas_excel.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\laporan_komoditas_excel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/laporan_komoditas_excel', [], true)
+ 5 APPPATH\Controllers\Crud.php(605): view('root/laporan_komoditas_excel', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 09:03:31 --> Undefined variable: file_name
+in APPPATH\Views\root\laporan_komoditas_excel.php on line 10.
+ 1 APPPATH\Views\root\laporan_komoditas_excel.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: file_name', 'APPPATH\\Views\\root\\laporan_komoditas_excel.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\laporan_komoditas_excel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/laporan_komoditas_excel', [], true)
+ 5 APPPATH\Controllers\Crud.php(605): view('root/laporan_komoditas_excel', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 09:03:35 --> Undefined variable: file_name
+in APPPATH\Views\root\laporan_komoditas_excel.php on line 10.
+ 1 APPPATH\Views\root\laporan_komoditas_excel.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: file_name', 'APPPATH\\Views\\root\\laporan_komoditas_excel.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\laporan_komoditas_excel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/laporan_komoditas_excel', [], true)
+ 5 APPPATH\Controllers\Crud.php(605): view('root/laporan_komoditas_excel', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 09:03:41 --> Undefined variable: file_name
+in APPPATH\Views\root\laporan_komoditas_excel.php on line 10.
+ 1 APPPATH\Views\root\laporan_komoditas_excel.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: file_name', 'APPPATH\\Views\\root\\laporan_komoditas_excel.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\laporan_komoditas_excel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/laporan_komoditas_excel', [], true)
+ 5 APPPATH\Controllers\Crud.php(605): view('root/laporan_komoditas_excel', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 09:03:44 --> Undefined variable: file_name
+in APPPATH\Views\root\laporan_komoditas_excel.php on line 10.
+ 1 APPPATH\Views\root\laporan_komoditas_excel.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: file_name', 'APPPATH\\Views\\root\\laporan_komoditas_excel.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\laporan_komoditas_excel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/laporan_komoditas_excel', [], true)
+ 5 APPPATH\Controllers\Crud.php(605): view('root/laporan_komoditas_excel', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 09:30:17 --> Argument 1 passed to _get_uri() must be of the type string, null given, called in C:\xampp\htdocs\pasar\system\Helpers\url_helper.php on line 87
+in SYSTEMPATH\Helpers\url_helper.php on line 31.
+ 1 SYSTEMPATH\Helpers\url_helper.php(87): _get_uri(null, Object(Config\App))
+ 2 SYSTEMPATH\Helpers\url_helper.php(106): site_url(null, null, Object(Config\App))
+ 3 APPPATH\Views\root\_user_panel.php(13): base_url(null)
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\_user_panel.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/_user_panel', [], true)
+ 7 APPPATH\Views\root\page_management_page.php(134): view('root/_user_panel')
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_management_page.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_management_page', [], true)
+11 APPPATH\Controllers\Root.php(174): view('root/page_management_page', [...])
+12 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->page_management()
+13 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+14 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 10:05:28 --> Class 'App\Controllers\Spreadsheet' not found
+in APPPATH\Controllers\Crud.php on line 607.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 10:05:45 --> Class 'App\Controllers\Spreadsheet' not found
+in APPPATH\Controllers\Crud.php on line 607.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 10:05:53 --> Class 'App\Controllers\Spreadsheet' not found
+in APPPATH\Controllers\Crud.php on line 607.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 10:08:46 --> filesize(): stat failed for asdad.xlsx
+in APPPATH\Views\root\laporan_komoditas_excel.php on line 11.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for asdad.xlsx', 'APPPATH\\Views\\root\\laporan_komoditas_excel.php', 11, [...])
+ 2 APPPATH\Views\root\laporan_komoditas_excel.php(11): filesize('asdad.xlsx')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\laporan_komoditas_excel.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/laporan_komoditas_excel', [], true)
+ 6 APPPATH\Controllers\Crud.php(608): view('root/laporan_komoditas_excel', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 10:08:47 --> filesize(): stat failed for asdad.xlsx
+in APPPATH\Views\root\laporan_komoditas_excel.php on line 11.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for asdad.xlsx', 'APPPATH\\Views\\root\\laporan_komoditas_excel.php', 11, [...])
+ 2 APPPATH\Views\root\laporan_komoditas_excel.php(11): filesize('asdad.xlsx')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\laporan_komoditas_excel.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/laporan_komoditas_excel', [], true)
+ 6 APPPATH\Controllers\Crud.php(608): view('root/laporan_komoditas_excel', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 10:08:53 --> filesize(): stat failed for asdad.xlsx
+in APPPATH\Views\root\laporan_komoditas_excel.php on line 11.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for asdad.xlsx', 'APPPATH\\Views\\root\\laporan_komoditas_excel.php', 11, [...])
+ 2 APPPATH\Views\root\laporan_komoditas_excel.php(11): filesize('asdad.xlsx')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\laporan_komoditas_excel.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/laporan_komoditas_excel', [], true)
+ 6 APPPATH\Controllers\Crud.php(608): view('root/laporan_komoditas_excel', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 10:09:06 --> filesize(): stat failed for asdad.xlsx
+in APPPATH\Views\root\laporan_komoditas_excel.php on line 11.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for asdad.xlsx', 'APPPATH\\Views\\root\\laporan_komoditas_excel.php', 11, [...])
+ 2 APPPATH\Views\root\laporan_komoditas_excel.php(11): filesize('asdad.xlsx')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\laporan_komoditas_excel.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/laporan_komoditas_excel', [], true)
+ 6 APPPATH\Controllers\Crud.php(608): view('root/laporan_komoditas_excel', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 10:12:14 --> File images/paid.png not found!
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Drawing.php on line 134.
+ 1 APPPATH\Controllers\Crud.php(630): PhpOffice\PhpSpreadsheet\Worksheet\Drawing->setPath('images/paid.png')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 10:16:52 --> Class 'App\Controllers\PHPExcel_Worksheet_Drawing' not found
+in APPPATH\Controllers\Crud.php on line 627.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 10:20:14 --> File http://localhost/pasarfiles/web-assets/logo-inhil.png does not exist
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx\ContentTypes.php on line 226.
+ 1 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx\ContentTypes.php(137): PhpOffice\PhpSpreadsheet\Writer\Xlsx\ContentTypes->getImageMimeType('http://localhost/pasarfiles/web-assets/logo-inhil.png')
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(333): PhpOffice\PhpSpreadsheet\Writer\Xlsx\ContentTypes->writeContentTypes(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), false)
+ 3 APPPATH\Controllers\Crud.php(642): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('FCPATH\\data.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 10:23:37 --> Undefined variable: file_name
+in APPPATH\Controllers\Crud.php on line 671.
+ 1 APPPATH\Controllers\Crud.php(671): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: file_name', 'APPPATH\\Controllers\\Crud.php', 671, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 10:23:38 --> Undefined variable: file_name
+in APPPATH\Controllers\Crud.php on line 671.
+ 1 APPPATH\Controllers\Crud.php(671): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: file_name', 'APPPATH\\Controllers\\Crud.php', 671, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 10:23:44 --> Undefined variable: file_name
+in APPPATH\Controllers\Crud.php on line 671.
+ 1 APPPATH\Controllers\Crud.php(671): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: file_name', 'APPPATH\\Controllers\\Crud.php', 671, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Crud->download_laporan_pangan_pdf()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 14:21:13 --> Undefined index: pasar
+in APPPATH\Views\root\page_laporan_penting.php on line 76.
+ 1 APPPATH\Views\root\page_laporan_penting.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pasar', 'APPPATH\\Views\\root\\page_laporan_penting.php', 76, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_penting.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_penting', [], true)
+ 5 APPPATH\Controllers\Root.php(435): view('root/page_laporan_penting', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 14:21:39 --> Undefined index: pasar
+in APPPATH\Views\root\page_laporan_penting.php on line 76.
+ 1 APPPATH\Views\root\page_laporan_penting.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pasar', 'APPPATH\\Views\\root\\page_laporan_penting.php', 76, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_penting.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_penting', [], true)
+ 5 APPPATH\Controllers\Root.php(435): view('root/page_laporan_penting', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 14:21:57 --> Undefined index: pasar
+in APPPATH\Views\root\page_laporan_penting.php on line 76.
+ 1 APPPATH\Views\root\page_laporan_penting.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pasar', 'APPPATH\\Views\\root\\page_laporan_penting.php', 76, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_penting.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_penting', [], true)
+ 5 APPPATH\Controllers\Root.php(435): view('root/page_laporan_penting', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_penting()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-27 14:29:59 --> Undefined variable: bulan
+in APPPATH\Helpers\additional_helper.php on line 134.
+ 1 APPPATH\Helpers\additional_helper.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: bulan', 'APPPATH\\Helpers\\additional_helper.php', 134, [...])
+ 2 APPPATH\Views\root\page_laporan_stok.php(96): bulan_indo('12 2022')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_stok.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_stok', [], true)
+ 6 APPPATH\Controllers\Root.php(547): view('root/page_laporan_stok', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_stok()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

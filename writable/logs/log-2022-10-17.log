@@ -1,0 +1,1634 @@
+CRITICAL - 2022-10-17 08:46:52 --> Too few arguments to function App\Models\User_model::count_user_by_filter(), 0 passed in C:\xampp\htdocs\pasar\app\Controllers\Backend.php on line 100 and exactly 1 expected
+in APPPATH\Models\User_model.php on line 47.
+ 1 APPPATH\Controllers\Backend.php(100): App\Models\User_model->count_user_by_filter()
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 08:52:47 --> Undefined index: transaksi
+in APPPATH\Controllers\Backend.php on line 108.
+ 1 APPPATH\Controllers\Backend.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: transaksi', 'APPPATH\\Controllers\\Backend.php', 108, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 09:25:04 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+CRITICAL - 2022-10-17 09:25:04 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'1\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'1\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'1\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = :tb_pasar.pasar_kecamatan:
+AND `tb_transaksi`.`transaksi_komoditas` = :tb_transaksi.transaksi_komoditas:
+AND `tb_transaksi`.`transaksi_status` = :tb_transaksi.transaksi_status:
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(239): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Action.php(37): App\Models\Transaksi_model->count_transaksi_by_komoditas_kecamatan('1', '14.04.04')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 09:25:10 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+CRITICAL - 2022-10-17 09:25:10 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'3\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'3\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'3\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = :tb_pasar.pasar_kecamatan:
+AND `tb_transaksi`.`transaksi_komoditas` = :tb_transaksi.transaksi_komoditas:
+AND `tb_transaksi`.`transaksi_status` = :tb_transaksi.transaksi_status:
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(239): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Action.php(37): App\Models\Transaksi_model->count_transaksi_by_komoditas_kecamatan('3', '14.04.04')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 09:25:12 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+CRITICAL - 2022-10-17 09:25:12 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'4\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'4\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'4\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = :tb_pasar.pasar_kecamatan:
+AND `tb_transaksi`.`transaksi_komoditas` = :tb_transaksi.transaksi_komoditas:
+AND `tb_transaksi`.`transaksi_status` = :tb_transaksi.transaksi_status:
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(239): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Action.php(37): App\Models\Transaksi_model->count_transaksi_by_komoditas_kecamatan('4', '14.04.04')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 09:25:14 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+CRITICAL - 2022-10-17 09:25:14 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'53\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'53\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'53\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = :tb_pasar.pasar_kecamatan:
+AND `tb_transaksi`.`transaksi_komoditas` = :tb_transaksi.transaksi_komoditas:
+AND `tb_transaksi`.`transaksi_status` = :tb_transaksi.transaksi_status:
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(239): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Action.php(37): App\Models\Transaksi_model->count_transaksi_by_komoditas_kecamatan('53', '14.04.04')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 09:25:15 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+CRITICAL - 2022-10-17 09:25:15 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'5\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'5\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'5\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = :tb_pasar.pasar_kecamatan:
+AND `tb_transaksi`.`transaksi_komoditas` = :tb_transaksi.transaksi_komoditas:
+AND `tb_transaksi`.`transaksi_status` = :tb_transaksi.transaksi_status:
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(239): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Action.php(37): App\Models\Transaksi_model->count_transaksi_by_komoditas_kecamatan('5', '14.04.04')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 09:25:16 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+CRITICAL - 2022-10-17 09:25:16 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'4\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'4\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'4\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = :tb_pasar.pasar_kecamatan:
+AND `tb_transaksi`.`transaksi_komoditas` = :tb_transaksi.transaksi_komoditas:
+AND `tb_transaksi`.`transaksi_status` = :tb_transaksi.transaksi_status:
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(239): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Action.php(37): App\Models\Transaksi_model->count_transaksi_by_komoditas_kecamatan('4', '14.04.04')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 09:25:50 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+CRITICAL - 2022-10-17 09:25:50 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'1\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'1\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'1\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = :tb_pasar.pasar_kecamatan:
+AND `tb_transaksi`.`transaksi_komoditas` = :tb_transaksi.transaksi_komoditas:
+AND `tb_transaksi`.`transaksi_status` = :tb_transaksi.transaksi_status:
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(239): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Action.php(37): App\Models\Transaksi_model->count_transaksi_by_komoditas_kecamatan('1', '14.04.04')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 09:26:05 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+CRITICAL - 2022-10-17 09:26:05 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'1\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'1\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'1\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = :tb_pasar.pasar_kecamatan:
+AND `tb_transaksi`.`transaksi_komoditas` = :tb_transaksi.transaksi_komoditas:
+AND `tb_transaksi`.`transaksi_status` = :tb_transaksi.transaksi_status:
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(239): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Action.php(37): App\Models\Transaksi_model->count_transaksi_by_komoditas_kecamatan('1', '14.04.04')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 09:26:08 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+CRITICAL - 2022-10-17 09:26:08 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'1\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'1\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = \'14.04.04\'
+AND `tb_transaksi`.`transaksi_komoditas` = \'1\'
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_pasar`.`pasar_kecamatan` = :tb_pasar.pasar_kecamatan:
+AND `tb_transaksi`.`transaksi_komoditas` = :tb_transaksi.transaksi_komoditas:
+AND `tb_transaksi`.`transaksi_status` = :tb_transaksi.transaksi_status:
+GROUP BY `tb_pasar`.`pasar_kecamatan`
+) CI_count_all_results', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(239): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Action.php(37): App\Models\Transaksi_model->count_transaksi_by_komoditas_kecamatan('1', '14.04.04')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:26:13 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:26:13 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wat%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wat%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wat%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'wat')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:26:15 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:26:15 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wat%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wat%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wat%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'wat')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:26:16 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:26:16 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wat%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wat%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wat%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'wat')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:26:37 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:26:37 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%supar%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%supar%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%supar%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'supar')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:27:15 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:27:15 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'suparh')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:27:16 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:27:16 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'suparh')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:27:17 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:27:17 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'suparh')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:27:17 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:27:17 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'suparh')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:27:17 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:27:17 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'suparh')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:27:18 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:27:18 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'suparh')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:27:18 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:27:18 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'suparh')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:27:18 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:27:18 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'suparh')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:27:18 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:27:18 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'suparh')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:27:19 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:27:19 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%suparh%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'suparh')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:27:31 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:27:31 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%aa%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%aa%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%aa%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'aa')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:28:53 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:28:53 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(60): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:28:55 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:28:55 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(60): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:28:55 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:28:55 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(60): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:28:56 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:28:56 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(60): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:28:56 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:28:56 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(60): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:28:56 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:28:56 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(60): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:28:57 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:28:57 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(60): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:30:29 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:30:29 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%erik%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%erik%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%erik%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(60): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('erik')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:32:21 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:32:21 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(60): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:32:44 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:32:44 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(60): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:32:45 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:32:45 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(60): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:33:12 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:33:12 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(60): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:33:14 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:33:14 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(60): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:33:29 --> Unknown column 'user_naasdasdme' in 'where clause'
+CRITICAL - 2022-10-17 16:33:29 --> Unknown column 'user_naasdasdme' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_naasdasdme` LIKE \'%wati%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_naasdasdme` LIKE \'%wati%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_naasdasdme` LIKE \'%wati%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_naasdasdme` LIKE :user_naasdasdme: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:33:42 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:33:42 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(60): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:33:52 --> Unknown column 'user_namee' in 'where clause'
+CRITICAL - 2022-10-17 16:33:52 --> Unknown column 'user_namee' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_namee` LIKE \'%wati%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_namee` LIKE \'%wati%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = \'1\'
+AND  `user_namee` LIKE \'%wati%\' ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_status` = :user_status:
+AND  `user_namee` LIKE :user_namee: ESCAPE \'!\'
+ORDER BY `user_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\User_model.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(562): App\Models\User_model->get_all_user_by_filter(20, 'wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:33:58 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:33:58 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(60): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:34:14 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:34:14 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(60): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:34:35 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:34:35 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(61): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:35:04 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:35:04 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(76): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:35:06 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:35:06 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(76): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:35:22 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:35:22 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(76): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:35:36 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:35:36 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(76): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 16:35:40 --> Unknown column 'user_nama' in 'where clause'
+CRITICAL - 2022-10-17 16:35:40 --> Unknown column 'user_nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = \'1\'
+AND  `user_nama` LIKE \'%wati%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `user_status` = :user_status:
+AND  `user_nama` LIKE :user_nama: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\User_model.php(76): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Backend.php(566): App\Models\User_model->count_user_by_filter('wati')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_user()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

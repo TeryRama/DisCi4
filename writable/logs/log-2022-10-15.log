@@ -1,0 +1,470 @@
+ERROR - 2022-10-15 15:17:47 --> Column 'transaksi_catatan' cannot be null
+CRITICAL - 2022-10-15 15:17:47 --> Column 'transaksi_catatan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'53\', \'250000\', NULL, \'1\', NULL, \'2022-10-15 15:17:47\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'53\', \'250000\', NULL, \'1\', NULL, \'2022-10-15 15:17:47\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'53\', \'250000\', NULL, \'1\', NULL, \'2022-10-15 15:17:47\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_pasar:, :transaksi_komoditas:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(43): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(886): App\Models\Transaksi_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-15 15:17:53 --> Column 'transaksi_catatan' cannot be null
+CRITICAL - 2022-10-15 15:17:53 --> Column 'transaksi_catatan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'53\', \'250000\', NULL, \'1\', NULL, \'2022-10-15 15:17:53\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'53\', \'250000\', NULL, \'1\', NULL, \'2022-10-15 15:17:53\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'53\', \'250000\', NULL, \'1\', NULL, \'2022-10-15 15:17:53\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_pasar:, :transaksi_komoditas:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(43): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(886): App\Models\Transaksi_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-15 15:21:25 --> Column 'transaksi_tanggal' cannot be null
+CRITICAL - 2022-10-15 15:21:25 --> Column 'transaksi_tanggal' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, NULL, \'14\', \'55\', \'10000\', NULL, \'1\', NULL, \'2022-10-15 15:21:25\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, NULL, \'14\', \'55\', \'10000\', NULL, \'1\', NULL, \'2022-10-15 15:21:25\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, NULL, \'14\', \'55\', \'10000\', NULL, \'1\', NULL, \'2022-10-15 15:21:25\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_pasar:, :transaksi_komoditas:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(43): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(886): App\Models\Transaksi_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-15 15:22:29 --> Column 'transaksi_catatan' cannot be null
+CRITICAL - 2022-10-15 15:22:29 --> Column 'transaksi_catatan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:22:29\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:22:29\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:22:29\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_pasar:, :transaksi_komoditas:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(43): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(886): App\Models\Transaksi_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-15 15:22:31 --> Column 'transaksi_catatan' cannot be null
+CRITICAL - 2022-10-15 15:22:31 --> Column 'transaksi_catatan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:22:31\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:22:31\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:22:31\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_pasar:, :transaksi_komoditas:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(43): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(886): App\Models\Transaksi_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-15 15:22:54 --> Column 'transaksi_catatan' cannot be null
+CRITICAL - 2022-10-15 15:22:54 --> Column 'transaksi_catatan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:22:54\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:22:54\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:22:54\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_pasar:, :transaksi_komoditas:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(43): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(886): App\Models\Transaksi_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-15 15:23:31 --> Column 'transaksi_catatan' cannot be null
+CRITICAL - 2022-10-15 15:23:31 --> Column 'transaksi_catatan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:23:31\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:23:31\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:23:31\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_pasar:, :transaksi_komoditas:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(43): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(886): App\Models\Transaksi_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-15 15:23:33 --> Column 'transaksi_catatan' cannot be null
+CRITICAL - 2022-10-15 15:23:33 --> Column 'transaksi_catatan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:23:33\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:23:33\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:23:33\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_pasar:, :transaksi_komoditas:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(43): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(886): App\Models\Transaksi_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-15 15:23:35 --> Column 'transaksi_catatan' cannot be null
+CRITICAL - 2022-10-15 15:23:35 --> Column 'transaksi_catatan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:23:35\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:23:35\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:23:35\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_pasar:, :transaksi_komoditas:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(43): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(886): App\Models\Transaksi_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-15 15:26:08 --> Column 'transaksi_catatan' cannot be null
+CRITICAL - 2022-10-15 15:26:08 --> Column 'transaksi_catatan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:26:07\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:26:07\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:26:07\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_pasar:, :transaksi_komoditas:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(43): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(886): App\Models\Transaksi_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-15 15:26:09 --> Column 'transaksi_catatan' cannot be null
+CRITICAL - 2022-10-15 15:26:09 --> Column 'transaksi_catatan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:26:09\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:26:09\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'18\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:26:09\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_pasar:, :transaksi_komoditas:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(43): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(886): App\Models\Transaksi_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-15 15:31:03 --> Column 'transaksi_catatan' cannot be null
+CRITICAL - 2022-10-15 15:31:03 --> Column 'transaksi_catatan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'14\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:31:03\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'14\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:31:03\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-15\', \'14\', \'55\', \'12000\', NULL, \'1\', \'root\', \'2022-10-15 15:31:03\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_pasar:, :transaksi_komoditas:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(43): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(886): App\Models\Transaksi_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-15 15:31:56 --> Column 'transaksi_catatan' cannot be null
+CRITICAL - 2022-10-15 15:31:56 --> Column 'transaksi_catatan' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-16\', \'14\', \'55\', \'10000\', NULL, \'1\', \'root\', \'2022-10-15 15:31:56\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-16\', \'14\', \'55\', \'10000\', NULL, \'1\', \'root\', \'2022-10-15 15:31:56\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-10-16\', \'14\', \'55\', \'10000\', NULL, \'1\', \'root\', \'2022-10-15 15:31:56\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi` (`transaksi_id`, `transaksi_tanggal`, `transaksi_pasar`, `transaksi_komoditas`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_pasar:, :transaksi_komoditas:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(43): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(886): App\Models\Transaksi_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-15 15:46:10 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+CRITICAL - 2022-10-15 15:46:10 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_transaksi`.`transaksi_pasar` = \'18\'
+AND `tb_transaksi`.`transaksi_komoditas` = 52
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_transaksi`.`transaksi_tanggal`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_transaksi`.`transaksi_pasar` = \'18\'
+AND `tb_transaksi`.`transaksi_komoditas` = 52
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_transaksi`.`transaksi_tanggal`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_transaksi`.`transaksi_pasar` = \'18\'
+AND `tb_transaksi`.`transaksi_komoditas` = 52
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_transaksi`.`transaksi_tanggal`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_transaksi`.`transaksi_pasar` = :tb_transaksi.transaksi_pasar:
+AND `tb_transaksi`.`transaksi_komoditas` = :tb_transaksi.transaksi_komoditas:
+AND `tb_transaksi`.`transaksi_status` = :tb_transaksi.transaksi_status:
+GROUP BY `tb_transaksi`.`transaksi_tanggal`
+) CI_count_all_results', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(251): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Publik.php(122): App\Models\Transaksi_model->count_transaksi_by_komoditas_pasar(52, '18')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-15 15:46:22 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+CRITICAL - 2022-10-15 15:46:22 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_transaksi`.`transaksi_pasar` = \'16\'
+AND `tb_transaksi`.`transaksi_komoditas` = 6
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_transaksi`.`transaksi_tanggal`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_transaksi`.`transaksi_pasar` = \'16\'
+AND `tb_transaksi`.`transaksi_komoditas` = 6
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_transaksi`.`transaksi_tanggal`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_transaksi`.`transaksi_pasar` = \'16\'
+AND `tb_transaksi`.`transaksi_komoditas` = 6
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_transaksi`.`transaksi_tanggal`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_transaksi`.`transaksi_pasar` = :tb_transaksi.transaksi_pasar:
+AND `tb_transaksi`.`transaksi_komoditas` = :tb_transaksi.transaksi_komoditas:
+AND `tb_transaksi`.`transaksi_status` = :tb_transaksi.transaksi_status:
+GROUP BY `tb_transaksi`.`transaksi_tanggal`
+) CI_count_all_results', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(251): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Publik.php(122): App\Models\Transaksi_model->count_transaksi_by_komoditas_pasar(6, '16')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-15 15:48:36 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+CRITICAL - 2022-10-15 15:48:36 --> Unknown column 'tb_transaksi.id_transaksi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_transaksi`.`transaksi_pasar` = \'16\'
+AND `tb_transaksi`.`transaksi_komoditas` = 6
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_transaksi`.`transaksi_tanggal`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_transaksi`.`transaksi_pasar` = \'16\'
+AND `tb_transaksi`.`transaksi_komoditas` = 6
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_transaksi`.`transaksi_tanggal`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_transaksi`.`transaksi_pasar` = \'16\'
+AND `tb_transaksi`.`transaksi_komoditas` = 6
+AND `tb_transaksi`.`transaksi_status` = \'1\'
+GROUP BY `tb_transaksi`.`transaksi_tanggal`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `tb_transaksi`.`id_transaksi`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `tb_transaksi`.`transaksi_pasar` = :tb_transaksi.transaksi_pasar:
+AND `tb_transaksi`.`transaksi_komoditas` = :tb_transaksi.transaksi_komoditas:
+AND `tb_transaksi`.`transaksi_status` = :tb_transaksi.transaksi_status:
+GROUP BY `tb_transaksi`.`transaksi_tanggal`
+) CI_count_all_results', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(251): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Publik.php(122): App\Models\Transaksi_model->count_transaksi_by_komoditas_pasar(6, '16')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 15:49:56 --> Undefined property: stdClass::$harga_prev
+in APPPATH\Views\public\page_detail_komoditas.php on line 84.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga_prev', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(137): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 15:50:00 --> Undefined property: stdClass::$harga_prev
+in APPPATH\Views\public\page_detail_komoditas.php on line 84.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga_prev', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(137): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 15:50:03 --> Undefined property: stdClass::$harga_prev
+in APPPATH\Views\public\page_detail_komoditas.php on line 84.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga_prev', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(137): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 15:50:11 --> Undefined property: stdClass::$harga_prev
+in APPPATH\Views\public\page_detail_komoditas.php on line 84.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga_prev', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(137): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 15:50:43 --> Undefined property: stdClass::$harga_prev
+in APPPATH\Views\public\page_detail_komoditas.php on line 84.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga_prev', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(138): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 15:50:44 --> Undefined property: stdClass::$harga_prev
+in APPPATH\Views\public\page_detail_komoditas.php on line 84.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga_prev', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(138): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 15:50:45 --> Undefined property: stdClass::$harga_prev
+in APPPATH\Views\public\page_detail_komoditas.php on line 84.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga_prev', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(138): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 15:50:46 --> Undefined property: stdClass::$harga_prev
+in APPPATH\Views\public\page_detail_komoditas.php on line 84.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga_prev', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(138): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 15:50:47 --> Undefined property: stdClass::$harga_prev
+in APPPATH\Views\public\page_detail_komoditas.php on line 84.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga_prev', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(138): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 15:50:47 --> Undefined property: stdClass::$harga_prev
+in APPPATH\Views\public\page_detail_komoditas.php on line 84.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga_prev', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(138): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 15:50:48 --> Undefined property: stdClass::$harga_prev
+in APPPATH\Views\public\page_detail_komoditas.php on line 84.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga_prev', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(138): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 15:50:48 --> Undefined property: stdClass::$harga_prev
+in APPPATH\Views\public\page_detail_komoditas.php on line 84.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga_prev', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(138): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 15:50:48 --> Undefined property: stdClass::$harga_prev
+in APPPATH\Views\public\page_detail_komoditas.php on line 84.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga_prev', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(138): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 15:50:49 --> Undefined property: stdClass::$harga_prev
+in APPPATH\Views\public\page_detail_komoditas.php on line 84.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga_prev', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 84, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(138): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,130 @@
+CRITICAL - 2022-12-30 11:13:16 --> Array to string conversion
+in APPPATH\Controllers\Root.php on line 77.
+ 1 APPPATH\Controllers\Root.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Root.php', 77, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->tes()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 14:39:21 --> Undefined offset: 0
+in APPPATH\Controllers\Root.php on line 87.
+ 1 APPPATH\Controllers\Root.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Root.php', 87, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->tes()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 14:39:51 --> Undefined offset: 0
+in APPPATH\Controllers\Root.php on line 87.
+ 1 APPPATH\Controllers\Root.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Root.php', 87, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->tes()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 14:42:53 --> Only variables should be passed by reference
+in APPPATH\Controllers\Root.php on line 100.
+ 1 APPPATH\Controllers\Root.php(100): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Only variables should be passed by reference', 'APPPATH\\Controllers\\Root.php', 100, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->tes()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:21:37 --> Object of class stdClass could not be converted to string
+in APPPATH\Controllers\Root.php on line 287.
+ 1 APPPATH\Controllers\Root.php(287): array_unique([...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:30:24 --> Attempt to assign property 'transaksi' of non-object
+in APPPATH\Controllers\Root.php on line 310.
+ 1 APPPATH\Controllers\Root.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'transaksi\' of non-object', 'APPPATH\\Controllers\\Root.php', 310, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:30:42 --> Attempt to assign property 'harga' of non-object
+in APPPATH\Controllers\Root.php on line 310.
+ 1 APPPATH\Controllers\Root.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'harga\' of non-object', 'APPPATH\\Controllers\\Root.php', 310, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:31:38 --> Attempt to assign property 'harga' of non-object
+in APPPATH\Controllers\Root.php on line 310.
+ 1 APPPATH\Controllers\Root.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'harga\' of non-object', 'APPPATH\\Controllers\\Root.php', 310, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:32:02 --> Attempt to assign property 'harga' of non-object
+in APPPATH\Controllers\Root.php on line 310.
+ 1 APPPATH\Controllers\Root.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'harga\' of non-object', 'APPPATH\\Controllers\\Root.php', 310, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:32:52 --> Attempt to assign property 'harga' of non-object
+in APPPATH\Controllers\Root.php on line 310.
+ 1 APPPATH\Controllers\Root.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'harga\' of non-object', 'APPPATH\\Controllers\\Root.php', 310, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:35:52 --> Attempt to assign property 'harga' of non-object
+in APPPATH\Controllers\Root.php on line 309.
+ 1 APPPATH\Controllers\Root.php(309): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'harga\' of non-object', 'APPPATH\\Controllers\\Root.php', 309, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:36:01 --> Attempt to assign property 'harga' of non-object
+in APPPATH\Controllers\Root.php on line 309.
+ 1 APPPATH\Controllers\Root.php(309): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'harga\' of non-object', 'APPPATH\\Controllers\\Root.php', 309, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:36:08 --> Attempt to assign property 'harga' of non-object
+in APPPATH\Controllers\Root.php on line 310.
+ 1 APPPATH\Controllers\Root.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'harga\' of non-object', 'APPPATH\\Controllers\\Root.php', 310, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:36:53 --> Attempt to assign property 'harga' of non-object
+in APPPATH\Controllers\Root.php on line 310.
+ 1 APPPATH\Controllers\Root.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'harga\' of non-object', 'APPPATH\\Controllers\\Root.php', 310, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:37:04 --> Attempt to assign property 'asdasdasd' of non-object
+in APPPATH\Controllers\Root.php on line 310.
+ 1 APPPATH\Controllers\Root.php(310): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'asdasdasd\' of non-object', 'APPPATH\\Controllers\\Root.php', 310, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:41:22 --> Undefined offset: 2000
+in APPPATH\Controllers\Root.php on line 236.
+ 1 APPPATH\Controllers\Root.php(236): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 2000', 'APPPATH\\Controllers\\Root.php', 236, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->tes()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 16:17:51 --> Undefined offset: 0
+in APPPATH\Controllers\Root.php on line 293.
+ 1 APPPATH\Controllers\Root.php(293): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Root.php', 293, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 16:22:49 --> Undefined variable: laporan
+in APPPATH\Views\root\page_laporan_komoditas_tanggal.php on line 94.
+ 1 APPPATH\Views\root\page_laporan_komoditas_tanggal.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: laporan', 'APPPATH\\Views\\root\\page_laporan_komoditas_tanggal.php', 94, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\root\\page_laporan_komoditas_tanggal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('root/page_laporan_komoditas_tanggal', [], true)
+ 5 APPPATH\Controllers\Root.php(322): view('root/page_laporan_komoditas_tanggal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

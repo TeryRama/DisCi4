@@ -1,0 +1,69 @@
+CRITICAL - 2023-04-07 04:47:35 --> Argument 1 passed to _get_uri() must be of the type string, null given, called in /var/customers/webs/disdagtri/disdagtri.inhilkab.go.id/system/Helpers/url_helper.php on line 87
+in SYSTEMPATH/Helpers/url_helper.php on line 31.
+ 1 SYSTEMPATH/Helpers/url_helper.php(87): _get_uri()
+ 2 SYSTEMPATH/Helpers/url_helper.php(106): site_url()
+ 3 APPPATH/Views/root/_user_panel.php(13): base_url()
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/root/_user_panel.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render()
+ 7 APPPATH/Views/root/page_laporan_komoditas.php(178): view()
+ 8 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/root/page_laporan_komoditas.php')
+ 9 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render()
+11 APPPATH/Controllers/Root.php(292): view()
+12 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->laporan_pangan()
+13 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-07 04:49:02 --> Argument 1 passed to _get_uri() must be of the type string, null given, called in /var/customers/webs/disdagtri/disdagtri.inhilkab.go.id/system/Helpers/url_helper.php on line 87
+in SYSTEMPATH/Helpers/url_helper.php on line 31.
+ 1 SYSTEMPATH/Helpers/url_helper.php(87): _get_uri()
+ 2 SYSTEMPATH/Helpers/url_helper.php(106): site_url()
+ 3 APPPATH/Views/root/_user_panel.php(13): base_url()
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/root/_user_panel.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render()
+ 7 APPPATH/Views/root/page_management_page.php(134): view()
+ 8 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/root/page_management_page.php')
+ 9 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render()
+11 APPPATH/Controllers/Root.php(191): view()
+12 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Root->page_management()
+13 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+14 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+15 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-07 06:51:51 --> Unknown column 'name' in 'field list'
+CRITICAL - 2023-04-07 06:51:51 --> Call to a member function getResult() on bool
+in APPPATH/Controllers/Publik.php on line 430.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->statistik_wilayah()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-07 06:52:10 --> Unknown column 'name' in 'field list'
+CRITICAL - 2023-04-07 06:52:10 --> Call to a member function getResult() on bool
+in APPPATH/Controllers/Publik.php on line 430.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->statistik_wilayah()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-07 06:52:36 --> Unknown column 'name' in 'field list'
+CRITICAL - 2023-04-07 06:52:36 --> Call to a member function getResult() on bool
+in APPPATH/Controllers/Publik.php on line 430.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->statistik_wilayah()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-07 06:59:37 --> Unknown column 'name' in 'field list'
+CRITICAL - 2023-04-07 06:59:37 --> Call to a member function getResult() on bool
+in APPPATH/Controllers/Publik.php on line 430.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->statistik_wilayah()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-07 07:00:28 --> Unknown column 'name' in 'field list'
+CRITICAL - 2023-04-07 07:00:28 --> Call to a member function getResult() on bool
+in APPPATH/Controllers/Publik.php on line 430.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->statistik_wilayah()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

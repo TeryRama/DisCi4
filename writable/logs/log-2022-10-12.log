@@ -1,0 +1,873 @@
+CRITICAL - 2022-10-12 08:42:57 --> Invalid file: _footer.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('_footer.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('_footer', [], true)
+ 3 APPPATH\Views\public\home.php(176): view('_footer')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\home.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home', [], true)
+ 7 APPPATH\Controllers\Publik.php(57): view('home', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-12 09:19:55 --> Unknown column 'pasar.pasar_id' in 'field list'
+CRITICAL - 2022-10-12 09:19:55 --> Unknown column 'pasar.pasar_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pasar`.`pasar_id`, `pasar`.`pasar_nama`, `pasar`.`pasar_kecamatan`, `_area`.`name`
+FROM `tb_pasar`
+JOIN `_area` ON `tb_pasar`.`pasar_kecamatan` = `_area`.`code`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pasar`.`pasar_id`, `pasar`.`pasar_nama`, `pasar`.`pasar_kecamatan`, `_area`.`name`
+FROM `tb_pasar`
+JOIN `_area` ON `tb_pasar`.`pasar_kecamatan` = `_area`.`code`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pasar`.`pasar_id`, `pasar`.`pasar_nama`, `pasar`.`pasar_kecamatan`, `_area`.`name`
+FROM `tb_pasar`
+JOIN `_area` ON `tb_pasar`.`pasar_kecamatan` = `_area`.`code`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pasar`.`pasar_id`, `pasar`.`pasar_nama`, `pasar`.`pasar_kecamatan`, `_area`.`name`
+FROM `tb_pasar`
+JOIN `_area` ON `tb_pasar`.`pasar_kecamatan` = `_area`.`code`', [], false)
+ 5 APPPATH\Models\Pasar_model.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Action.php(31): App\Models\Pasar_model->get_pasar_by_kecamatan()
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 09:29:52 --> Call to undefined method App\Models\Transaksi_model::get_avg_by_kecamatan
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Action.php(34): CodeIgniter\Model->__call('get_avg_by_kecamatan', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 09:49:44 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 51.
+ 1 APPPATH\Controllers\Action.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 51, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 09:50:37 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 52.
+ 1 APPPATH\Controllers\Action.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 52, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 10:04:04 --> Undefined property: stdClass::$komoditas_foto
+in APPPATH\Views\public\home.php on line 89.
+ 1 APPPATH\Views\public\home.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$komoditas_foto', 'APPPATH\\Views\\public\\home.php', 89, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Publik.php(59): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 10:04:24 --> Undefined property: stdClass::$komoditas_satuan
+in APPPATH\Views\public\home.php on line 95.
+ 1 APPPATH\Views\public\home.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$komoditas_satuan', 'APPPATH\\Views\\public\\home.php', 95, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Publik.php(59): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 10:04:34 --> Undefined property: stdClass::$name
+in APPPATH\Views\public\home.php on line 211.
+ 1 APPPATH\Views\public\home.php(211): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$name', 'APPPATH\\Views\\public\\home.php', 211, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Publik.php(59): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 10:40:58 --> Undefined property: stdClass::$avg_prev
+in APPPATH\Controllers\Publik.php on line 48.
+ 1 APPPATH\Controllers\Publik.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_prev', 'APPPATH\\Controllers\\Publik.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 10:47:57 --> Too few arguments to function App\Models\Transaksi_model::count_transaksi_by_komoditas(), 0 passed in C:\xampp\htdocs\pasar\app\Controllers\Publik.php on line 35 and exactly 1 expected
+in APPPATH\Models\Transaksi_model.php on line 102.
+ 1 APPPATH\Controllers\Publik.php(35): App\Models\Transaksi_model->count_transaksi_by_komoditas()
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 10:48:09 --> Too few arguments to function App\Models\Transaksi_model::count_transaksi_by_komoditas(), 0 passed in C:\xampp\htdocs\pasar\app\Controllers\Publik.php on line 35 and exactly 1 expected
+in APPPATH\Models\Transaksi_model.php on line 102.
+ 1 APPPATH\Controllers\Publik.php(35): App\Models\Transaksi_model->count_transaksi_by_komoditas()
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 10:49:40 --> Too few arguments to function App\Models\Transaksi_model::count_transaksi_by_komoditas(), 0 passed in C:\xampp\htdocs\pasar\app\Controllers\Publik.php on line 35 and exactly 1 expected
+in APPPATH\Models\Transaksi_model.php on line 102.
+ 1 APPPATH\Controllers\Publik.php(35): App\Models\Transaksi_model->count_transaksi_by_komoditas()
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 10:49:42 --> Too few arguments to function App\Models\Transaksi_model::count_transaksi_by_komoditas(), 0 passed in C:\xampp\htdocs\pasar\app\Controllers\Publik.php on line 35 and exactly 1 expected
+in APPPATH\Models\Transaksi_model.php on line 102.
+ 1 APPPATH\Controllers\Publik.php(35): App\Models\Transaksi_model->count_transaksi_by_komoditas()
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 10:49:42 --> Too few arguments to function App\Models\Transaksi_model::count_transaksi_by_komoditas(), 0 passed in C:\xampp\htdocs\pasar\app\Controllers\Publik.php on line 35 and exactly 1 expected
+in APPPATH\Models\Transaksi_model.php on line 102.
+ 1 APPPATH\Controllers\Publik.php(35): App\Models\Transaksi_model->count_transaksi_by_komoditas()
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 10:50:15 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getNumRows()
+in APPPATH\Models\Transaksi_model.php on line 108.
+ 1 APPPATH\Controllers\Publik.php(35): App\Models\Transaksi_model->count_transaksi_by_komoditas([...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 10:54:39 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT COUNT(*) AS `numrows`
+FROM `tb_transaksi`
+WHERE `tb_transaksi`.`transaksi_komoditas` = :tb_transaksi.transaksi_komoditas:
+AND `tb_transaksi`.`transaksi_status` = :tb_transaksi.transaksi_status:', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_transaksi`
+WHERE `tb_transaksi`.`transaksi_komoditas` = :tb_transaksi.transaksi_komoditas:
+AND `tb_transaksi`.`transaksi_status` = :tb_transaksi.transaksi_status:', [...], false)
+ 6 APPPATH\Models\Transaksi_model.php(108): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 7 APPPATH\Controllers\Publik.php(35): App\Models\Transaksi_model->count_transaksi_by_komoditas([...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 10:55:51 --> Undefined property: stdClass::$avg_prev
+in APPPATH\Controllers\Publik.php on line 49.
+ 1 APPPATH\Controllers\Publik.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_prev', 'APPPATH\\Controllers\\Publik.php', 49, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 10:57:39 --> Undefined property: stdClass::$avg_prev
+in APPPATH\Controllers\Publik.php on line 53.
+ 1 APPPATH\Controllers\Publik.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_prev', 'APPPATH\\Controllers\\Publik.php', 53, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 10:58:14 --> Undefined property: stdClass::$avg_prev
+in APPPATH\Controllers\Publik.php on line 54.
+ 1 APPPATH\Controllers\Publik.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_prev', 'APPPATH\\Controllers\\Publik.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 10:59:02 --> Undefined property: stdClass::$avg_prev
+in APPPATH\Controllers\Publik.php on line 53.
+ 1 APPPATH\Controllers\Publik.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_prev', 'APPPATH\\Controllers\\Publik.php', 53, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 10:59:18 --> Undefined property: stdClass::$avg_prev
+in APPPATH\Controllers\Publik.php on line 53.
+ 1 APPPATH\Controllers\Publik.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_prev', 'APPPATH\\Controllers\\Publik.php', 53, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:02:25 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 48.
+ 1 APPPATH\Controllers\Action.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:03:44 --> Attempt to assign property 'cek' of non-object
+in APPPATH\Controllers\Publik.php on line 33.
+ 1 APPPATH\Controllers\Publik.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'cek\' of non-object', 'APPPATH\\Controllers\\Publik.php', 33, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:04:15 --> Attempt to assign property 'cek' of non-object
+in APPPATH\Controllers\Publik.php on line 33.
+ 1 APPPATH\Controllers\Publik.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'cek\' of non-object', 'APPPATH\\Controllers\\Publik.php', 33, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:11:48 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 48.
+ 1 APPPATH\Controllers\Action.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:13:58 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 50.
+ 1 APPPATH\Controllers\Action.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 50, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:14:03 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 50.
+ 1 APPPATH\Controllers\Action.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 50, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:14:04 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 50.
+ 1 APPPATH\Controllers\Action.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 50, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:14:23 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 50.
+ 1 APPPATH\Controllers\Action.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 50, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:14:26 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 50.
+ 1 APPPATH\Controllers\Action.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 50, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:14:28 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 50.
+ 1 APPPATH\Controllers\Action.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 50, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:14:59 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 50.
+ 1 APPPATH\Controllers\Action.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 50, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:15:08 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 50.
+ 1 APPPATH\Controllers\Action.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 50, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:15:36 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 48.
+ 1 APPPATH\Controllers\Action.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:16:00 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 48.
+ 1 APPPATH\Controllers\Action.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:16:20 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 48.
+ 1 APPPATH\Controllers\Action.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:16:22 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 48.
+ 1 APPPATH\Controllers\Action.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:16:24 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 48.
+ 1 APPPATH\Controllers\Action.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:16:26 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 48.
+ 1 APPPATH\Controllers\Action.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:16:28 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 48.
+ 1 APPPATH\Controllers\Action.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:16:33 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 48.
+ 1 APPPATH\Controllers\Action.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:17:15 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 48.
+ 1 APPPATH\Controllers\Action.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:18:53 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 48.
+ 1 APPPATH\Controllers\Action.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:19:58 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 48.
+ 1 APPPATH\Controllers\Action.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:20:52 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 48.
+ 1 APPPATH\Controllers\Action.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 48, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:22:22 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-12 11:25:03 --> Undefined property: stdClass::$avg_prev
+in APPPATH\Controllers\Action.php on line 49.
+ 1 APPPATH\Controllers\Action.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_prev', 'APPPATH\\Controllers\\Action.php', 49, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:46:24 --> Undefined property: stdClass::$avg_prev
+in APPPATH\Controllers\Action.php on line 86.
+ 1 APPPATH\Controllers\Action.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_prev', 'APPPATH\\Controllers\\Action.php', 86, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:48:21 --> Undefined property: stdClass::$avg_prev
+in APPPATH\Controllers\Action.php on line 86.
+ 1 APPPATH\Controllers\Action.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_prev', 'APPPATH\\Controllers\\Action.php', 86, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:48:28 --> Undefined property: stdClass::$avg_prev
+in APPPATH\Controllers\Action.php on line 86.
+ 1 APPPATH\Controllers\Action.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_prev', 'APPPATH\\Controllers\\Action.php', 86, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:48:52 --> Undefined property: stdClass::$avg_prev
+in APPPATH\Controllers\Action.php on line 86.
+ 1 APPPATH\Controllers\Action.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_prev', 'APPPATH\\Controllers\\Action.php', 86, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:49:25 --> Undefined property: stdClass::$avg_prev
+in APPPATH\Controllers\Action.php on line 86.
+ 1 APPPATH\Controllers\Action.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_prev', 'APPPATH\\Controllers\\Action.php', 86, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:54:20 --> Undefined property: stdClass::$avg_prev
+in APPPATH\Controllers\Action.php on line 86.
+ 1 APPPATH\Controllers\Action.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_prev', 'APPPATH\\Controllers\\Action.php', 86, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:58:18 --> Undefined property: stdClass::$avg_prev
+in APPPATH\Controllers\Action.php on line 88.
+ 1 APPPATH\Controllers\Action.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_prev', 'APPPATH\\Controllers\\Action.php', 88, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:58:56 --> Undefined property: stdClass::$avg_prev
+in APPPATH\Controllers\Action.php on line 88.
+ 1 APPPATH\Controllers\Action.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_prev', 'APPPATH\\Controllers\\Action.php', 88, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 11:58:59 --> Undefined property: stdClass::$avg_prev
+in APPPATH\Controllers\Action.php on line 88.
+ 1 APPPATH\Controllers\Action.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_prev', 'APPPATH\\Controllers\\Action.php', 88, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 12:08:36 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\public\home.php on line 87.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Publik.php(67): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 12:08:43 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\public\home.php on line 87.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Publik.php(67): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 13:26:53 --> Creating default object from empty value
+in APPPATH\Controllers\Action.php on line 106.
+ 1 APPPATH\Controllers\Action.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'APPPATH\\Controllers\\Action.php', 106, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 13:47:24 --> Invalid file: head.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('head.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('head', [], true)
+ 3 APPPATH\Views\public\home.php(3): view('head')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\home.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home', [], true)
+ 7 APPPATH\Controllers\Publik.php(67): view('home', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 13:54:44 --> Undefined property: stdClass::$status
+in APPPATH\Views\public\home.php on line 33.
+ 1 APPPATH\Views\public\home.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status', 'APPPATH\\Views\\public\\home.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Publik.php(79): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->data_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 13:56:31 --> Invalid file: home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Publik.php(79): view('home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->data_komoditas()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 13:57:07 --> Invalid file: home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Publik.php(79): view('home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->data_komoditas()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 14:20:20 --> Too few arguments to function App\Models\Komoditas_model::get_komoditas_by_grup(), 0 passed in C:\xampp\htdocs\pasar\app\Controllers\Publik.php on line 79 and exactly 1 expected
+in APPPATH\Models\Komoditas_model.php on line 79.
+ 1 APPPATH\Controllers\Publik.php(79): App\Models\Komoditas_model->get_komoditas_by_grup()
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->data_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 14:20:42 --> Undefined property: stdClass::$komoditas_id
+in APPPATH\Controllers\Publik.php on line 79.
+ 1 APPPATH\Controllers\Publik.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$komoditas_id', 'APPPATH\\Controllers\\Publik.php', 79, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->data_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 14:21:31 --> Undefined offset: 6
+in APPPATH\Controllers\Publik.php on line 79.
+ 1 APPPATH\Controllers\Publik.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 6', 'APPPATH\\Controllers\\Publik.php', 79, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->data_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 14:22:20 --> Undefined offset: 6
+in APPPATH\Controllers\Publik.php on line 79.
+ 1 APPPATH\Controllers\Publik.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 6', 'APPPATH\\Controllers\\Publik.php', 79, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->data_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 14:22:21 --> Undefined offset: 6
+in APPPATH\Controllers\Publik.php on line 79.
+ 1 APPPATH\Controllers\Publik.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 6', 'APPPATH\\Controllers\\Publik.php', 79, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->data_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 14:22:27 --> Undefined offset: 6
+in APPPATH\Controllers\Publik.php on line 79.
+ 1 APPPATH\Controllers\Publik.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 6', 'APPPATH\\Controllers\\Publik.php', 79, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->data_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 14:22:53 --> Undefined offset: 6
+in APPPATH\Controllers\Publik.php on line 79.
+ 1 APPPATH\Controllers\Publik.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 6', 'APPPATH\\Controllers\\Publik.php', 79, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->data_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 15:58:57 --> Undefined property: stdClass::$rata_harga
+in APPPATH\Controllers\Publik.php on line 93.
+ 1 APPPATH\Controllers\Publik.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$rata_harga', 'APPPATH\\Controllers\\Publik.php', 93, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 15:59:43 --> Undefined property: stdClass::$transaksi_tanggal
+in APPPATH\Controllers\Publik.php on line 93.
+ 1 APPPATH\Controllers\Publik.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$transaksi_tanggal', 'APPPATH\\Controllers\\Publik.php', 93, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 16:01:32 --> Undefined property: stdClass::$transaksi_tanggal
+in APPPATH\Controllers\Publik.php on line 93.
+ 1 APPPATH\Controllers\Publik.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$transaksi_tanggal', 'APPPATH\\Controllers\\Publik.php', 93, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 16:09:14 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 329.
+ 1 SYSTEMPATH\Database\Query.php(329): implode(',', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('SELECT ROUND(AVG(transaksi_harga)) as rata_harga
+FROM `tb_transaksi`
+WHERE `transaksi_komoditas` = :transaksi_komoditas:
+AND `transaksi_tanggal` = :transaksi_tanggal:
+AND `transaksi_status` = :transaksi_status:', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROUND(AVG(transaksi_harga)) as rata_harga
+FROM `tb_transaksi`
+WHERE `transaksi_komoditas` = :transaksi_komoditas:
+AND `transaksi_tanggal` = :transaksi_tanggal:
+AND `transaksi_status` = :transaksi_status:', [...], false)
+ 6 APPPATH\Models\Transaksi_model.php(97): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH\Controllers\Publik.php(93): App\Models\Transaksi_model->get_harga_by_komoditas_date(1, [...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 16:09:29 --> Undefined property: stdClass::$transaksi_tanggal
+in APPPATH\Controllers\Publik.php on line 95.
+ 1 APPPATH\Controllers\Publik.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$transaksi_tanggal', 'APPPATH\\Controllers\\Publik.php', 95, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 16:10:18 --> Undefined property: stdClass::$transaksi_tanggal
+in APPPATH\Controllers\Publik.php on line 95.
+ 1 APPPATH\Controllers\Publik.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$transaksi_tanggal', 'APPPATH\\Controllers\\Publik.php', 95, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 16:11:13 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Publik.php on line 93.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 16:11:59 --> Undefined property: stdClass::$transaksi_tanggal
+in APPPATH\Controllers\Publik.php on line 96.
+ 1 APPPATH\Controllers\Publik.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$transaksi_tanggal', 'APPPATH\\Controllers\\Publik.php', 96, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 16:17:19 --> Undefined property: stdClass::$harga
+in APPPATH\Controllers\Publik.php on line 99.
+ 1 APPPATH\Controllers\Publik.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga', 'APPPATH\\Controllers\\Publik.php', 99, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 16:22:35 --> Undefined property: stdClass::$pasar_nama
+in APPPATH\Controllers\Publik.php on line 100.
+ 1 APPPATH\Controllers\Publik.php(100): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$pasar_nama', 'APPPATH\\Controllers\\Publik.php', 100, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 16:28:18 --> Undefined property: stdClass::$harga
+in APPPATH\Controllers\Publik.php on line 99.
+ 1 APPPATH\Controllers\Publik.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga', 'APPPATH\\Controllers\\Publik.php', 99, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-12 16:45:10 --> Unknown column 'pasar.pasar_nama' in 'field list'
+CRITICAL - 2022-10-12 16:45:10 --> Unknown column 'pasar.pasar_nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tb_transaksi`.`transaksi_harga`, `pasar`.`pasar_nama`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `transaksi_status` = \'1\'
+AND `transaksi_komoditas` = 1
+AND `transaksi_tanggal` = \'2022-10-12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_transaksi`.`transaksi_harga`, `pasar`.`pasar_nama`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `transaksi_status` = \'1\'
+AND `transaksi_komoditas` = 1
+AND `transaksi_tanggal` = \'2022-10-12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_transaksi`.`transaksi_harga`, `pasar`.`pasar_nama`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `transaksi_status` = \'1\'
+AND `transaksi_komoditas` = 1
+AND `transaksi_tanggal` = \'2022-10-12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tb_transaksi`.`transaksi_harga`, `pasar`.`pasar_nama`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+WHERE `transaksi_status` = :transaksi_status:
+AND `transaksi_komoditas` = :transaksi_komoditas:
+AND `transaksi_tanggal` = :transaksi_tanggal:', [...], false)
+ 5 APPPATH\Models\Transaksi_model.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Publik.php(106): App\Models\Transaksi_model->get_transaksi_by_komoditas_date(1, '2022-10-12')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 17:02:55 --> Undefined property: stdClass::$pasar_id
+in APPPATH\Controllers\Publik.php on line 109.
+ 1 APPPATH\Controllers\Publik.php(109): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$pasar_id', 'APPPATH\\Controllers\\Publik.php', 109, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 17:09:55 --> Undefined property: stdClass::$transaksi_harga
+in APPPATH\Controllers\Publik.php on line 115.
+ 1 APPPATH\Controllers\Publik.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$transaksi_harga', 'APPPATH\\Controllers\\Publik.php', 115, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 17:10:30 --> Undefined property: stdClass::$transaksi_harga
+in APPPATH\Controllers\Publik.php on line 115.
+ 1 APPPATH\Controllers\Publik.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$transaksi_harga', 'APPPATH\\Controllers\\Publik.php', 115, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:17:42 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 89.
+ 1 APPPATH\Controllers\Action.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:17:47 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 89.
+ 1 APPPATH\Controllers\Action.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:17:52 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 89.
+ 1 APPPATH\Controllers\Action.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:17:59 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 89.
+ 1 APPPATH\Controllers\Action.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:18:02 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 89.
+ 1 APPPATH\Controllers\Action.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:18:27 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 89.
+ 1 APPPATH\Controllers\Action.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:18:41 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 89.
+ 1 APPPATH\Controllers\Action.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:19:46 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 89.
+ 1 APPPATH\Controllers\Action.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:24:08 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 89.
+ 1 APPPATH\Controllers\Action.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:24:26 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 89.
+ 1 APPPATH\Controllers\Action.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:25:05 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 89.
+ 1 APPPATH\Controllers\Action.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:28:27 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 89.
+ 1 APPPATH\Controllers\Action.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:29:20 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 89.
+ 1 APPPATH\Controllers\Action.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:33:16 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 89.
+ 1 APPPATH\Controllers\Action.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 89, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:38:20 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 90.
+ 1 APPPATH\Controllers\Action.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 90, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:41:37 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 90.
+ 1 APPPATH\Controllers\Action.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 90, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:42:17 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 90.
+ 1 APPPATH\Controllers\Action.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 90, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:42:21 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 90.
+ 1 APPPATH\Controllers\Action.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 90, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:43:12 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 90.
+ 1 APPPATH\Controllers\Action.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 90, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:43:15 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 90.
+ 1 APPPATH\Controllers\Action.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 90, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:44:31 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 134.
+ 1 APPPATH\Controllers\Action.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 134, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:45:02 --> Undefined variable: w
+in APPPATH\Controllers\Action.php on line 134.
+ 1 APPPATH\Controllers\Action.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: w', 'APPPATH\\Controllers\\Action.php', 134, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:47:08 --> Undefined variable: av
+in APPPATH\Controllers\Action.php on line 118.
+ 1 APPPATH\Controllers\Action.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: av', 'APPPATH\\Controllers\\Action.php', 118, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:47:17 --> Undefined property: stdClass::$harga_rata
+in APPPATH\Controllers\Action.php on line 118.
+ 1 APPPATH\Controllers\Action.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$harga_rata', 'APPPATH\\Controllers\\Action.php', 118, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-12 19:55:32 --> Undefined property: stdClass::$avg_harga
+in APPPATH\Views\public\page_detail_komoditas.php on line 38.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$avg_harga', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 38, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(127): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

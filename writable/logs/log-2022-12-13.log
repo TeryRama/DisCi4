@@ -1,0 +1,526 @@
+CRITICAL - 2022-12-13 11:55:46 --> Call to undefined method App\Models\Barang_penting_model::edit_barang
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Backend.php(1542): CodeIgniter\Model->__call('edit_barang', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_barang_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 12:10:24 --> Undefined property: stdClass::$barang_het_update_time
+in APPPATH\Controllers\Backend.php on line 1598.
+ 1 APPPATH\Controllers\Backend.php(1598): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$barang_het_update_time', 'APPPATH\\Controllers\\Backend.php', 1598, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_barang_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 12:15:32 --> Undefined property: stdClass::$barang_het_update_time
+in APPPATH\Controllers\Backend.php on line 1604.
+ 1 APPPATH\Controllers\Backend.php(1604): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$barang_het_update_time', 'APPPATH\\Controllers\\Backend.php', 1604, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_barang_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 12:15:52 --> Unknown column 'barang_het' in 'field list'
+CRITICAL - 2022-12-13 12:15:52 --> Unknown column 'barang_het' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_het`
+FROM `tb_komoditas`
+WHERE `barang_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_het`
+FROM `tb_komoditas`
+WHERE `barang_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_het`
+FROM `tb_komoditas`
+WHERE `barang_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_het`
+FROM `tb_komoditas`
+WHERE `barang_id` = :barang_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1524): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 13:21:52 --> array_push() expects parameter 1 to be array, null given
+in APPPATH\Controllers\Backend.php on line 1607.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() expects parameter 1 to be array, null given', 'APPPATH\\Controllers\\Backend.php', 1607, [...])
+ 2 APPPATH\Controllers\Backend.php(1607): array_push(null, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_barang_penting()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 13:22:03 --> array_push() expects parameter 1 to be array, null given
+in APPPATH\Controllers\Backend.php on line 1607.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() expects parameter 1 to be array, null given', 'APPPATH\\Controllers\\Backend.php', 1607, [...])
+ 2 APPPATH\Controllers\Backend.php(1607): array_push(null, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_barang_penting()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 14:38:45 --> Unknown column 'komoditas_grup' in 'where clause'
+CRITICAL - 2022-12-13 14:38:45 --> Unknown column 'komoditas_grup' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'13\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'13\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'13\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_grup` = :komoditas_grup:
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\Barang_penting_model.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1618): App\Models\Barang_penting_model->get_all_barang_by_filter(20, 'C:\\xampp\\htdocs\\pasar', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 14:38:47 --> Unknown column 'komoditas_grup' in 'where clause'
+CRITICAL - 2022-12-13 14:38:47 --> Unknown column 'komoditas_grup' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'12\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'12\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'12\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_grup` = :komoditas_grup:
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\Barang_penting_model.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1618): App\Models\Barang_penting_model->get_all_barang_by_filter(20, 'C:\\xampp\\htdocs\\pasar', '12')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 14:38:49 --> Unknown column 'komoditas_grup' in 'where clause'
+CRITICAL - 2022-12-13 14:38:49 --> Unknown column 'komoditas_grup' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'13\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'13\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'13\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_grup` = :komoditas_grup:
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\Barang_penting_model.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1618): App\Models\Barang_penting_model->get_all_barang_by_filter(20, 'C:\\xampp\\htdocs\\pasar', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 14:38:52 --> Unknown column 'komoditas_grup' in 'where clause'
+CRITICAL - 2022-12-13 14:38:52 --> Unknown column 'komoditas_grup' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'14\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'14\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'14\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_grup` = :komoditas_grup:
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\Barang_penting_model.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1618): App\Models\Barang_penting_model->get_all_barang_by_filter(20, 'C:\\xampp\\htdocs\\pasar', '14')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 14:46:19 --> Unknown column 'komoditas_grup' in 'where clause'
+CRITICAL - 2022-12-13 14:46:19 --> Unknown column 'komoditas_grup' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'13\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'13\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'13\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_grup` = :komoditas_grup:
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\Barang_penting_model.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1618): App\Models\Barang_penting_model->get_all_barang_by_filter(20, 'C:\\xampp\\htdocs\\pasar', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 14:47:10 --> Unknown column 'komoditas_grup' in 'where clause'
+CRITICAL - 2022-12-13 14:47:10 --> Unknown column 'komoditas_grup' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'14\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'14\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'14\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_grup` = :komoditas_grup:
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\Barang_penting_model.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1618): App\Models\Barang_penting_model->get_all_barang_by_filter(20, 'C:\\xampp\\htdocs\\pasar', '14')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 14:47:12 --> Unknown column 'komoditas_grup' in 'where clause'
+CRITICAL - 2022-12-13 14:47:12 --> Unknown column 'komoditas_grup' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'13\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'13\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'13\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_grup` = :komoditas_grup:
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\Barang_penting_model.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1618): App\Models\Barang_penting_model->get_all_barang_by_filter(20, 'C:\\xampp\\htdocs\\pasar', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 14:48:22 --> Unknown column 'komoditas_grup' in 'where clause'
+CRITICAL - 2022-12-13 14:48:22 --> Unknown column 'komoditas_grup' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'13\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'13\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'13\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_grup` = :komoditas_grup:
+ORDER BY `barang_create_time` DESC
+ LIMIT 10', [...], false)
+ 5 APPPATH\Models\Barang_penting_model.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1618): App\Models\Barang_penting_model->get_all_barang_by_filter(10, 'C:\\xampp\\htdocs\\pasar', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 14:48:24 --> Unknown column 'komoditas_grup' in 'where clause'
+CRITICAL - 2022-12-13 14:48:24 --> Unknown column 'komoditas_grup' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'12\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'12\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'12\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_grup` = :komoditas_grup:
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\Barang_penting_model.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1618): App\Models\Barang_penting_model->get_all_barang_by_filter(20, 'C:\\xampp\\htdocs\\pasar', '12')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 14:48:29 --> Unknown column 'komoditas_grup' in 'where clause'
+CRITICAL - 2022-12-13 14:48:29 --> Unknown column 'komoditas_grup' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'14\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'14\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = \'14\'
+ORDER BY `barang_create_time` DESC
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_grup` = :komoditas_grup:
+ORDER BY `barang_create_time` DESC
+ LIMIT 20', [...], false)
+ 5 APPPATH\Models\Barang_penting_model.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1618): App\Models\Barang_penting_model->get_all_barang_by_filter(20, 'C:\\xampp\\htdocs\\pasar', '14')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 14:50:53 --> Unknown column 'komoditas_grup' in 'where clause'
+CRITICAL - 2022-12-13 14:50:53 --> Unknown column 'komoditas_grup' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = 0
+ORDER BY `barang_create_time` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = 0
+ORDER BY `barang_create_time` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_grup` = 0
+ORDER BY `barang_create_time` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_grup`, `barang_het`, `barang_foto`, `barang_satuan`, `barang_het_update_time`, `grup_komoditas_nama`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_grup` = :komoditas_grup:
+ORDER BY `barang_create_time` DESC', [...], false)
+ 5 APPPATH\Models\Barang_penting_model.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1619): App\Models\Barang_penting_model->get_all_barang_by_filter(0, null, false)
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 15:15:08 --> Undefined property: stdClass::$distributor_pasar
+in APPPATH\Controllers\Backend.php on line 1623.
+ 1 APPPATH\Controllers\Backend.php(1623): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$distributor_pasar', 'APPPATH\\Controllers\\Backend.php', 1623, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_distributor_barang_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 15:15:38 --> Undefined property: stdClass::$distributor_pasar
+in APPPATH\Controllers\Backend.php on line 1623.
+ 1 APPPATH\Controllers\Backend.php(1623): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$distributor_pasar', 'APPPATH\\Controllers\\Backend.php', 1623, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_distributor_barang_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 15:15:47 --> Call to undefined method App\Models\Jualan_model::count_jualan_by_distributor
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Backend.php(1624): CodeIgniter\Model->__call('count_jualan_by_distributor', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_distributor_barang_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

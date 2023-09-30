@@ -1,0 +1,689 @@
+CRITICAL - 2022-12-14 08:39:23 --> Call to undefined function App\Controllers\array_icount_values()
+in APPPATH\Controllers\Backend.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->index()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 10:16:35 --> Call to undefined method App\Models\Jualan_model::add_relasi
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Backend.php(1814): CodeIgniter\Model->__call('add_relasi', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_relasi_distributor_barang_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 10:16:56 --> Undefined index: jualan_create_by
+in APPPATH\Controllers\Backend.php on line 1815.
+ 1 APPPATH\Controllers\Backend.php(1815): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: jualan_create_by', 'APPPATH\\Controllers\\Backend.php', 1815, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->add_relasi_distributor_barang_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 10:26:36 --> Undefined property: stdClass::$jualan_id
+in APPPATH\Controllers\Backend.php on line 1789.
+ 1 APPPATH\Controllers\Backend.php(1789): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$jualan_id', 'APPPATH\\Controllers\\Backend.php', 1789, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_relasi_distributor_barang_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 10:27:03 --> Undefined property: stdClass::$komoditas_nama
+in APPPATH\Controllers\Backend.php on line 1790.
+ 1 APPPATH\Controllers\Backend.php(1790): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$komoditas_nama', 'APPPATH\\Controllers\\Backend.php', 1790, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_relasi_distributor_barang_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 15:17:56 --> Call to undefined method App\Models\Barang_penting_model::get_barang_by_distributor
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Backend.php(1864): CodeIgniter\Model->__call('get_barang_by_distributor', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_harga_barang_penting_distributor_harian()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 15:19:36 --> Table 'pasar.tb_distributor' doesn't exist
+CRITICAL - 2022-12-14 15:19:36 --> Table 'pasar.tb_distributor' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `distributor_status` = :distributor_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_status` = :komoditas_status:
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200', [...], false)
+ 5 APPPATH\Models\Relasi_barang_penting_model.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1864): App\Models\Relasi_barang_penting_model->get_barang_by_distributor(200, '1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_harga_barang_penting_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 15:21:46 --> Table 'pasar.tb_distributor' doesn't exist
+CRITICAL - 2022-12-14 15:21:46 --> Table 'pasar.tb_distributor' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `distributor_status` = :distributor_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_status` = :komoditas_status:
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200', [...], false)
+ 5 APPPATH\Models\Relasi_barang_penting_model.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1864): App\Models\Relasi_barang_penting_model->get_barang_by_distributor(200, '1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_harga_barang_penting_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 15:21:55 --> Table 'pasar.tb_distributor' doesn't exist
+CRITICAL - 2022-12-14 15:21:56 --> Table 'pasar.tb_distributor' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `distributor_status` = :distributor_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_status` = :komoditas_status:
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200', [...], false)
+ 5 APPPATH\Models\Relasi_barang_penting_model.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1864): App\Models\Relasi_barang_penting_model->get_barang_by_distributor(200, '1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_harga_barang_penting_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 15:22:44 --> Table 'pasar.tb_distributor' doesn't exist
+CRITICAL - 2022-12-14 15:22:44 --> Table 'pasar.tb_distributor' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `distributor_status` = :distributor_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_status` = :komoditas_status:
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200', [...], false)
+ 5 APPPATH\Models\Relasi_barang_penting_model.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1864): App\Models\Relasi_barang_penting_model->get_barang_by_distributor(200, '1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_harga_barang_penting_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 15:23:26 --> Table 'pasar.tb_distributor' doesn't exist
+CRITICAL - 2022-12-14 15:23:26 --> Table 'pasar.tb_distributor' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `komoditas_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `distributor_status` = :distributor_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `komoditas_status` = :komoditas_status:
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200', [...], false)
+ 5 APPPATH\Models\Relasi_barang_penting_model.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1864): App\Models\Relasi_barang_penting_model->get_barang_by_distributor(200, '1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_harga_barang_penting_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 15:24:59 --> Table 'pasar.tb_distributor' doesn't exist
+CRITICAL - 2022-12-14 15:24:59 --> Table 'pasar.tb_distributor' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `barang_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `barang_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = \'1\'
+AND `relasi_status` = \'1\'
+AND `distributor_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+AND `barang_status` = \'1\'
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_het`, `barang_foto`, `barang_satuan`
+FROM `tb_relasi_barang_penting`
+JOIN `tb_distributor` ON `tb_relasi_barang_penting`.`relasi_distributor` = `tb_distributor`.`distributor_id`
+JOIN `tb_barang_penting` ON `tb_relasi_barang_penting`.`relasi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `relasi_distributor` = :relasi_distributor:
+AND `relasi_status` = :relasi_status:
+AND `distributor_status` = :distributor_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+AND `barang_status` = :barang_status:
+ORDER BY `relasi_create_time` DESC
+ LIMIT 200', [...], false)
+ 5 APPPATH\Models\Relasi_barang_penting_model.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1864): App\Models\Relasi_barang_penting_model->get_barang_by_distributor(200, '1')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_harga_barang_penting_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 16:22:43 --> Unknown column 'transaksi_barang' in 'field list'
+CRITICAL - 2022-12-14 16:22:43 --> Unknown column 'transaksi_barang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', \'3\', \'85000\', \'1\', \'85000\', \'\', \'1\', \'root\', \'2022-12-14 16:22:43\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', \'3\', \'85000\', \'1\', \'85000\', \'\', \'1\', \'root\', \'2022-12-14 16:22:43\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', \'3\', \'85000\', \'1\', \'85000\', \'\', \'1\', \'root\', \'2022-12-14 16:22:43\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_barang:, :transaksi_het:, :transaksi_distributor:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_barang_penting_model.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(1926): App\Models\Transaksi_barang_penting_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 16:22:52 --> Unknown column 'transaksi_barang' in 'field list'
+CRITICAL - 2022-12-14 16:22:52 --> Unknown column 'transaksi_barang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', \'3\', \'85000\', \'1\', \'85000\', \'\', \'1\', \'root\', \'2022-12-14 16:22:52\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', \'3\', \'85000\', \'1\', \'85000\', \'\', \'1\', \'root\', \'2022-12-14 16:22:52\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', \'3\', \'85000\', \'1\', \'85000\', \'\', \'1\', \'root\', \'2022-12-14 16:22:52\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_barang:, :transaksi_het:, :transaksi_distributor:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_barang_penting_model.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(1926): App\Models\Transaksi_barang_penting_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 16:23:23 --> Unknown column 'transaksi_barang' in 'field list'
+CRITICAL - 2022-12-14 16:23:23 --> Unknown column 'transaksi_barang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', \'3\', \'85000\', \'1\', \'32\', \'\', \'1\', \'root\', \'2022-12-14 16:23:23\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', \'3\', \'85000\', \'1\', \'32\', \'\', \'1\', \'root\', \'2022-12-14 16:23:23\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', \'3\', \'85000\', \'1\', \'32\', \'\', \'1\', \'root\', \'2022-12-14 16:23:23\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_barang:, :transaksi_het:, :transaksi_distributor:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_barang_penting_model.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(1926): App\Models\Transaksi_barang_penting_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 16:24:02 --> Unknown column 'transaksi_barang' in 'field list'
+CRITICAL - 2022-12-14 16:24:02 --> Unknown column 'transaksi_barang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', \'3\', \'85000\', \'1\', \'32\', \'\', \'1\', \'root\', \'2022-12-14 16:24:02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', \'3\', \'85000\', \'1\', \'32\', \'\', \'1\', \'root\', \'2022-12-14 16:24:02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', \'3\', \'85000\', \'1\', \'32\', \'\', \'1\', \'root\', \'2022-12-14 16:24:02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_barang:, :transaksi_het:, :transaksi_distributor:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_barang_penting_model.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(1926): App\Models\Transaksi_barang_penting_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 16:26:57 --> Unknown column 'transaksi_barang' in 'field list'
+CRITICAL - 2022-12-14 16:26:57 --> Unknown column 'transaksi_barang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', 0, \'85000\', 0, \'85000\', \'gas pol bos q\', \'1\', \'root\', \'2022-12-14 16:26:57\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', 0, \'85000\', 0, \'85000\', \'gas pol bos q\', \'1\', \'root\', \'2022-12-14 16:26:57\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', 0, \'85000\', 0, \'85000\', \'gas pol bos q\', \'1\', \'root\', \'2022-12-14 16:26:57\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_barang:, :transaksi_het:, :transaksi_distributor:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_barang_penting_model.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(1926): App\Models\Transaksi_barang_penting_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 16:27:57 --> Column 'transaksi_id' cannot be null
+CRITICAL - 2022-12-14 16:27:57 --> Column 'transaksi_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', \'2\', \'85000\', \'1\', \'85000\', \'gas pol bos q\', \'1\', \'root\', \'2022-12-14 16:27:57\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', \'2\', \'85000\', \'1\', \'85000\', \'gas pol bos q\', \'1\', \'root\', \'2022-12-14 16:27:57\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (NULL, \'2022-12-14\', \'2\', \'85000\', \'1\', \'85000\', \'gas pol bos q\', \'1\', \'root\', \'2022-12-14 16:27:57\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_penting` (`transaksi_id`, `transaksi_tanggal`, `transaksi_barang`, `transaksi_het`, `transaksi_distributor`, `transaksi_harga`, `transaksi_catatan`, `transaksi_status`, `transaksi_create_by`, `transaksi_create_time`) VALUES (:transaksi_id:, :transaksi_tanggal:, :transaksi_barang:, :transaksi_het:, :transaksi_distributor:, :transaksi_harga:, :transaksi_catatan:, :transaksi_status:, :transaksi_create_by:, :transaksi_create_time:)', [...], false)
+ 5 APPPATH\Models\Transaksi_barang_penting_model.php(29): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Backend.php(1926): App\Models\Transaksi_barang_penting_model->add_transaksi([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->edit_harga_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 16:28:37 --> Unknown column 'transaksi_komoditas' in 'where clause'
+CRITICAL - 2022-12-14 16:28:37 --> Unknown column 'transaksi_komoditas' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = \'1\'
+AND `transaksi_komoditas` = \'3\'
+AND `transaksi_tanggal` = \'2022-12-14\'
+AND `transaksi_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = \'1\'
+AND `transaksi_komoditas` = \'3\'
+AND `transaksi_tanggal` = \'2022-12-14\'
+AND `transaksi_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = \'1\'
+AND `transaksi_komoditas` = \'3\'
+AND `transaksi_tanggal` = \'2022-12-14\'
+AND `transaksi_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = :transaksi_distributor:
+AND `transaksi_komoditas` = :transaksi_komoditas:
+AND `transaksi_tanggal` = :transaksi_tanggal:
+AND `transaksi_status` = :transaksi_status:', [...], false)
+ 5 APPPATH\Models\Transaksi_barang_penting_model.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1877): App\Models\Transaksi_barang_penting_model->get_transaksi_by_distributor_barang_date('1', '3', '2022-12-14')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_harga_barang_penting_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 16:28:38 --> Unknown column 'transaksi_komoditas' in 'where clause'
+CRITICAL - 2022-12-14 16:28:38 --> Unknown column 'transaksi_komoditas' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = \'1\'
+AND `transaksi_komoditas` = \'3\'
+AND `transaksi_tanggal` = \'2022-12-14\'
+AND `transaksi_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = \'1\'
+AND `transaksi_komoditas` = \'3\'
+AND `transaksi_tanggal` = \'2022-12-14\'
+AND `transaksi_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = \'1\'
+AND `transaksi_komoditas` = \'3\'
+AND `transaksi_tanggal` = \'2022-12-14\'
+AND `transaksi_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = :transaksi_distributor:
+AND `transaksi_komoditas` = :transaksi_komoditas:
+AND `transaksi_tanggal` = :transaksi_tanggal:
+AND `transaksi_status` = :transaksi_status:', [...], false)
+ 5 APPPATH\Models\Transaksi_barang_penting_model.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1877): App\Models\Transaksi_barang_penting_model->get_transaksi_by_distributor_barang_date('1', '3', '2022-12-14')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_harga_barang_penting_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 16:30:11 --> Unknown column 'transaksi_komoditas' in 'where clause'
+CRITICAL - 2022-12-14 16:30:11 --> Unknown column 'transaksi_komoditas' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = \'1\'
+AND `transaksi_komoditas` = \'3\'
+AND `transaksi_tanggal` = \'2022-12-14\'
+AND `transaksi_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = \'1\'
+AND `transaksi_komoditas` = \'3\'
+AND `transaksi_tanggal` = \'2022-12-14\'
+AND `transaksi_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = \'1\'
+AND `transaksi_komoditas` = \'3\'
+AND `transaksi_tanggal` = \'2022-12-14\'
+AND `transaksi_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = :transaksi_distributor:
+AND `transaksi_komoditas` = :transaksi_komoditas:
+AND `transaksi_tanggal` = :transaksi_tanggal:
+AND `transaksi_status` = :transaksi_status:', [...], false)
+ 5 APPPATH\Models\Transaksi_barang_penting_model.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1877): App\Models\Transaksi_barang_penting_model->get_transaksi_by_distributor_barang_date('1', '3', '2022-12-14')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_harga_barang_penting_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 16:30:40 --> Unknown column 'transaksi_komoditas' in 'where clause'
+CRITICAL - 2022-12-14 16:30:40 --> Unknown column 'transaksi_komoditas' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = \'1\'
+AND `transaksi_komoditas` = \'3\'
+AND `transaksi_tanggal` = \'2022-12-14\'
+AND `transaksi_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = \'1\'
+AND `transaksi_komoditas` = \'3\'
+AND `transaksi_tanggal` = \'2022-12-14\'
+AND `transaksi_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = \'1\'
+AND `transaksi_komoditas` = \'3\'
+AND `transaksi_tanggal` = \'2022-12-14\'
+AND `transaksi_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = :transaksi_distributor:
+AND `transaksi_komoditas` = :transaksi_komoditas:
+AND `transaksi_tanggal` = :transaksi_tanggal:
+AND `transaksi_status` = :transaksi_status:', [...], false)
+ 5 APPPATH\Models\Transaksi_barang_penting_model.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1877): App\Models\Transaksi_barang_penting_model->get_transaksi_by_distributor_barang_date('1', '3', '2022-12-14')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_harga_barang_penting_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 16:30:57 --> Unknown column 'transaksi_komoditas' in 'where clause'
+CRITICAL - 2022-12-14 16:30:57 --> Unknown column 'transaksi_komoditas' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = \'1\'
+AND `transaksi_komoditas` = \'3\'
+AND `transaksi_tanggal` = \'2022-12-14\'
+AND `transaksi_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = \'1\'
+AND `transaksi_komoditas` = \'3\'
+AND `transaksi_tanggal` = \'2022-12-14\'
+AND `transaksi_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = \'1\'
+AND `transaksi_komoditas` = \'3\'
+AND `transaksi_tanggal` = \'2022-12-14\'
+AND `transaksi_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi_harga`, `transaksi_id`, `transaksi_catatan`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_distributor` = :transaksi_distributor:
+AND `transaksi_komoditas` = :transaksi_komoditas:
+AND `transaksi_tanggal` = :transaksi_tanggal:
+AND `transaksi_status` = :transaksi_status:', [...], false)
+ 5 APPPATH\Models\Transaksi_barang_penting_model.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1877): App\Models\Transaksi_barang_penting_model->get_transaksi_by_distributor_barang_date('1', '3', '2022-12-14')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_harga_barang_penting_distributor_harian()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 20:40:01 --> Table 'pasar.tb_barang' doesn't exist
+CRITICAL - 2022-12-14 20:40:01 --> Table 'pasar.tb_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_harga`, `transaksi_het`, `transaksi_catatan`, `barang_nama`, `distributor_nama`
+FROM `tb_transaksi_penting`
+JOIN `tb_barang` ON `tb_transaksi_penting`.`transaksi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_penting`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_create_time` DESC
+ LIMIT 1477476', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_harga`, `transaksi_het`, `transaksi_catatan`, `barang_nama`, `distributor_nama`
+FROM `tb_transaksi_penting`
+JOIN `tb_barang` ON `tb_transaksi_penting`.`transaksi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_penting`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_create_time` DESC
+ LIMIT 1477476')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_harga`, `transaksi_het`, `transaksi_catatan`, `barang_nama`, `distributor_nama`
+FROM `tb_transaksi_penting`
+JOIN `tb_barang` ON `tb_transaksi_penting`.`transaksi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_penting`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = \'1\'
+AND `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'
+ORDER BY `transaksi_create_time` DESC
+ LIMIT 1477476')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi_id`, `transaksi_tanggal`, `transaksi_harga`, `transaksi_het`, `transaksi_catatan`, `barang_nama`, `distributor_nama`
+FROM `tb_transaksi_penting`
+JOIN `tb_barang` ON `tb_transaksi_penting`.`transaksi_barang` = `tb_barang_penting`.`barang_id`
+JOIN `tb_distributor_barang_penting` ON `tb_transaksi_penting`.`transaksi_distributor` = `tb_distributor_barang_penting`.`distributor_id`
+JOIN `tb_grup_komoditas` ON `tb_barang_penting`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `transaksi_status` = :transaksi_status:
+AND `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:
+ORDER BY `transaksi_create_time` DESC
+ LIMIT 1477476', [...], false)
+ 5 APPPATH\Models\Transaksi_barang_penting_model.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1960): App\Models\Transaksi_barang_penting_model->get_all_transaksi_by_filter(1477476, 'C:\\xampp\\htdocs\\pasar')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi_barang_penting()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 20:40:22 --> Undefined property: stdClass::$transaksi_barang
+in APPPATH\Controllers\Backend.php on line 1970.
+ 1 APPPATH\Controllers\Backend.php(1970): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$transaksi_barang', 'APPPATH\\Controllers\\Backend.php', 1970, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi_barang_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 20:41:06 --> Undefined property: stdClass::$barang_foto
+in APPPATH\Controllers\Backend.php on line 1972.
+ 1 APPPATH\Controllers\Backend.php(1972): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$barang_foto', 'APPPATH\\Controllers\\Backend.php', 1972, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_transaksi_barang_penting()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

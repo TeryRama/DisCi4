@@ -1,0 +1,89 @@
+CRITICAL - 2023-01-19 09:01:23 --> Trying to access array offset on value of type null
+in APPPATH\Views\public\page_home.php on line 115.
+ 1 APPPATH\Views\public\page_home.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\public\\page_home.php', 115, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_home', [], true)
+ 5 APPPATH\Controllers\Publik.php(41): view('page_home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-19 09:19:18 --> Undefined variable: berita_update
+in APPPATH\Views\public\page_komoditas.php on line 179.
+ 1 APPPATH\Views\public\page_komoditas.php(179): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: berita_update', 'APPPATH\\Views\\public\\page_komoditas.php', 179, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(79): view('page_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-19 09:28:01 --> Undefined property: stdClass::$artikel_gambar
+in APPPATH\Views\public\page_komoditas.php on line 185.
+ 1 APPPATH\Views\public\page_komoditas.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$artikel_gambar', 'APPPATH\\Views\\public\\page_komoditas.php', 185, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(82): view('page_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-19 09:49:59 --> Undefined offset: 0
+in APPPATH\Controllers\Action.php on line 44.
+ 1 APPPATH\Controllers\Action.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Action.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-19 09:50:05 --> Undefined offset: 0
+in APPPATH\Controllers\Action.php on line 44.
+ 1 APPPATH\Controllers\Action.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Action.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-19 09:50:08 --> Undefined offset: 0
+in APPPATH\Controllers\Action.php on line 44.
+ 1 APPPATH\Controllers\Action.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Action.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-19 09:50:11 --> Undefined offset: 0
+in APPPATH\Controllers\Action.php on line 44.
+ 1 APPPATH\Controllers\Action.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Action.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-19 09:50:15 --> Undefined offset: 0
+in APPPATH\Controllers\Action.php on line 44.
+ 1 APPPATH\Controllers\Action.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Action.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-19 09:50:17 --> Undefined offset: 0
+in APPPATH\Controllers\Action.php on line 44.
+ 1 APPPATH\Controllers\Action.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Action.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-19 09:50:30 --> Undefined offset: 0
+in APPPATH\Controllers\Action.php on line 44.
+ 1 APPPATH\Controllers\Action.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Action.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-19 09:50:32 --> Undefined offset: 0
+in APPPATH\Controllers\Action.php on line 44.
+ 1 APPPATH\Controllers\Action.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Action.php', 44, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_avg_kecamatan_by_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,100 @@
+CRITICAL - 2022-11-10 14:58:16 --> Argument 1 passed to Dompdf\Dompdf::setOptions() must be an instance of Dompdf\Options, array given, called in C:\xampp\htdocs\pasar\app\Controllers\Backend.php on line 1052
+in FCPATH\vendor\dompdf\dompdf\src\Dompdf.php on line 1322.
+ 1 APPPATH\Controllers\Backend.php(1052): Dompdf\Dompdf->setOptions([...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->unduh_laporan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 15:08:52 --> Argument 5 passed to Dompdf\Image\Cache::resolve_url() must be an instance of Dompdf\Dompdf, instance of Dompdf\Options given, called in C:\xampp\htdocs\pasar\vendor\dompdf\dompdf\src\FrameDecorator\Image.php on line 58
+in FCPATH\vendor\dompdf\dompdf\src\Image\Cache.php on line 62.
+ 1 FCPATH\vendor\dompdf\dompdf\src\FrameDecorator\Image.php(58): Dompdf\Image\Cache::resolve_url('http://localhost/pasarfiles/web-assets/logo-inhil.png', 'C:\\xampp\\htdocs\\pasar', 'C:\\xampp\\htdocs\\pasar', 'C:\\xampp\\htdocs\\pasar', Object(Dompdf\Options))
+ 2 FCPATH\vendor\dompdf\dompdf\src\Frame\Factory.php(200): Dompdf\FrameDecorator\Image->__construct(Object(Dompdf\Frame), Object(Dompdf\Dompdf))
+ 3 FCPATH\vendor\dompdf\dompdf\src\Dompdf.php(731): Dompdf\Frame\Factory::decorate_frame(Object(Dompdf\Frame), Object(Dompdf\Dompdf), Object(Dompdf\FrameDecorator\Page))
+ 4 APPPATH\Controllers\Backend.php(1051): Dompdf\Dompdf->render()
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->unduh_laporan()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 15:09:04 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes)
+in APPPATH\Views\errors\html\error_exception.php on line 96.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-10 15:09:41 --> Argument 5 passed to Dompdf\Image\Cache::resolve_url() must be an instance of Dompdf\Dompdf, instance of Dompdf\Options given, called in C:\xampp\htdocs\pasar\vendor\dompdf\dompdf\src\FrameDecorator\Image.php on line 58
+in FCPATH\vendor\dompdf\dompdf\src\Image\Cache.php on line 62.
+ 1 FCPATH\vendor\dompdf\dompdf\src\FrameDecorator\Image.php(58): Dompdf\Image\Cache::resolve_url('http://localhost/pasarfiles/web-assets/logo-inhil.png', 'C:\\xampp\\htdocs\\pasar', 'C:\\xampp\\htdocs\\pasar', 'C:\\xampp\\htdocs\\pasar', Object(Dompdf\Options))
+ 2 FCPATH\vendor\dompdf\dompdf\src\Frame\Factory.php(200): Dompdf\FrameDecorator\Image->__construct(Object(Dompdf\Frame), Object(Dompdf\Dompdf))
+ 3 FCPATH\vendor\dompdf\dompdf\src\Dompdf.php(731): Dompdf\Frame\Factory::decorate_frame(Object(Dompdf\Frame), Object(Dompdf\Dompdf), Object(Dompdf\FrameDecorator\Page))
+ 4 APPPATH\Controllers\Backend.php(1051): Dompdf\Dompdf->render()
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->unduh_laporan()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 15:09:49 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes)
+in APPPATH\Views\errors\html\error_exception.php on line 96.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-10 15:12:01 --> Class 'App\Controllers\Options' not found
+in APPPATH\Controllers\Backend.php on line 1045.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->unduh_laporan()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 03:16:48 --> syntax error, unexpected 'exit' (T_EXIT), expecting ';' or ','
+in APPPATH\Controllers\Backend.php on line 1072.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Backend.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Backend')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Backend')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Backend')
+ 5 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\Backend', true)
+ 6 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 16:38:24 --> Undefined offset: 0
+in APPPATH\Controllers\Backend.php on line 1079.
+ 1 APPPATH\Controllers\Backend.php(1079): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Backend.php', 1079, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->format_laporan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 16:42:04 --> Undefined property: stdClass::$grup_komoditas_nama
+in APPPATH\Views\admin\format_laporan.php on line 90.
+ 1 APPPATH\Views\admin\format_laporan.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$grup_komoditas_nama', 'APPPATH\\Views\\admin\\format_laporan.php', 90, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\format_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/format_laporan', [], true)
+ 5 APPPATH\Controllers\Backend.php(1091): view('admin/format_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->format_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 16:42:23 --> Undefined property: stdClass::$grup_komoditas_nama
+in APPPATH\Views\admin\format_laporan.php on line 90.
+ 1 APPPATH\Views\admin\format_laporan.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$grup_komoditas_nama', 'APPPATH\\Views\\admin\\format_laporan.php', 90, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\format_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/format_laporan', [], true)
+ 5 APPPATH\Controllers\Backend.php(1091): view('admin/format_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->format_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 16:51:42 --> Undefined property: stdClass::$angka1
+in APPPATH\Views\admin\format_laporan.php on line 109.
+ 1 APPPATH\Views\admin\format_laporan.php(109): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$angka1', 'APPPATH\\Views\\admin\\format_laporan.php', 109, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\format_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/format_laporan', [], true)
+ 5 APPPATH\Controllers\Backend.php(1091): view('admin/format_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->format_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 16:51:54 --> Undefined variable: harga2
+in APPPATH\Views\admin\format_laporan.php on line 109.
+ 1 APPPATH\Views\admin\format_laporan.php(109): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: harga2', 'APPPATH\\Views\\admin\\format_laporan.php', 109, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\format_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/format_laporan', [], true)
+ 5 APPPATH\Controllers\Backend.php(1091): view('admin/format_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->format_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,208 @@
+CRITICAL - 2023-01-06 10:38:39 --> Cannot use object of type App\Models\User_model as array
+in APPPATH\Controllers\Backend.php on line 192.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:38:39 --> Cannot use object of type App\Models\User_model as array
+in APPPATH\Controllers\Backend.php on line 192.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:38:40 --> Cannot use object of type App\Models\User_model as array
+in APPPATH\Controllers\Backend.php on line 192.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:42:36 --> Cannot use object of type App\Models\User_model as array
+in APPPATH\Controllers\Backend.php on line 197.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:44:05 --> Cannot use object of type App\Models\User_model as array
+in APPPATH\Controllers\Backend.php on line 197.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:44:31 --> Undefined property: stdClass::$user_id
+in APPPATH\Controllers\Backend.php on line 197.
+ 1 APPPATH\Controllers\Backend.php(197): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_id', 'APPPATH\\Controllers\\Backend.php', 197, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:44:58 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getResults()
+in APPPATH\Controllers\Backend.php on line 193.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:47:24 --> Division by zero
+in APPPATH\Controllers\Backend.php on line 220.
+ 1 APPPATH\Controllers\Backend.php(220): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zero', 'APPPATH\\Controllers\\Backend.php', 220, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:48:03 --> Division by zero
+in APPPATH\Controllers\Backend.php on line 221.
+ 1 APPPATH\Controllers\Backend.php(221): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zero', 'APPPATH\\Controllers\\Backend.php', 221, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:48:24 --> Division by zero
+in APPPATH\Controllers\Backend.php on line 219.
+ 1 APPPATH\Controllers\Backend.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zero', 'APPPATH\\Controllers\\Backend.php', 219, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:49:36 --> Division by zero
+in APPPATH\Controllers\Backend.php on line 219.
+ 1 APPPATH\Controllers\Backend.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zero', 'APPPATH\\Controllers\\Backend.php', 219, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:51:06 --> Division by zero
+in APPPATH\Controllers\Backend.php on line 219.
+ 1 APPPATH\Controllers\Backend.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zero', 'APPPATH\\Controllers\\Backend.php', 219, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:51:25 --> Division by zero
+in APPPATH\Controllers\Backend.php on line 203.
+ 1 APPPATH\Controllers\Backend.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zero', 'APPPATH\\Controllers\\Backend.php', 203, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:52:20 --> Division by zero
+in APPPATH\Controllers\Backend.php on line 203.
+ 1 APPPATH\Controllers\Backend.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zero', 'APPPATH\\Controllers\\Backend.php', 203, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:52:36 --> Division by zero
+in APPPATH\Controllers\Backend.php on line 203.
+ 1 APPPATH\Controllers\Backend.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zero', 'APPPATH\\Controllers\\Backend.php', 203, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:53:43 --> Division by zero
+in APPPATH\Controllers\Backend.php on line 203.
+ 1 APPPATH\Controllers\Backend.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zero', 'APPPATH\\Controllers\\Backend.php', 203, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:55:23 --> Undefined property: stdClass::$user_fk
+in APPPATH\Controllers\Backend.php on line 233.
+ 1 APPPATH\Controllers\Backend.php(233): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_fk', 'APPPATH\\Controllers\\Backend.php', 233, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 10:57:59 --> Undefined property: stdClass::$user
+in APPPATH\Controllers\Backend.php on line 227.
+ 1 APPPATH\Controllers\Backend.php(227): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user', 'APPPATH\\Controllers\\Backend.php', 227, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:23:05 --> Undefined property: stdClass::$user_fk
+in APPPATH\Controllers\Backend.php on line 234.
+ 1 APPPATH\Controllers\Backend.php(234): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_fk', 'APPPATH\\Controllers\\Backend.php', 234, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:32:37 --> Undefined property: stdClass::$user_image
+in APPPATH\Controllers\Backend.php on line 212.
+ 1 APPPATH\Controllers\Backend.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_image', 'APPPATH\\Controllers\\Backend.php', 212, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:32:40 --> Undefined property: stdClass::$user_image
+in APPPATH\Controllers\Backend.php on line 212.
+ 1 APPPATH\Controllers\Backend.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_image', 'APPPATH\\Controllers\\Backend.php', 212, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:32:40 --> Undefined property: stdClass::$user_image
+in APPPATH\Controllers\Backend.php on line 212.
+ 1 APPPATH\Controllers\Backend.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_image', 'APPPATH\\Controllers\\Backend.php', 212, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:32:42 --> Undefined property: stdClass::$user_image
+in APPPATH\Controllers\Backend.php on line 212.
+ 1 APPPATH\Controllers\Backend.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_image', 'APPPATH\\Controllers\\Backend.php', 212, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:32:43 --> Undefined property: stdClass::$user_image
+in APPPATH\Controllers\Backend.php on line 212.
+ 1 APPPATH\Controllers\Backend.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_image', 'APPPATH\\Controllers\\Backend.php', 212, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:32:44 --> Undefined property: stdClass::$user_image
+in APPPATH\Controllers\Backend.php on line 212.
+ 1 APPPATH\Controllers\Backend.php(212): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_image', 'APPPATH\\Controllers\\Backend.php', 212, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:32:47 --> Undefined property: stdClass::$user_image
+in APPPATH\Controllers\Backend.php on line 250.
+ 1 APPPATH\Controllers\Backend.php(250): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$user_image', 'APPPATH\\Controllers\\Backend.php', 250, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:41:55 --> Division by zero
+in APPPATH\Controllers\Backend.php on line 235.
+ 1 APPPATH\Controllers\Backend.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zero', 'APPPATH\\Controllers\\Backend.php', 235, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:41:57 --> Division by zero
+in APPPATH\Controllers\Backend.php on line 235.
+ 1 APPPATH\Controllers\Backend.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zero', 'APPPATH\\Controllers\\Backend.php', 235, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:41:58 --> Division by zero
+in APPPATH\Controllers\Backend.php on line 235.
+ 1 APPPATH\Controllers\Backend.php(235): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zero', 'APPPATH\\Controllers\\Backend.php', 235, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 15:02:50 --> Undefined variable: artikel
+in APPPATH\Views\public\page_privasi.php on line 138.
+ 1 APPPATH\Views\public\page_privasi.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: artikel', 'APPPATH\\Views\\public\\page_privasi.php', 138, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_privasi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_privasi', [], true)
+ 5 APPPATH\Controllers\Publik.php(245): view('page_privasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->privasi()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

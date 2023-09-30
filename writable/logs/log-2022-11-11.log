@@ -1,0 +1,55 @@
+CRITICAL - 2022-11-11 14:12:54 --> Undefined property: stdClass::$hargamax
+in APPPATH\Views\admin\format_laporan.php on line 108.
+ 1 APPPATH\Views\admin\format_laporan.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$hargamax', 'APPPATH\\Views\\admin\\format_laporan.php', 108, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\format_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/format_laporan', [], true)
+ 5 APPPATH\Controllers\Backend.php(1127): view('admin/format_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->format_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 15:59:13 --> A non-numeric value encountered
+in APPPATH\Views\admin\format_laporan.php on line 106.
+ 1 APPPATH\Views\admin\format_laporan.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Views\\admin\\format_laporan.php', 106, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\format_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/format_laporan', [], true)
+ 5 APPPATH\Controllers\Backend.php(1176): view('admin/format_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->format_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 16:02:24 --> Undefined offset: 0
+in APPPATH\Views\admin\format_laporan.php on line 63.
+ 1 APPPATH\Views\admin\format_laporan.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\admin\\format_laporan.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\format_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/format_laporan', [], true)
+ 5 APPPATH\Controllers\Backend.php(1114): view('admin/format_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->unduh_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 16:02:45 --> Undefined offset: 0
+in APPPATH\Views\admin\format_laporan.php on line 63.
+ 1 APPPATH\Views\admin\format_laporan.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\admin\\format_laporan.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\format_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/format_laporan', [], true)
+ 5 APPPATH\Controllers\Backend.php(1114): view('admin/format_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->unduh_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-11 16:03:09 --> Undefined offset: 0
+in APPPATH\Views\admin\format_laporan.php on line 63.
+ 1 APPPATH\Views\admin\format_laporan.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Views\\admin\\format_laporan.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\format_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/format_laporan', [], true)
+ 5 APPPATH\Controllers\Backend.php(1114): view('admin/format_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->unduh_laporan()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

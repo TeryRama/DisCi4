@@ -1,0 +1,253 @@
+CRITICAL - 2022-10-03 13:10:45 --> Undefined property: App\Controllers\Backend::$UM
+in APPPATH\Controllers\Backend.php on line 26.
+ 1 APPPATH\Controllers\Backend.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Backend::$UM', 'APPPATH\\Controllers\\Backend.php', 26, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->login()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 01:11:16 --> Class 'Tests\Support\Models\UserModel' not found
+in APPPATH\Controllers\Backend.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(858): App\Controllers\Backend->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 13:18:57 --> Call to undefined function App\Controllers\encrypt_url()
+in APPPATH\Controllers\Backend.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->login()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 13:19:40 --> Call to undefined function App\Controllers\encrypt_url()
+in APPPATH\Controllers\Backend.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->login()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 13:20:10 --> Call to undefined function App\Controllers\encrypt_url()
+in APPPATH\Controllers\Backend.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->login()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 13:21:21 --> Call to undefined function App\Controllers\encrypt_url()
+in APPPATH\Controllers\Backend.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->login()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 13:23:04 --> Call to undefined function App\Controllers\encrypt_url()
+in APPPATH\Controllers\Backend.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->login()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 13:24:48 --> Call to undefined function App\Controllers\encrypt_url()
+in APPPATH\Controllers\Backend.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->login()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 13:27:07 --> Call to undefined function App\Controllers\encrypt_url()
+in APPPATH\Controllers\Backend.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->login()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 13:27:19 --> Call to undefined function App\Controllers\encrypt_url()
+in APPPATH\Controllers\Backend.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->login()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 13:27:42 --> Call to undefined function App\Controllers\encrypt_url()
+in APPPATH\Controllers\Backend.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->login()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 13:27:45 --> Call to undefined function App\Controllers\encrypt_url()
+in APPPATH\Controllers\Backend.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->login()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 13:27:51 --> Call to undefined function App\Controllers\encrypt_url()
+in APPPATH\Controllers\Backend.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->login()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 16:10:13 --> array_push() expects parameter 1 to be array, null given
+in APPPATH\Controllers\Backend.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() expects parameter 1 to be array, null given', 'APPPATH\\Controllers\\Backend.php', 78, [...])
+ 2 APPPATH\Controllers\Backend.php(78): array_push(null, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 16:10:26 --> array_push() expects parameter 1 to be array, null given
+in APPPATH\Controllers\Backend.php on line 78.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() expects parameter 1 to be array, null given', 'APPPATH\\Controllers\\Backend.php', 78, [...])
+ 2 APPPATH\Controllers\Backend.php(78): array_push(null, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 16:13:46 --> Undefined variable: response
+in APPPATH\Controllers\Backend.php on line 85.
+ 1 APPPATH\Controllers\Backend.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: response', 'APPPATH\\Controllers\\Backend.php', 85, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 20:00:47 --> Call to undefined method App\Models\Pasar_model::getRow
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Backend.php(70): CodeIgniter\Model->__call('getRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 20:01:00 --> Undefined property: stdClass::$count
+in APPPATH\Controllers\Backend.php on line 70.
+ 1 APPPATH\Controllers\Backend.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$count', 'APPPATH\\Controllers\\Backend.php', 70, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 20:01:11 --> Call to undefined method stdClass::Count()
+in APPPATH\Controllers\Backend.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 20:01:33 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Controllers\Backend.php on line 70.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Controllers\\Backend.php', 70, [...])
+ 2 APPPATH\Controllers\Backend.php(70): count(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 20:09:36 --> Call to a member function get() on array
+in APPPATH\Controllers\Backend.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 20:10:03 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Controllers\Backend.php on line 75.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Controllers\\Backend.php', 75, [...])
+ 2 APPPATH\Controllers\Backend.php(75): count(Object(App\Models\Pasar_model))
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 20:11:44 --> Object of class App\Controllers\Backend could not be converted to string
+in APPPATH\Controllers\Backend.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 20:12:03 --> Object of class App\Controllers\Backend could not be converted to string
+in APPPATH\Controllers\Backend.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 20:12:19 --> Object of class App\Controllers\Backend could not be converted to string
+in APPPATH\Controllers\Backend.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 20:12:28 --> Object of class App\Controllers\Backend could not be converted to string
+in APPPATH\Controllers\Backend.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-03 20:15:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `tb_pasar`
+WHERE `pasar_status` = '1'
+AND `pasar_status` = '1'
+AND  `p...' at line 1
+CRITICAL - 2022-10-03 20:15:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `tb_pasar`
+WHERE `pasar_status` = '1'
+AND `pasar_status` = '1'
+AND  `p...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *, *
+FROM `tb_pasar`
+WHERE `pasar_status` = \'1\'
+AND `pasar_status` = \'1\'
+AND  `pasar_nama` LIKE \'%pusat%\' ESCAPE \'!\'
+AND  `pasar_nama` LIKE \'%pusat%\' ESCAPE \'!\'
+ LIMIT 20', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, *
+FROM `tb_pasar`
+WHERE `pasar_status` = \'1\'
+AND `pasar_status` = \'1\'
+AND  `pasar_nama` LIKE \'%pusat%\' ESCAPE \'!\'
+AND  `pasar_nama` LIKE \'%pusat%\' ESCAPE \'!\'
+ LIMIT 20')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, *
+FROM `tb_pasar`
+WHERE `pasar_status` = \'1\'
+AND `pasar_status` = \'1\'
+AND  `pasar_nama` LIKE \'%pusat%\' ESCAPE \'!\'
+AND  `pasar_nama` LIKE \'%pusat%\' ESCAPE \'!\'
+ LIMIT 20')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, *
+FROM `tb_pasar`
+WHERE `pasar_status` = :pasar_status:
+AND `pasar_status` = :pasar_status.1:
+AND  `pasar_nama` LIKE :pasar_nama: ESCAPE \'!\'
+AND  `pasar_nama` LIKE :pasar_nama.1: ESCAPE \'!\'
+ LIMIT 20', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(72): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 20:18:19 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Controllers\Backend.php on line 75.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Controllers\\Backend.php', 75, [...])
+ 2 APPPATH\Controllers\Backend.php(75): count(Object(App\Models\Pasar_model))
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 20:18:36 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Controllers\Backend.php on line 75.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Controllers\\Backend.php', 75, [...])
+ 2 APPPATH\Controllers\Backend.php(75): count(Object(App\Models\Pasar_model))
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 20:18:37 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Controllers\Backend.php on line 75.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Controllers\\Backend.php', 75, [...])
+ 2 APPPATH\Controllers\Backend.php(75): count(Object(App\Models\Pasar_model))
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 20:18:38 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Controllers\Backend.php on line 75.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Controllers\\Backend.php', 75, [...])
+ 2 APPPATH\Controllers\Backend.php(75): count(Object(App\Models\Pasar_model))
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-03 20:25:13 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Controllers\Backend.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Controllers\\Backend.php', 72, [...])
+ 2 APPPATH\Controllers\Backend.php(72): count(Object(App\Models\Pasar_model))
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

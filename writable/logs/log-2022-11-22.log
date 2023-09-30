@@ -1,0 +1,95 @@
+ERROR - 2022-11-22 09:50:14 --> Unknown column 'jualan_id.komoditas_nama' in 'field list'
+CRITICAL - 2022-11-22 09:50:14 --> Unknown column 'jualan_id.komoditas_nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `jualan_id`. `komoditas_nama`, `grup_komoditas_nama`
+FROM `tb_Pedagang`
+JOIN `tb_komoditas` ON `tb_jualan`.`jualan_komoditas` = `tb_komoditas`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `jualan_pedagang` = \'1\'
+AND `jualan_status` = \'1\'
+ORDER BY `jualan_create_time` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jualan_id`. `komoditas_nama`, `grup_komoditas_nama`
+FROM `tb_Pedagang`
+JOIN `tb_komoditas` ON `tb_jualan`.`jualan_komoditas` = `tb_komoditas`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `jualan_pedagang` = \'1\'
+AND `jualan_status` = \'1\'
+ORDER BY `jualan_create_time` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jualan_id`. `komoditas_nama`, `grup_komoditas_nama`
+FROM `tb_Pedagang`
+JOIN `tb_komoditas` ON `tb_jualan`.`jualan_komoditas` = `tb_komoditas`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `jualan_pedagang` = \'1\'
+AND `jualan_status` = \'1\'
+ORDER BY `jualan_create_time` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `jualan_id`. `komoditas_nama`, `grup_komoditas_nama`
+FROM `tb_Pedagang`
+JOIN `tb_komoditas` ON `tb_jualan`.`jualan_komoditas` = `tb_komoditas`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `jualan_pedagang` = :jualan_pedagang:
+AND `jualan_status` = :jualan_status:
+ORDER BY `jualan_create_time` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1261): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_jualan()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-22 09:50:43 --> Unknown column 'jualan_id' in 'field list'
+CRITICAL - 2022-11-22 09:50:43 --> Unknown column 'jualan_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `jualan_id`, `komoditas_nama`, `grup_komoditas_nama`
+FROM `tb_Pedagang`
+JOIN `tb_komoditas` ON `tb_jualan`.`jualan_komoditas` = `tb_komoditas`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `jualan_pedagang` = \'1\'
+AND `jualan_status` = \'1\'
+ORDER BY `jualan_create_time` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `jualan_id`, `komoditas_nama`, `grup_komoditas_nama`
+FROM `tb_Pedagang`
+JOIN `tb_komoditas` ON `tb_jualan`.`jualan_komoditas` = `tb_komoditas`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `jualan_pedagang` = \'1\'
+AND `jualan_status` = \'1\'
+ORDER BY `jualan_create_time` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `jualan_id`, `komoditas_nama`, `grup_komoditas_nama`
+FROM `tb_Pedagang`
+JOIN `tb_komoditas` ON `tb_jualan`.`jualan_komoditas` = `tb_komoditas`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `jualan_pedagang` = \'1\'
+AND `jualan_status` = \'1\'
+ORDER BY `jualan_create_time` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `jualan_id`, `komoditas_nama`, `grup_komoditas_nama`
+FROM `tb_Pedagang`
+JOIN `tb_komoditas` ON `tb_jualan`.`jualan_komoditas` = `tb_komoditas`.`komoditas_id`
+JOIN `tb_grup_komoditas` ON `tb_komoditas`.`komoditas_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `jualan_pedagang` = :jualan_pedagang:
+AND `jualan_status` = :jualan_status:
+ORDER BY `jualan_create_time` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Backend.php(1261): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_jualan()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 11:15:19 --> Call to undefined method App\Models\Jualan_model::edit_jualan
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Backend.php(1319): CodeIgniter\Model->__call('edit_jualan', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->delete_jualan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 11:16:44 --> Undefined index: jualan_create_by
+in APPPATH\Controllers\Backend.php on line 1320.
+ 1 APPPATH\Controllers\Backend.php(1320): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: jualan_create_by', 'APPPATH\\Controllers\\Backend.php', 1320, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->delete_jualan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 11:17:34 --> Undefined index: jualan_create_by
+in APPPATH\Controllers\Backend.php on line 1320.
+ 1 APPPATH\Controllers\Backend.php(1320): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: jualan_create_by', 'APPPATH\\Controllers\\Backend.php', 1320, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->delete_jualan()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

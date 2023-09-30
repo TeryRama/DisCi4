@@ -1,0 +1,47 @@
+CRITICAL - 2023-01-18 10:14:34 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResult()
+in APPPATH\Controllers\Backend.php on line 3503.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->perbarui_profil()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 10:18:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResult()
+in APPPATH\Controllers\Backend.php on line 3503.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->perbarui_profil()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 10:19:54 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResult()
+in APPPATH\Controllers\Backend.php on line 3503.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->perbarui_profil()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 10:20:52 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResult()
+in APPPATH\Controllers\Backend.php on line 3503.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->perbarui_profil()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 10:21:07 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+in APPPATH\Controllers\Backend.php on line 3503.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->perbarui_profil()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-18 10:21:13 --> Unknown column 'user_nama' in 'field list'
+CRITICAL - 2023-01-18 10:21:13 --> Unknown column 'user_nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tb_user` SET `user_id` = \'B6D50186-5717-4499-89E4-9EDD3DEE3233\', `user_nama` = \'erik setiawan new\', `user_email` = \'19eriksetiawan@gmail.com\', `user_update_by` = \'root\', `user_update_time` = \'2023-01-18 10:21:13\'
+WHERE `user_id` = \'B6D50186-5717-4499-89E4-9EDD3DEE3233\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_user` SET `user_id` = \'B6D50186-5717-4499-89E4-9EDD3DEE3233\', `user_nama` = \'erik setiawan new\', `user_email` = \'19eriksetiawan@gmail.com\', `user_update_by` = \'root\', `user_update_time` = \'2023-01-18 10:21:13\'
+WHERE `user_id` = \'B6D50186-5717-4499-89E4-9EDD3DEE3233\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_user` SET `user_id` = \'B6D50186-5717-4499-89E4-9EDD3DEE3233\', `user_nama` = \'erik setiawan new\', `user_email` = \'19eriksetiawan@gmail.com\', `user_update_by` = \'root\', `user_update_time` = \'2023-01-18 10:21:13\'
+WHERE `user_id` = \'B6D50186-5717-4499-89E4-9EDD3DEE3233\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2046): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_user` SET `user_id` = :user_id.1:, `user_nama` = :user_nama:, `user_email` = :user_email:, `user_update_by` = :user_update_by:, `user_update_time` = :user_update_time:
+WHERE `user_id` = :user_id:', [...], false)
+ 5 APPPATH\Models\User_model.php(100): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Backend.php(3540): App\Models\User_model->edit_user([...])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->perbarui_profil()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

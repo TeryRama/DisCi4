@@ -1,0 +1,80 @@
+CRITICAL - 2023-09-18 09:54:23 --> Invalid file: page_home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('page_home.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_home', [], true)
+ 3 APPPATH\Controllers\Publik.php(57): view('page_home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 09:54:26 --> Invalid file: page_home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('page_home.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_home', [], true)
+ 3 APPPATH\Controllers\Publik.php(57): view('page_home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 09:55:14 --> Invalid file: page_home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('page_home.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_home', [], true)
+ 3 APPPATH\Controllers\Publik.php(57): view('page_home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 09:55:26 --> Invalid file: page_home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('page_home.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_home', [], true)
+ 3 APPPATH\Controllers\Publik.php(57): view('page_home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-09-18 09:58:34 --> Invalid file: page_home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('page_home.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_home', [], true)
+ 3 APPPATH\Controllers\Publik.php(57): view('page_home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-09-18 14:48:47 --> Table 'pasar.atb_user' doesn't exist
+CRITICAL - 2023-09-18 14:48:47 --> Table 'pasar.atb_user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `atb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_username` = \'pasarpusat@gmail.com\'
+OR `user_email` = \'pasarpusat@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `atb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_username` = \'pasarpusat@gmail.com\'
+OR `user_email` = \'pasarpusat@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `atb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_username` = \'pasarpusat@gmail.com\'
+OR `user_email` = \'pasarpusat@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `atb_user`
+JOIN `tb_user_level` ON `tb_user`.`user_role` = `tb_user_level`.`user_level_id`
+WHERE `user_username` = :user_username:
+OR `user_email` = :user_email:', [...], false)
+ 5 APPPATH\Models\User_model.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Login.php(126): App\Models\User_model->get_user_by_username_email('pasarpusat@gmail.com')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Login->request_forgot_password()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

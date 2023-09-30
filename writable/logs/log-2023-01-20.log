@@ -1,0 +1,388 @@
+CRITICAL - 2023-01-20 10:45:02 --> Undefined offset: 0
+in APPPATH\Controllers\Action.php on line 75.
+ 1 APPPATH\Controllers\Action.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Action.php', 75, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_transaksi_by_pasar()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 10:45:09 --> Undefined offset: 0
+in APPPATH\Controllers\Action.php on line 75.
+ 1 APPPATH\Controllers\Action.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Action.php', 75, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_transaksi_by_pasar()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-20 11:43:23 --> Unknown column 'transaksi_komoditas' in 'where clause'
+CRITICAL - 2023-01-20 11:43:23 --> Unknown column 'transaksi_komoditas' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROUND(AVG(transaksi_harga)) as rata_harga, `transaksi_tanggal`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_komoditas` = \'2\'
+AND DATE(transaksi_tanggal) = \'2023-01-20\'
+AND `transaksi_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROUND(AVG(transaksi_harga)) as rata_harga, `transaksi_tanggal`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_komoditas` = \'2\'
+AND DATE(transaksi_tanggal) = \'2023-01-20\'
+AND `transaksi_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROUND(AVG(transaksi_harga)) as rata_harga, `transaksi_tanggal`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_komoditas` = \'2\'
+AND DATE(transaksi_tanggal) = \'2023-01-20\'
+AND `transaksi_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROUND(AVG(transaksi_harga)) as rata_harga, `transaksi_tanggal`
+FROM `tb_transaksi_penting`
+WHERE `transaksi_komoditas` = :transaksi_komoditas:
+AND DATE(transaksi_tanggal) = :DATE(transaksi_tanggal):
+AND `transaksi_status` = :transaksi_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Publik.php(97): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 11:47:22 --> Creating default object from empty value
+in APPPATH\Controllers\Publik.php on line 102.
+ 1 APPPATH\Controllers\Publik.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'APPPATH\\Controllers\\Publik.php', 102, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-20 14:38:42 --> Unknown column 'tb_barang_lainnya.barang_grup' in 'on clause'
+CRITICAL - 2023-01-20 14:38:42 --> Unknown column 'tb_barang_lainnya.barang_grup' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `barang_id`, `barang_nama`, `barang_satuan`, `barang_foto`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_lainnya`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `barang_id`, `barang_nama`, `barang_satuan`, `barang_foto`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_lainnya`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `barang_id`, `barang_nama`, `barang_satuan`, `barang_foto`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_lainnya`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = \'1\'
+AND `grup_komoditas_status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `barang_id`, `barang_nama`, `barang_satuan`, `barang_foto`
+FROM `tb_barang_penting`
+JOIN `tb_grup_komoditas` ON `tb_barang_lainnya`.`barang_grup` = `tb_grup_komoditas`.`grup_komoditas_id`
+WHERE `barang_status` = :barang_status:
+AND `grup_komoditas_status` = :grup_komoditas_status:', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Publik.php(123): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 15:05:28 --> Undefined variable: penting
+in APPPATH\Views\public\page_komoditas.php on line 87.
+ 1 APPPATH\Views\public\page_komoditas.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: penting', 'APPPATH\\Views\\public\\page_komoditas.php', 87, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(168): view('page_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 16:28:19 --> explode() expects parameter 2 to be string, array given
+in APPPATH\Helpers\additional_helper.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'explode() expects parameter 2 to be string, array given', 'APPPATH\\Helpers\\additional_helper.php', 92, [...])
+ 2 APPPATH\Helpers\additional_helper.php(92): explode('-', [...])
+ 3 APPPATH\Views\public\page_detail_komoditas.php(23): tgl_indo([...])
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 7 APPPATH\Controllers\Publik.php(286): view('page_detail_komoditas', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 16:38:14 --> Attempt to assign property 'harga_rata' of non-object
+in APPPATH\Controllers\Publik.php on line 199.
+ 1 APPPATH\Controllers\Publik.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'harga_rata\' of non-object', 'APPPATH\\Controllers\\Publik.php', 199, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-20 16:49:04 --> Unknown column 'tb_transaksi_transaksi_pasar' in 'on clause'
+CRITICAL - 2023-01-20 16:49:04 --> Unknown column 'tb_transaksi_transaksi_pasar' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROUND(AVG(transaksi_harga)) as rata_harga, `transaksi_tanggal`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi_transaksi_pasar` = `tb_pasar`.`pasar_id`
+JOIN `_area` ON `tb_pasar`.`pasar_kecamatan` = `_area`.`code`
+WHERE `transaksi_komoditas` = 1
+AND `transaksi_status` = \'1\'
+GROUP BY `transaksi_tanggal`
+ORDER BY `transaksi_tanggal` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROUND(AVG(transaksi_harga)) as rata_harga, `transaksi_tanggal`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi_transaksi_pasar` = `tb_pasar`.`pasar_id`
+JOIN `_area` ON `tb_pasar`.`pasar_kecamatan` = `_area`.`code`
+WHERE `transaksi_komoditas` = 1
+AND `transaksi_status` = \'1\'
+GROUP BY `transaksi_tanggal`
+ORDER BY `transaksi_tanggal` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROUND(AVG(transaksi_harga)) as rata_harga, `transaksi_tanggal`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi_transaksi_pasar` = `tb_pasar`.`pasar_id`
+JOIN `_area` ON `tb_pasar`.`pasar_kecamatan` = `_area`.`code`
+WHERE `transaksi_komoditas` = 1
+AND `transaksi_status` = \'1\'
+GROUP BY `transaksi_tanggal`
+ORDER BY `transaksi_tanggal` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROUND(AVG(transaksi_harga)) as rata_harga, `transaksi_tanggal`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi_transaksi_pasar` = `tb_pasar`.`pasar_id`
+JOIN `_area` ON `tb_pasar`.`pasar_kecamatan` = `_area`.`code`
+WHERE `transaksi_komoditas` = :transaksi_komoditas:
+AND `transaksi_status` = :transaksi_status:
+GROUP BY `transaksi_tanggal`
+ORDER BY `transaksi_tanggal` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Publik.php(201): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-20 16:50:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.rata_harga, `tb_transaksi`.`transaksi_tanggal`, `tb_pasar`.`pasar_nama`, `_a...' at line 1
+CRITICAL - 2023-01-20 16:50:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.rata_harga, `tb_transaksi`.`transaksi_tanggal`, `tb_pasar`.`pasar_nama`, `_a...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROUND(AVG(transaksi_harga)) as tb_transaksi.rata_harga, `tb_transaksi`.`transaksi_tanggal`, `tb_pasar`.`pasar_nama`, `_area`.`name`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+JOIN `_area` ON `tb_pasar`.`pasar_kecamatan` = `_area`.`code`
+WHERE `transaksi_komoditas` = 1
+AND `transaksi_status` = \'1\'
+GROUP BY `transaksi_tanggal`
+ORDER BY `transaksi_tanggal` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROUND(AVG(transaksi_harga)) as tb_transaksi.rata_harga, `tb_transaksi`.`transaksi_tanggal`, `tb_pasar`.`pasar_nama`, `_area`.`name`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+JOIN `_area` ON `tb_pasar`.`pasar_kecamatan` = `_area`.`code`
+WHERE `transaksi_komoditas` = 1
+AND `transaksi_status` = \'1\'
+GROUP BY `transaksi_tanggal`
+ORDER BY `transaksi_tanggal` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROUND(AVG(transaksi_harga)) as tb_transaksi.rata_harga, `tb_transaksi`.`transaksi_tanggal`, `tb_pasar`.`pasar_nama`, `_area`.`name`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+JOIN `_area` ON `tb_pasar`.`pasar_kecamatan` = `_area`.`code`
+WHERE `transaksi_komoditas` = 1
+AND `transaksi_status` = \'1\'
+GROUP BY `transaksi_tanggal`
+ORDER BY `transaksi_tanggal` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROUND(AVG(transaksi_harga)) as tb_transaksi.rata_harga, `tb_transaksi`.`transaksi_tanggal`, `tb_pasar`.`pasar_nama`, `_area`.`name`
+FROM `tb_transaksi`
+JOIN `tb_pasar` ON `tb_transaksi`.`transaksi_pasar` = `tb_pasar`.`pasar_id`
+JOIN `_area` ON `tb_pasar`.`pasar_kecamatan` = `_area`.`code`
+WHERE `transaksi_komoditas` = :transaksi_komoditas:
+AND `transaksi_status` = :transaksi_status:
+GROUP BY `transaksi_tanggal`
+ORDER BY `transaksi_tanggal` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Publik.php(201): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 16:55:58 --> Undefined variable: last_update
+in APPPATH\Views\public\page_detail_komoditas.php on line 23.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: last_update', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 23, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(324): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 16:56:43 --> Undefined variable: pasar_min
+in APPPATH\Views\public\page_detail_komoditas.php on line 35.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pasar_min', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 35, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(325): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 16:57:26 --> Undefined variable: pasar_min_nama
+in APPPATH\Views\public\page_detail_komoditas.php on line 36.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pasar_min_nama', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 36, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(325): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 16:57:32 --> Undefined variable: pasar_max
+in APPPATH\Views\public\page_detail_komoditas.php on line 46.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: pasar_max', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(325): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 16:58:06 --> Undefined variable: kec_min
+in APPPATH\Views\public\page_detail_komoditas.php on line 66.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kec_min', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(325): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 16:58:58 --> Undefined variable: data_kecamatan
+in APPPATH\Views\public\page_detail_komoditas.php on line 92.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data_kecamatan', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 92, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(325): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 16:59:13 --> Undefined variable: data_kecamatan
+in APPPATH\Views\public\page_detail_komoditas.php on line 92.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data_kecamatan', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 92, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(325): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 16:59:52 --> Undefined variable: data_kecamatan
+in APPPATH\Views\public\page_detail_komoditas.php on line 99.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data_kecamatan', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 99, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(325): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 17:00:04 --> Undefined variable: kecamatan
+in APPPATH\Views\public\page_detail_komoditas.php on line 148.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kecamatan', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 148, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(325): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 21:12:45 --> Trying to access array offset on value of type null
+in APPPATH\Views\public\page_home.php on line 115.
+ 1 APPPATH\Views\public\page_home.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\public\\page_home.php', 115, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_home', [], true)
+ 5 APPPATH\Controllers\Publik.php(48): view('page_home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 21:43:44 --> Undefined variable: artikel
+in APPPATH\Views\public\page_detail_komoditas.php on line 123.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: artikel', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(325): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:05:47 --> Undefined variable: kecamatan
+in APPPATH\Views\public\page_detail_komoditas.php on line 189.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(189): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kecamatan', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 189, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(238): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 22:09:08 --> Undefined property: stdClass::$pasar_nama
+in APPPATH\Views\public\page_detail_komoditas.php on line 109.
+ 1 APPPATH\Views\public\page_detail_komoditas.php(109): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$pasar_nama', 'APPPATH\\Views\\public\\page_detail_komoditas.php', 109, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_detail_komoditas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_detail_komoditas', [], true)
+ 5 APPPATH\Controllers\Publik.php(253): view('page_detail_komoditas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->detail_komoditas()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:04:11 --> max(): Array must contain at least one element
+in APPPATH\Controllers\Action.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'max(): Array must contain at least one element', 'APPPATH\\Controllers\\Action.php', 187, [...])
+ 2 APPPATH\Controllers\Action.php(187): max([])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_statistik_wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:22:02 --> max(): Array must contain at least one element
+in APPPATH\Controllers\Action.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'max(): Array must contain at least one element', 'APPPATH\\Controllers\\Action.php', 187, [...])
+ 2 APPPATH\Controllers\Action.php(187): max([])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_statistik_wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:22:24 --> max(): Array must contain at least one element
+in APPPATH\Controllers\Action.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'max(): Array must contain at least one element', 'APPPATH\\Controllers\\Action.php', 187, [...])
+ 2 APPPATH\Controllers\Action.php(187): max([])
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Action->get_statistik_wilayah()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:33:14 --> Undefined variable: transaksi_tanggal
+in APPPATH\Controllers\Publik.php on line 307.
+ 1 APPPATH\Controllers\Publik.php(307): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: transaksi_tanggal', 'APPPATH\\Controllers\\Publik.php', 307, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->statistik_wilayah()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:41:14 --> Illegal string offset 'harga'
+in APPPATH\Views\public\page_statistik_wilayah.php on line 116.
+ 1 APPPATH\Views\public\page_statistik_wilayah.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'harga\'', 'APPPATH\\Views\\public\\page_statistik_wilayah.php', 116, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_statistik_wilayah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_statistik_wilayah', [], true)
+ 5 APPPATH\Controllers\Publik.php(322): view('page_statistik_wilayah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->statistik_wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-20 23:42:08 --> Illegal string offset 'harga'
+in APPPATH\Views\public\page_statistik_wilayah.php on line 116.
+ 1 APPPATH\Views\public\page_statistik_wilayah.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'harga\'', 'APPPATH\\Views\\public\\page_statistik_wilayah.php', 116, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\public\\page_statistik_wilayah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('page_statistik_wilayah', [], true)
+ 5 APPPATH\Controllers\Publik.php(322): view('page_statistik_wilayah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Publik->statistik_wilayah()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Publik))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

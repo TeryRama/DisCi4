@@ -1,0 +1,14 @@
+CRITICAL - 2022-10-05 10:19:42 --> Call to undefined method App\Models\Area_model::get_area_by_code
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Backend.php(101): CodeIgniter\Model->__call('get_area_by_code', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-05 10:20:11 --> Undefined offset: 0
+in APPPATH\Controllers\Backend.php on line 106.
+ 1 APPPATH\Controllers\Backend.php(106): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\Backend.php', 106, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->get_data_pasar()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

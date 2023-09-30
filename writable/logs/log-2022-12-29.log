@@ -1,0 +1,14 @@
+CRITICAL - 2022-12-29 16:49:37 --> date_diff() expects parameter 1 to be DateTimeInterface, string given
+in APPPATH\Controllers\Root.php on line 226.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_diff() expects parameter 1 to be DateTimeInterface, string given', 'APPPATH\\Controllers\\Root.php', 226, [...])
+ 2 APPPATH\Controllers\Root.php(226): date_diff('2022-12-16', '2022-12-17')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-29 18:50:14 --> Object of class DateTime could not be converted to string
+in APPPATH\Controllers\Root.php on line 229.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Root->laporan_pangan_tanggal()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Root))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

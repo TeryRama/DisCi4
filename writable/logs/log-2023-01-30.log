@@ -1,0 +1,350 @@
+ERROR - 2023-01-30 08:35:20 --> Error connecting to the database: Access denied for user '****'@'localhost'
+CRITICAL - 2023-01-30 08:35:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost'
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Publik.php(45): CodeIgniter\Model->__call()
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-30 08:35:44 --> Error connecting to the database: Access denied for user '****'@'localhost'
+CRITICAL - 2023-01-30 08:35:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost'
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Publik.php(45): CodeIgniter\Model->__call()
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-30 08:36:41 --> Table 'disdagtrisql1.tb_artikel' doesn't exist
+CRITICAL - 2023-01-30 08:36:41 --> Table 'disdagtrisql1.tb_artikel' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(771): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Publik.php(45): CodeIgniter\Model->__call()
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->index()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 08:39:42 --> curl_exec() has been disabled for security reasons
+in APPPATH/Viewspage_home.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Viewspage_home.php(7): curl_exec()
+ 3 APPPATH/Viewspage_home.php(114): get_CURL()
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Viewspage_home.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render()
+ 7 APPPATH/Controllers/Publik.php(48): view()
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->index()
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 08:43:57 --> curl_exec() has been disabled for security reasons
+in APPPATH/Viewspage_home.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Viewspage_home.php(7): curl_exec()
+ 3 APPPATH/Viewspage_home.php(114): get_CURL()
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Viewspage_home.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render()
+ 7 APPPATH/Controllers/Publik.php(48): view()
+ 8 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->index()
+ 9 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 08:44:32 --> parse_ini_file() has been disabled for security reasons
+in APPPATH/Helpers/additional_helper.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Helpers/additional_helper.php(39): parse_ini_file()
+ 3 APPPATH/Controllers/Backend.php(189): decrypt_url()
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 08:44:32 --> parse_ini_file() has been disabled for security reasons
+in APPPATH/Helpers/additional_helper.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Helpers/additional_helper.php(39): parse_ini_file()
+ 3 APPPATH/Controllers/Backend.php(189): decrypt_url()
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 08:47:13 --> parse_ini_file() has been disabled for security reasons
+in APPPATH/Helpers/additional_helper.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Helpers/additional_helper.php(39): parse_ini_file()
+ 3 APPPATH/Controllers/Backend.php(189): decrypt_url()
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 08:47:13 --> parse_ini_file() has been disabled for security reasons
+in APPPATH/Helpers/additional_helper.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Helpers/additional_helper.php(39): parse_ini_file()
+ 3 APPPATH/Controllers/Backend.php(189): decrypt_url()
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 08:47:16 --> parse_ini_file() has been disabled for security reasons
+in APPPATH/Helpers/additional_helper.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Helpers/additional_helper.php(39): parse_ini_file()
+ 3 APPPATH/Controllers/Backend.php(189): decrypt_url()
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 08:47:55 --> parse_ini_file() has been disabled for security reasons
+in APPPATH/Helpers/additional_helper.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Helpers/additional_helper.php(39): parse_ini_file()
+ 3 APPPATH/Controllers/Backend.php(189): decrypt_url()
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 08:47:55 --> parse_ini_file() has been disabled for security reasons
+in APPPATH/Helpers/additional_helper.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Helpers/additional_helper.php(39): parse_ini_file()
+ 3 APPPATH/Controllers/Backend.php(189): decrypt_url()
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 08:47:57 --> parse_ini_file() has been disabled for security reasons
+in APPPATH/Helpers/additional_helper.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Helpers/additional_helper.php(39): parse_ini_file()
+ 3 APPPATH/Controllers/Backend.php(189): decrypt_url()
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 08:47:58 --> parse_ini_file() has been disabled for security reasons
+in APPPATH/Helpers/additional_helper.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Helpers/additional_helper.php(39): parse_ini_file()
+ 3 APPPATH/Controllers/Backend.php(189): decrypt_url()
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 08:48:45 --> parse_ini_file() has been disabled for security reasons
+in APPPATH/Helpers/additional_helper.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Helpers/additional_helper.php(12): parse_ini_file()
+ 3 APPPATH/Controllers/Backend.php(95): encrypt_url()
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->index()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 08:49:56 --> parse_ini_file() has been disabled for security reasons
+in APPPATH/Helpers/additional_helper.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Helpers/additional_helper.php(12): parse_ini_file()
+ 3 APPPATH/Controllers/Backend.php(95): encrypt_url()
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->index()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:23:38 --> Undefined variable: last_update
+in APPPATH/Controllers/Publik.php on line 84.
+ 1 APPPATH/Controllers/Publik.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->komoditas()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:28:52 --> Undefined variable: last_update
+in APPPATH/Controllers/Publik.php on line 84.
+ 1 APPPATH/Controllers/Publik.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->komoditas()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:29:39 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:29:39 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:31:07 --> Undefined variable: last_update
+in APPPATH/Controllers/Publik.php on line 84.
+ 1 APPPATH/Controllers/Publik.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->komoditas()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:32:45 --> Undefined variable: last_update
+in APPPATH/Controllers/Publik.php on line 84.
+ 1 APPPATH/Controllers/Publik.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->komoditas()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:34:12 --> Undefined variable: last_update
+in APPPATH/Controllers/Publik.php on line 84.
+ 1 APPPATH/Controllers/Publik.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Publik->komoditas()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:37:19 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:37:19 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:37:30 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:37:30 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:37:42 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:37:45 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:37:45 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:39:11 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:39:11 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:39:13 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:39:14 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:39:58 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:40:19 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:41:04 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:43:10 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:43:10 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 09:44:44 --> Division by zero
+in APPPATH/Controllers/Backend.php on line 210.
+ 1 APPPATH/Controllers/Backend.php(210): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 22:03:49 --> syntax error, unexpected end of file
+in APPPATH/Controllers/Publik.php on line 275.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(846): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 22:03:53 --> syntax error, unexpected end of file, expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+in APPPATH/Controllers/Publik.php on line 301.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(846): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

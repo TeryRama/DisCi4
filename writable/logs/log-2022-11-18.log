@@ -1,0 +1,70 @@
+CRITICAL - 2022-11-18 17:03:07 --> Too few arguments to function App\Models\Grup_komoditas_model::count_grup_komoditas_by_filter(), 1 passed in C:\xampp\htdocs\pasar\app\Controllers\Backend.php on line 115 and exactly 2 expected
+in APPPATH\Models\Grup_komoditas_model.php on line 12.
+ 1 APPPATH\Controllers\Backend.php(115): App\Models\Grup_komoditas_model->count_grup_komoditas_by_filter('C:\\xampp\\htdocs\\pasar')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 17:03:07 --> Too few arguments to function App\Models\Grup_komoditas_model::count_grup_komoditas_by_filter(), 1 passed in C:\xampp\htdocs\pasar\app\Controllers\Backend.php on line 115 and exactly 2 expected
+in APPPATH\Models\Grup_komoditas_model.php on line 12.
+ 1 APPPATH\Controllers\Backend.php(115): App\Models\Grup_komoditas_model->count_grup_komoditas_by_filter('C:\\xampp\\htdocs\\pasar')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 17:03:09 --> Too few arguments to function App\Models\Grup_komoditas_model::count_grup_komoditas_by_filter(), 1 passed in C:\xampp\htdocs\pasar\app\Controllers\Backend.php on line 115 and exactly 2 expected
+in APPPATH\Models\Grup_komoditas_model.php on line 12.
+ 1 APPPATH\Controllers\Backend.php(115): App\Models\Grup_komoditas_model->count_grup_komoditas_by_filter('C:\\xampp\\htdocs\\pasar')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 17:03:17 --> Too few arguments to function App\Models\Grup_komoditas_model::count_grup_komoditas_by_filter(), 1 passed in C:\xampp\htdocs\pasar\app\Controllers\Backend.php on line 115 and exactly 2 expected
+in APPPATH\Models\Grup_komoditas_model.php on line 12.
+ 1 APPPATH\Controllers\Backend.php(115): App\Models\Grup_komoditas_model->count_grup_komoditas_by_filter('C:\\xampp\\htdocs\\pasar')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 17:03:17 --> Too few arguments to function App\Models\Grup_komoditas_model::count_grup_komoditas_by_filter(), 1 passed in C:\xampp\htdocs\pasar\app\Controllers\Backend.php on line 115 and exactly 2 expected
+in APPPATH\Models\Grup_komoditas_model.php on line 12.
+ 1 APPPATH\Controllers\Backend.php(115): App\Models\Grup_komoditas_model->count_grup_komoditas_by_filter('C:\\xampp\\htdocs\\pasar')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 17:03:18 --> Too few arguments to function App\Models\Grup_komoditas_model::count_grup_komoditas_by_filter(), 1 passed in C:\xampp\htdocs\pasar\app\Controllers\Backend.php on line 115 and exactly 2 expected
+in APPPATH\Models\Grup_komoditas_model.php on line 12.
+ 1 APPPATH\Controllers\Backend.php(115): App\Models\Grup_komoditas_model->count_grup_komoditas_by_filter('C:\\xampp\\htdocs\\pasar')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 17:03:27 --> Too few arguments to function App\Models\Grup_komoditas_model::count_grup_komoditas_by_filter(), 1 passed in C:\xampp\htdocs\pasar\app\Controllers\Backend.php on line 115 and exactly 2 expected
+in APPPATH\Models\Grup_komoditas_model.php on line 12.
+ 1 APPPATH\Controllers\Backend.php(115): App\Models\Grup_komoditas_model->count_grup_komoditas_by_filter('C:\\xampp\\htdocs\\pasar')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 17:03:27 --> Too few arguments to function App\Models\Grup_komoditas_model::count_grup_komoditas_by_filter(), 1 passed in C:\xampp\htdocs\pasar\app\Controllers\Backend.php on line 115 and exactly 2 expected
+in APPPATH\Models\Grup_komoditas_model.php on line 12.
+ 1 APPPATH\Controllers\Backend.php(115): App\Models\Grup_komoditas_model->count_grup_komoditas_by_filter('C:\\xampp\\htdocs\\pasar')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 17:03:44 --> Too few arguments to function App\Models\Grup_komoditas_model::count_grup_komoditas_by_filter(), 1 passed in C:\xampp\htdocs\pasar\app\Controllers\Backend.php on line 115 and exactly 2 expected
+in APPPATH\Models\Grup_komoditas_model.php on line 12.
+ 1 APPPATH\Controllers\Backend.php(115): App\Models\Grup_komoditas_model->count_grup_komoditas_by_filter('C:\\xampp\\htdocs\\pasar')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 17:04:43 --> Too few arguments to function App\Models\Grup_komoditas_model::count_grup_komoditas_by_filter(), 1 passed in C:\xampp\htdocs\pasar\app\Controllers\Backend.php on line 115 and exactly 2 expected
+in APPPATH\Models\Grup_komoditas_model.php on line 12.
+ 1 APPPATH\Controllers\Backend.php(115): App\Models\Grup_komoditas_model->count_grup_komoditas_by_filter('C:\\xampp\\htdocs\\pasar')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Backend->dashboard_info()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
